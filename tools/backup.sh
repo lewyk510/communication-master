@@ -19,12 +19,16 @@ bundle() {
 }
 
 push() {
-  if git remote get-url origin >/dev/null 2>&1; then
-    git push origin master
-    git push origin --tags 2>/dev/null || true
-    echo "pushed to $(git remote get-url origin)"
+  r="origin"
+  if ! git remote get-url "$r" >/dev/null 2>&1 && git remote get-url private >/dev/null 2>&1; then
+    r="private"
+  fi
+  if git remote get-url "$r" >/dev/null 2>&1; then
+    git push "$r" HEAD
+    git push "$r" --tags 2>/dev/null || true
+    echo "pushed to '$r' ($(git remote get-url "$r"))"
   else
-    echo "no 'origin' remote — run: git remote add origin git@github.com:<you>/communication-master.git"
+    echo "no backup remote — add one: git remote add private git@github.com:<you>/<repo>.git"
     return 1
   fi
 }
