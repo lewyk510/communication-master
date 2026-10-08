@@ -1,0 +1,29 @@
+{
+  "id": "sc4-hard-conversations",
+  "title": "Hard Conversations · 高难度对话",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc4-hard-conversations/core.md",
+    "zh": "wiki/scenarios/sc4-hard-conversations/zh.md",
+    "en": "wiki/scenarios/sc4-hard-conversations/en.md",
+    "ms": "wiki/scenarios/sc4-hard-conversations/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "拒绝",
+    "离职",
+    "分手",
+    "坏消息",
+    "谈薪",
+    "hard conversation",
+    "bad news",
+    "quit",
+    "say no",
+    "冷暴力",
+    "离婚"
+  ],
+  "see_also": []
+}

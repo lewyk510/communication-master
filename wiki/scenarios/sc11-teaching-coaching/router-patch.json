@@ -1,0 +1,14 @@
+{
+  "id": "sc11-teaching-coaching",
+  "title": "Teaching & Coaching · 教学/指导",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc11-teaching-coaching/core.md",
+    "zh": "wiki/scenarios/sc11-teaching-coaching/zh.md",
+    "en": "wiki/scenarios/sc11-teaching-coaching/en.md",
+    "ms": "wiki/scenarios/sc11-teaching-coaching/ms.md"
+  },
+  "scenarios": ["S2", "S3"],
+  "triggers": ["教学", "带人", "指导", "teaching", "coaching", "mentoring", "mengajar"],
+  "see_also": []
+}

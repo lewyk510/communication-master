@@ -1,0 +1,15 @@
+{
+  "op": "update",
+  "id": "sc13-mediation",
+  "title": "Mediation · 第三方调解",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc13-mediation/core.md",
+    "zh": "wiki/scenarios/sc13-mediation/zh.md",
+    "en": "wiki/scenarios/sc13-mediation/en.md",
+    "ms": "wiki/scenarios/sc13-mediation/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["调解", "和事佬", "仲裁", "mediation", "arbitration", "pengantaraan"],
+  "see_also": []
+}

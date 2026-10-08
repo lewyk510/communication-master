@@ -1,0 +1,14 @@
+{
+  "id": "sc2-romance-intimacy",
+  "title": "Romance & Intimacy · 亲密关系",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc2-romance-intimacy/core.md",
+    "zh": "wiki/scenarios/sc2-romance-intimacy/zh.md",
+    "en": "wiki/scenarios/sc2-romance-intimacy/en.md",
+    "ms": "wiki/scenarios/sc2-romance-intimacy/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["恋爱", "表白", "约会", "暧昧", "romance", "dating", "crush", "cinta", "janji temu"],
+  "see_also": []
+}

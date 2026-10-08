@@ -1,0 +1,14 @@
+{
+  "id": "sc5-networking-first-impressions",
+  "title": "Networking & First Impressions · 破冰",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc5-networking-first-impressions/core.md",
+    "zh": "wiki/scenarios/sc5-networking-first-impressions/zh.md",
+    "en": "wiki/scenarios/sc5-networking-first-impressions/en.md",
+    "ms": "wiki/scenarios/sc5-networking-first-impressions/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["破冰", "自我介绍", "第一印象", "networking", "first impression", "small talk", "kenalan baru"],
+  "see_also": []
+}

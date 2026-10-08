@@ -1,0 +1,27 @@
+{
+  "id": "sc6-friends-social",
+  "title": "Friends & Social · 朋友社交",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc6-friends-social/core.md",
+    "zh": "wiki/scenarios/sc6-friends-social/zh.md",
+    "en": "wiki/scenarios/sc6-friends-social/en.md",
+    "ms": "wiki/scenarios/sc6-friends-social/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "朋友",
+    "社交",
+    "聚会",
+    "friends",
+    "party",
+    "hangout",
+    "kawan",
+    "rakan",
+    "改天"
+  ],
+  "see_also": []
+}

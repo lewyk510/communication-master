@@ -1,0 +1,26 @@
+{
+  "id": "c9-manipulation-defense",
+  "title": "Manipulation & Defense · 操纵识别与防御",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c9-manipulation-defense/core.md",
+    "zh": "wiki/concepts/c9-manipulation-defense/zh.md",
+    "en": "wiki/concepts/c9-manipulation-defense/en.md",
+    "ms": "wiki/concepts/c9-manipulation-defense/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "PUA",
+    "煤气灯",
+    "操纵",
+    "情感勒索",
+    "gaslighting",
+    "manipulation",
+    "emotional blackmail",
+    "manipulasi"
+  ],
+  "see_also": []
+}

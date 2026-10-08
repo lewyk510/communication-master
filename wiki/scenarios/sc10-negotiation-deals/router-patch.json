@@ -1,0 +1,26 @@
+{
+  "id": "sc10-negotiation-deals",
+  "title": "Negotiation & Deals · 谈判与成交",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc10-negotiation-deals/core.md",
+    "zh": "wiki/scenarios/sc10-negotiation-deals/zh.md",
+    "en": "wiki/scenarios/sc10-negotiation-deals/en.md",
+    "ms": "wiki/scenarios/sc10-negotiation-deals/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "谈判",
+    "砍价",
+    "成交",
+    "negotiation",
+    "bargaining",
+    "rundingan",
+    "offer",
+    "谈薪"
+  ],
+  "see_also": []
+}

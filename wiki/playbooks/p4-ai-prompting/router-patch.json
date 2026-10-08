@@ -1,0 +1,1 @@
+{"id":"p4-ai-prompting","title":"AI Prompting · AI 提示词","type":"playbook","paths":{"core":"wiki/playbooks/p4-ai-prompting/core.md","zh":"wiki/playbooks/p4-ai-prompting/zh.md","en":"wiki/playbooks/p4-ai-prompting/en.md","ms":"wiki/playbooks/p4-ai-prompting/ms.md"},"scenarios":["S4"],"triggers":["AI","提示词","让AI帮我","prompt","prompting","ChatGPT","LLM","arahan AI"],"see_also":[]}

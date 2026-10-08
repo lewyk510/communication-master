@@ -1,0 +1,14 @@
+{
+  "id": "sc12-asking-help",
+  "title": "Asking for Help · 请求与求助",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc12-asking-help/core.md",
+    "zh": "wiki/scenarios/sc12-asking-help/zh.md",
+    "en": "wiki/scenarios/sc12-asking-help/en.md",
+    "ms": "wiki/scenarios/sc12-asking-help/ms.md"
+  },
+  "scenarios": ["S2"],
+  "triggers": ["求助", "帮忙", "请求", "asking for help", "request", "bantuan"],
+  "see_also": []
+}

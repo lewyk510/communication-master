@@ -1,0 +1,28 @@
+{
+  "id": "cu4-cross-cultural-general",
+  "title": "Cross-Cultural General · 跨文化通则",
+  "type": "culture",
+  "paths": {
+    "core": "wiki/cultures/cu4-cross-cultural-general/core.md",
+    "zh": "wiki/cultures/cu4-cross-cultural-general/zh.md",
+    "en": "wiki/cultures/cu4-cross-cultural-general/en.md",
+    "ms": "wiki/cultures/cu4-cross-cultural-general/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "triggers": [
+    "跨文化",
+    "文化差异",
+    "高语境",
+    "cross-cultural",
+    "culture shock",
+    "high-context",
+    "low-context",
+    "budaya",
+    "perbezaan budaya"
+  ],
+  "see_also": []
+}

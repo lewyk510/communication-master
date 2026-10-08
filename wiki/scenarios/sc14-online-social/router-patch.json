@@ -1,0 +1,14 @@
+{
+  "id": "sc14-online-social",
+  "title": "Online Social & Communities · 网络社群互动",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc14-online-social/core.md",
+    "zh": "wiki/scenarios/sc14-online-social/zh.md",
+    "en": "wiki/scenarios/sc14-online-social/en.md",
+    "ms": "wiki/scenarios/sc14-online-social/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["网友", "群聊", "评论区", "online", "community", "forum", "komen"],
+  "see_also": []
+}

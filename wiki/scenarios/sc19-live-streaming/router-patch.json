@@ -1,0 +1,14 @@
+{
+  "id": "sc19-live-streaming",
+  "title": "Live Streaming & Voice Room · 直播与语音房",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc19-live-streaming/core.md",
+    "zh": "wiki/scenarios/sc19-live-streaming/zh.md",
+    "en": "wiki/scenarios/sc19-live-streaming/en.md",
+    "ms": "wiki/scenarios/sc19-live-streaming/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["直播", "直播间", "弹幕", "主播", "语音房", "连麦", "打赏", "榜一", "灯牌", "直播事故", "live stream", "livestream", "streamer", "twitch", "bilibili", "danmaku", "voice room", "clubhouse", "parasocial", "准社会", "siaran langsung", "bilik suara", "penstrim", "hadiah live", "moderator", "房管"],
+  "see_also": ["wiki/scenarios/sc14-online-social/", "wiki/concepts/c9-manipulation-defense/", "wiki/cultures/cu2-malaysia-chinese/"]
+}

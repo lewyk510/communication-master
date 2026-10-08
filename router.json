@@ -1,0 +1,1443 @@
+{
+  "version": 1,
+  "lang_default": "auto",
+  "always_load": [
+    "wiki/synthesis/00-how-to-use.md"
+  ],
+  "engines": {
+    "S1": "wiki/playbooks/p2-subtext-decoder/",
+    "S3": "wiki/playbooks/p3-formal-writing/",
+    "S4": "wiki/playbooks/p4-ai-prompting/",
+    "S2": "wiki/playbooks/p1-reply-engine/"
+  },
+  "entries": [
+    {
+      "id": "c1-subtext-implicature",
+      "title": "Subtext & Implicature · 潜台词与会话含义",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c1-subtext-implicature/core.md",
+        "zh": "wiki/concepts/c1-subtext-implicature/zh.md",
+        "en": "wiki/concepts/c1-subtext-implicature/en.md",
+        "ms": "wiki/concepts/c1-subtext-implicature/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "潜台词",
+        "言外之意",
+        "话里有话",
+        "弦外之音",
+        "暗示",
+        "subtext",
+        "implicature",
+        "reading between the lines",
+        "maksud tersirat",
+        "bahasa berlapik",
+        "你开心就好",
+        "开心就好",
+        "随便",
+        "都行",
+        "无所谓",
+        "fine",
+        "whatever",
+        "up to you",
+        "看着办",
+        "行吧",
+        "再说吧",
+        "改天",
+        "呵呵",
+        "嗯"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c2-persuasion-influence",
+      "title": "Persuasion & Influence · 说服与影响",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c2-persuasion-influence/core.md",
+        "zh": "wiki/concepts/c2-persuasion-influence/zh.md",
+        "en": "wiki/concepts/c2-persuasion-influence/en.md",
+        "ms": "wiki/concepts/c2-persuasion-influence/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "说服",
+        "影响力",
+        "劝说",
+        "互惠",
+        "稀缺",
+        "锚定",
+        "损失厌恶",
+        "谈判",
+        "让步",
+        "谈价",
+        "砍价",
+        "persuasion",
+        "influence",
+        "Cialdini",
+        "scarcity",
+        "reciprocity",
+        "anchoring",
+        "BATNA",
+        "negotiation",
+        "calibrated questions",
+        "door-in-the-face",
+        "foot-in-the-door",
+        "pujukan",
+        "pengaruh",
+        "rundingan",
+        "tawar-menawar"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c3-nvc-conflict-repair",
+      "title": "NVC & Conflict Repair · 非暴力沟通与冲突修复",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "zh": "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "en": "wiki/concepts/c3-nvc-conflict-repair/en.md",
+        "ms": "wiki/concepts/c3-nvc-conflict-repair/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "非暴力沟通",
+        "冲突",
+        "道歉",
+        "和解",
+        "NVC",
+        "conflict",
+        "apology",
+        "repair",
+        "konflik",
+        "maaf",
+        "冷暴力"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c4-emotional-intelligence",
+      "title": "Emotional Intelligence · 情绪智力",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c4-emotional-intelligence/core.md",
+        "zh": "wiki/concepts/c4-emotional-intelligence/zh.md",
+        "en": "wiki/concepts/c4-emotional-intelligence/en.md",
+        "ms": "wiki/concepts/c4-emotional-intelligence/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "情绪",
+        "情商",
+        "共情",
+        "情绪智力",
+        "情绪颗粒度",
+        "validation",
+        "emotional intelligence",
+        "EQ",
+        "empathy",
+        "active listening",
+        "affect labeling",
+        "kecerdasan emosi",
+        "empati",
+        "mendengarkan"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c5-personality-typology",
+      "title": "Personality Typology · 人格类型学",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c5-personality-typology/core.md",
+        "zh": "wiki/concepts/c5-personality-typology/zh.md",
+        "en": "wiki/concepts/c5-personality-typology/en.md",
+        "ms": "wiki/concepts/c5-personality-typology/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "人格",
+        "性格",
+        "人格类型",
+        "MBTI",
+        "大五",
+        "九型人格",
+        "Enneagram",
+        "DISC",
+        "personality",
+        "Big Five",
+        "OCEAN",
+        "HEXACO",
+        "Dark Triad",
+        "personaliti",
+        "personaliti kepribadian",
+        "big lima"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c6-nonverbal-subconscious",
+      "title": "Nonverbal & Subconscious Signals · 非语言与潜意识信号",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c6-nonverbal-subconscious/core.md",
+        "zh": "wiki/concepts/c6-nonverbal-subconscious/zh.md",
+        "en": "wiki/concepts/c6-nonverbal-subconscious/en.md",
+        "ms": "wiki/concepts/c6-nonverbal-subconscious/ms.md"
+      },
+      "scenarios": [
+        "S1"
+      ],
+      "triggers": [
+        "肢体语言",
+        "微表情",
+        "眼神",
+        "语气",
+        "body language",
+        "microexpression",
+        "tone of voice",
+        "posture",
+        "bahasa badan",
+        "ekspresi"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c7-demographic-differences",
+      "title": "Demographic Differences · 人群差异（性别/年龄/代际）",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c7-demographic-differences/core.md",
+        "zh": "wiki/concepts/c7-demographic-differences/zh.md",
+        "en": "wiki/concepts/c7-demographic-differences/en.md",
+        "ms": "wiki/concepts/c7-demographic-differences/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "性别差异",
+        "代沟",
+        "年龄",
+        "男女沟通",
+        "打断",
+        "刻板印象",
+        "digital native",
+        "gender differences",
+        "generation gap",
+        "interruption",
+        "generasi",
+        "jurang generasi",
+        "Gen Z",
+        "Boomer"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c8-astrology-heuristics",
+      "title": "Astrology Heuristics · 星座/生肖",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c8-astrology-heuristics/core.md",
+        "zh": "wiki/concepts/c8-astrology-heuristics/zh.md",
+        "en": "wiki/concepts/c8-astrology-heuristics/en.md",
+        "ms": "wiki/concepts/c8-astrology-heuristics/ms.md"
+      },
+      "scenarios": [
+        "S1"
+      ],
+      "triggers": [
+        "星座",
+        "占星",
+        "生肖",
+        "astrology",
+        "zodiac",
+        "horoscope",
+        "zodiak"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c9-manipulation-defense",
+      "title": "Manipulation & Defense · 操纵识别与防御",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c9-manipulation-defense/core.md",
+        "zh": "wiki/concepts/c9-manipulation-defense/zh.md",
+        "en": "wiki/concepts/c9-manipulation-defense/en.md",
+        "ms": "wiki/concepts/c9-manipulation-defense/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "PUA",
+        "煤气灯",
+        "操纵",
+        "情感勒索",
+        "gaslighting",
+        "manipulation",
+        "emotional blackmail",
+        "manipulasi"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c10-models-meta",
+      "title": "Models & Meta · 沟通模型与元方法",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c10-models-meta/core.md",
+        "zh": "wiki/concepts/c10-models-meta/zh.md",
+        "en": "wiki/concepts/c10-models-meta/en.md",
+        "ms": "wiki/concepts/c10-models-meta/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "triggers": [
+        "模型",
+        "框架",
+        "meta",
+        "framework",
+        "communication model",
+        "attachment",
+        "kerangka"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc1-workplace-power",
+      "title": "Workplace Power · 职场权力",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc1-workplace-power/core.md",
+        "zh": "wiki/scenarios/sc1-workplace-power/zh.md",
+        "en": "wiki/scenarios/sc1-workplace-power/en.md",
+        "ms": "wiki/scenarios/sc1-workplace-power/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "职场",
+        "老板",
+        "同事",
+        "汇报",
+        "升职",
+        "加薪",
+        "workplace",
+        "boss",
+        "colleague",
+        "promotion",
+        "tempat kerja",
+        "ketua",
+        "加班",
+        "offer",
+        "谈薪",
+        "noted with thanks",
+        "per my last email"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc2-romance-intimacy",
+      "title": "Romance & Intimacy · 亲密关系",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc2-romance-intimacy/core.md",
+        "zh": "wiki/scenarios/sc2-romance-intimacy/zh.md",
+        "en": "wiki/scenarios/sc2-romance-intimacy/en.md",
+        "ms": "wiki/scenarios/sc2-romance-intimacy/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "恋爱",
+        "表白",
+        "约会",
+        "暧昧",
+        "romance",
+        "dating",
+        "crush",
+        "cinta",
+        "janji temu"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc3-family-kinship",
+      "title": "Family & Kinship · 家庭与亲戚",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc3-family-kinship/core.md",
+        "zh": "wiki/scenarios/sc3-family-kinship/zh.md",
+        "en": "wiki/scenarios/sc3-family-kinship/en.md",
+        "ms": "wiki/scenarios/sc3-family-kinship/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "父母",
+        "家庭",
+        "亲戚",
+        "催婚",
+        "过年",
+        "family",
+        "parents",
+        "relatives",
+        "in-laws",
+        "keluarga",
+        "ibu bapa",
+        "sanak saudara"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc4-hard-conversations",
+      "title": "Hard Conversations · 高难度对话",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc4-hard-conversations/core.md",
+        "zh": "wiki/scenarios/sc4-hard-conversations/zh.md",
+        "en": "wiki/scenarios/sc4-hard-conversations/en.md",
+        "ms": "wiki/scenarios/sc4-hard-conversations/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "拒绝",
+        "离职",
+        "分手",
+        "坏消息",
+        "谈薪",
+        "hard conversation",
+        "bad news",
+        "quit",
+        "say no",
+        "冷暴力",
+        "离婚"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc5-networking-first-impressions",
+      "title": "Networking & First Impressions · 破冰",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc5-networking-first-impressions/core.md",
+        "zh": "wiki/scenarios/sc5-networking-first-impressions/zh.md",
+        "en": "wiki/scenarios/sc5-networking-first-impressions/en.md",
+        "ms": "wiki/scenarios/sc5-networking-first-impressions/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "破冰",
+        "自我介绍",
+        "第一印象",
+        "networking",
+        "first impression",
+        "small talk",
+        "kenalan baru"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc6-friends-social",
+      "title": "Friends & Social · 朋友社交",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc6-friends-social/core.md",
+        "zh": "wiki/scenarios/sc6-friends-social/zh.md",
+        "en": "wiki/scenarios/sc6-friends-social/en.md",
+        "ms": "wiki/scenarios/sc6-friends-social/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "朋友",
+        "社交",
+        "聚会",
+        "friends",
+        "party",
+        "hangout",
+        "kawan",
+        "rakan",
+        "改天"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc7-digital-messaging",
+      "title": "Digital Messaging · 线上聊天",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc7-digital-messaging/core.md",
+        "zh": "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "en": "wiki/scenarios/sc7-digital-messaging/en.md",
+        "ms": "wiki/scenarios/sc7-digital-messaging/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "微信",
+        "whatsapp",
+        "消息",
+        "已读不回",
+        "reply",
+        "texting",
+        "read receipt",
+        "mesej",
+        "balas"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "cu1-malaysia-malay",
+      "title": "Malaysian Malay Culture · 马来文化",
+      "type": "culture",
+      "paths": {
+        "core": "wiki/cultures/cu1-malaysia-malay/core.md",
+        "zh": "wiki/cultures/cu1-malaysia-malay/zh.md",
+        "en": "wiki/cultures/cu1-malaysia-malay/en.md",
+        "ms": "wiki/cultures/cu1-malaysia-malay/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "马来",
+        "马来礼节",
+        "budi bahasa",
+        "adat",
+        "Melayu",
+        "Malay culture",
+        "Dato",
+        "boleh",
+        "boleh boleh",
+        "tak kisah",
+        "okay lah",
+        "can lah",
+        "nanti",
+        "nanti nanti",
+        "tak apa",
+        "insyaAllah",
+        "InsyaAllah",
+        "malay",
+        "orang melayu"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "cu2-malaysia-chinese",
+      "title": "Malaysian Chinese Culture · 马来西亚华人文化",
+      "type": "culture",
+      "paths": {
+        "core": "wiki/cultures/cu2-malaysia-chinese/core.md",
+        "zh": "wiki/cultures/cu2-malaysia-chinese/zh.md",
+        "en": "wiki/cultures/cu2-malaysia-chinese/en.md",
+        "ms": "wiki/cultures/cu2-malaysia-chinese/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "马来西亚华人",
+        "华人",
+        "面子",
+        "人情",
+        "Malaysian Chinese",
+        "face",
+        "guanxi",
+        "renqing",
+        "Cina"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "cu3-malaysia-indian",
+      "title": "Malaysian Indian Culture · 马来西亚印度文化",
+      "type": "culture",
+      "paths": {
+        "core": "wiki/cultures/cu3-malaysia-indian/core.md",
+        "zh": "wiki/cultures/cu3-malaysia-indian/zh.md",
+        "en": "wiki/cultures/cu3-malaysia-indian/en.md",
+        "ms": "wiki/cultures/cu3-malaysia-indian/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "印度",
+        "淡米尔",
+        "Malaysian Indian",
+        "Deepavali",
+        "Thaipusam",
+        "Vanakkam"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "cu4-cross-cultural-general",
+      "title": "Cross-Cultural General · 跨文化通则",
+      "type": "culture",
+      "paths": {
+        "core": "wiki/cultures/cu4-cross-cultural-general/core.md",
+        "zh": "wiki/cultures/cu4-cross-cultural-general/zh.md",
+        "en": "wiki/cultures/cu4-cross-cultural-general/en.md",
+        "ms": "wiki/cultures/cu4-cross-cultural-general/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "跨文化",
+        "文化差异",
+        "高语境",
+        "cross-cultural",
+        "culture shock",
+        "high-context",
+        "low-context",
+        "budaya",
+        "perbezaan budaya"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "p1-reply-engine",
+      "title": "Reply Engine · 回复引擎",
+      "type": "playbook",
+      "paths": {
+        "core": "wiki/playbooks/p1-reply-engine/core.md",
+        "zh": "wiki/playbooks/p1-reply-engine/zh.md",
+        "en": "wiki/playbooks/p1-reply-engine/en.md",
+        "ms": "wiki/playbooks/p1-reply-engine/ms.md"
+      },
+      "scenarios": [
+        "S2"
+      ],
+      "triggers": [
+        "怎么回",
+        "回复",
+        "回消息",
+        "帮我想个回复",
+        "reply",
+        "respond",
+        "draft a reply",
+        "balas",
+        "cara membalas"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "p2-subtext-decoder",
+      "title": "Subtext Decoder · 潜台词解码器",
+      "type": "playbook",
+      "paths": {
+        "core": "wiki/playbooks/p2-subtext-decoder/core.md",
+        "zh": "wiki/playbooks/p2-subtext-decoder/zh.md",
+        "en": "wiki/playbooks/p2-subtext-decoder/en.md",
+        "ms": "wiki/playbooks/p2-subtext-decoder/ms.md"
+      },
+      "scenarios": [
+        "S1"
+      ],
+      "triggers": [
+        "解码",
+        "他什么意思",
+        "什么意思",
+        "暗示",
+        "decode",
+        "what did they mean",
+        "interpret",
+        "maksud tersirat",
+        "你开心就好",
+        "开心就好",
+        "随便",
+        "都行",
+        "无所谓",
+        "看你",
+        "听你的",
+        "fine",
+        "whatever",
+        "up to you",
+        "tak kisah",
+        "ikut awak",
+        "terserah",
+        "看着办",
+        "行吧",
+        "再说吧",
+        "改天",
+        "呵呵",
+        "嗯",
+        "加班",
+        "noted with thanks",
+        "per my last email"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "p3-formal-writing",
+      "title": "Formal Writing · 正式写作",
+      "type": "playbook",
+      "paths": {
+        "core": "wiki/playbooks/p3-formal-writing/core.md",
+        "zh": "wiki/playbooks/p3-formal-writing/zh.md",
+        "en": "wiki/playbooks/p3-formal-writing/en.md",
+        "ms": "wiki/playbooks/p3-formal-writing/ms.md"
+      },
+      "scenarios": [
+        "S3"
+      ],
+      "triggers": [
+        "投诉",
+        "申诉",
+        "申请信",
+        "邮件",
+        "正式信",
+        "complaint",
+        "appeal",
+        "formal letter",
+        "refund",
+        "surat rasmi",
+        "complain",
+        "complaining",
+        "billing",
+        "internal email",
+        "cc",
+        "bcc",
+        "follow-up",
+        "抄送",
+        "密送",
+        "内部邮件"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "p4-ai-prompting",
+      "title": "AI Prompting · AI 提示词",
+      "type": "playbook",
+      "paths": {
+        "core": "wiki/playbooks/p4-ai-prompting/core.md",
+        "zh": "wiki/playbooks/p4-ai-prompting/zh.md",
+        "en": "wiki/playbooks/p4-ai-prompting/en.md",
+        "ms": "wiki/playbooks/p4-ai-prompting/ms.md"
+      },
+      "scenarios": [
+        "S4"
+      ],
+      "triggers": [
+        "AI",
+        "提示词",
+        "让AI帮我",
+        "prompt",
+        "prompting",
+        "ChatGPT",
+        "LLM",
+        "arahan AI"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c11-paralanguage-prosody",
+      "title": "Paralanguage & Prosody · 副语言与语气",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c11-paralanguage-prosody/core.md",
+        "zh": "wiki/concepts/c11-paralanguage-prosody/zh.md",
+        "en": "wiki/concepts/c11-paralanguage-prosody/en.md",
+        "ms": "wiki/concepts/c11-paralanguage-prosody/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "语气",
+        "语调",
+        "停顿",
+        "tone",
+        "prosody",
+        "intonation",
+        "nada suara"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c12-rhetoric-storytelling",
+      "title": "Rhetoric & Storytelling · 修辞与叙事/幽默",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c12-rhetoric-storytelling/core.md",
+        "zh": "wiki/concepts/c12-rhetoric-storytelling/zh.md",
+        "en": "wiki/concepts/c12-rhetoric-storytelling/en.md",
+        "ms": "wiki/concepts/c12-rhetoric-storytelling/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "修辞",
+        "比喻",
+        "讲故事",
+        "幽默",
+        "rhetoric",
+        "storytelling",
+        "metaphor",
+        "humour",
+        "peribahasa"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c13-visual-multimodal",
+      "title": "Visual & Multimodal · 视觉与多模态(emoji/表情包)",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c13-visual-multimodal/core.md",
+        "zh": "wiki/concepts/c13-visual-multimodal/zh.md",
+        "en": "wiki/concepts/c13-visual-multimodal/en.md",
+        "ms": "wiki/concepts/c13-visual-multimodal/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "表情包",
+        "梗图",
+        "图片",
+        "emoji",
+        "visual",
+        "multimodal",
+        "mem",
+        "sticker"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c14-self-talk",
+      "title": "Self-Talk · 自我对话",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c14-self-talk/core.md",
+        "zh": "wiki/concepts/c14-self-talk/zh.md",
+        "en": "wiki/concepts/c14-self-talk/en.md",
+        "ms": "wiki/concepts/c14-self-talk/ms.md"
+      },
+      "scenarios": [
+        "S2"
+      ],
+      "triggers": [
+        "自我对话",
+        "内心戏",
+        "self-talk",
+        "intrapersonal",
+        "inner voice",
+        "dialog dalaman"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c15-group-team-communication",
+      "title": "Group & Team Communication · 群体与团队沟通",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c15-group-team-communication/core.md",
+        "zh": "wiki/concepts/c15-group-team-communication/zh.md",
+        "en": "wiki/concepts/c15-group-team-communication/en.md",
+        "ms": "wiki/concepts/c15-group-team-communication/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "团队",
+        "会议",
+        "群体",
+        "team",
+        "meeting",
+        "group",
+        "mesyuarat"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c16-public-speaking",
+      "title": "Public Speaking & Presentation · 公开演讲与演示",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c16-public-speaking/core.md",
+        "zh": "wiki/concepts/c16-public-speaking/zh.md",
+        "en": "wiki/concepts/c16-public-speaking/en.md",
+        "ms": "wiki/concepts/c16-public-speaking/ms.md"
+      },
+      "scenarios": [
+        "S3"
+      ],
+      "triggers": [
+        "演讲",
+        "汇报",
+        "演示",
+        "public speaking",
+        "presentation",
+        "slaid"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c17-mass-media-pr",
+      "title": "Mass Media & PR · 大众媒体与公关",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c17-mass-media-pr/core.md",
+        "zh": "wiki/concepts/c17-mass-media-pr/zh.md",
+        "en": "wiki/concepts/c17-mass-media-pr/en.md",
+        "ms": "wiki/concepts/c17-mass-media-pr/ms.md"
+      },
+      "scenarios": [
+        "S3"
+      ],
+      "triggers": [
+        "公关",
+        "媒体",
+        "社媒",
+        "PR",
+        "public relations",
+        "media",
+        "media massa"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "c18-propaganda-fallacies",
+      "title": "Propaganda & Fallacies · 宣传与逻辑谬误识别",
+      "type": "concept",
+      "paths": {
+        "core": "wiki/concepts/c18-propaganda-fallacies/core.md",
+        "zh": "wiki/concepts/c18-propaganda-fallacies/zh.md",
+        "en": "wiki/concepts/c18-propaganda-fallacies/en.md",
+        "ms": "wiki/concepts/c18-propaganda-fallacies/ms.md"
+      },
+      "scenarios": [
+        "S1"
+      ],
+      "triggers": [
+        "逻辑谬误",
+        "宣传",
+        "带节奏",
+        "fallacy",
+        "propaganda",
+        "bias"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc8-job-interviews",
+      "title": "Job Interviews · 求职面试",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc8-job-interviews/core.md",
+        "zh": "wiki/scenarios/sc8-job-interviews/zh.md",
+        "en": "wiki/scenarios/sc8-job-interviews/en.md",
+        "ms": "wiki/scenarios/sc8-job-interviews/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "面试",
+        "求职",
+        "应聘",
+        "interview",
+        "job interview",
+        "temuduga",
+        "offer",
+        "谈薪"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc9-live-service",
+      "title": "Live Customer Service · 现场客服与投诉",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc9-live-service/core.md",
+        "zh": "wiki/scenarios/sc9-live-service/zh.md",
+        "en": "wiki/scenarios/sc9-live-service/en.md",
+        "ms": "wiki/scenarios/sc9-live-service/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "客服",
+        "投诉",
+        "退货",
+        "customer service",
+        "complaint",
+        "khidmat pelanggan",
+        "complain",
+        "billing"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc10-negotiation-deals",
+      "title": "Negotiation & Deals · 谈判与成交",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc10-negotiation-deals/core.md",
+        "zh": "wiki/scenarios/sc10-negotiation-deals/zh.md",
+        "en": "wiki/scenarios/sc10-negotiation-deals/en.md",
+        "ms": "wiki/scenarios/sc10-negotiation-deals/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "谈判",
+        "砍价",
+        "成交",
+        "negotiation",
+        "bargaining",
+        "rundingan",
+        "offer",
+        "谈薪"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc11-teaching-coaching",
+      "title": "Teaching & Coaching · 教学/指导",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc11-teaching-coaching/core.md",
+        "zh": "wiki/scenarios/sc11-teaching-coaching/zh.md",
+        "en": "wiki/scenarios/sc11-teaching-coaching/en.md",
+        "ms": "wiki/scenarios/sc11-teaching-coaching/ms.md"
+      },
+      "scenarios": [
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "教学",
+        "带人",
+        "指导",
+        "teaching",
+        "coaching",
+        "mentoring",
+        "mengajar"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc12-asking-help",
+      "title": "Asking for Help · 请求与求助",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc12-asking-help/core.md",
+        "zh": "wiki/scenarios/sc12-asking-help/zh.md",
+        "en": "wiki/scenarios/sc12-asking-help/en.md",
+        "ms": "wiki/scenarios/sc12-asking-help/ms.md"
+      },
+      "scenarios": [
+        "S2"
+      ],
+      "triggers": [
+        "求助",
+        "帮忙",
+        "请求",
+        "asking for help",
+        "request",
+        "bantuan"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc13-mediation",
+      "title": "Mediation · 第三方调解",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc13-mediation/core.md",
+        "zh": "wiki/scenarios/sc13-mediation/zh.md",
+        "en": "wiki/scenarios/sc13-mediation/en.md",
+        "ms": "wiki/scenarios/sc13-mediation/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "调解",
+        "和事佬",
+        "仲裁",
+        "mediation",
+        "arbitration",
+        "pengantaraan"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc14-online-social",
+      "title": "Online Social & Communities · 网络社群互动",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc14-online-social/core.md",
+        "zh": "wiki/scenarios/sc14-online-social/zh.md",
+        "en": "wiki/scenarios/sc14-online-social/en.md",
+        "ms": "wiki/scenarios/sc14-online-social/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "网友",
+        "群聊",
+        "评论区",
+        "online",
+        "community",
+        "forum",
+        "komen"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc15-calls-video",
+      "title": "Calls & Video · 电话/视频通话",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc15-calls-video/core.md",
+        "zh": "wiki/scenarios/sc15-calls-video/zh.md",
+        "en": "wiki/scenarios/sc15-calls-video/en.md",
+        "ms": "wiki/scenarios/sc15-calls-video/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "打电话",
+        "视频通话",
+        "语音",
+        "call",
+        "video call",
+        "panggilan"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "cu5-codeswitching",
+      "title": "Codeswitching & Varieties · 语码转换",
+      "type": "culture",
+      "paths": {
+        "core": "wiki/cultures/cu5-codeswitching/core.md",
+        "zh": "wiki/cultures/cu5-codeswitching/zh.md",
+        "en": "wiki/cultures/cu5-codeswitching/en.md",
+        "ms": "wiki/cultures/cu5-codeswitching/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "方言",
+        "语码转换",
+        "Manglish",
+        "Singlish",
+        "codeswitch",
+        "dialect",
+        "bahasa campur"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc16-condolence-grief",
+      "title": "Condolence & Grief · 丧事慰问",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc16-condolence-grief/core.md",
+        "zh": "wiki/scenarios/sc16-condolence-grief/zh.md",
+        "en": "wiki/scenarios/sc16-condolence-grief/en.md",
+        "ms": "wiki/scenarios/sc16-condolence-grief/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "丧事",
+        "哀悼",
+        "慰问",
+        "节哀",
+        "帛金",
+        "白事",
+        "守孝",
+        "白包",
+        "讣告",
+        "过世",
+        "去世",
+        "离世",
+        "逝世",
+        "亡故",
+        "走了",
+        "过世了",
+        "去世了",
+        "离世了",
+        "过身",
+        "往生",
+        "葬礼",
+        "出殡",
+        "追思",
+        "悼念",
+        "灵堂",
+        "纸扎",
+        "节哀顺变",
+        "takziah",
+        "salam takziah",
+        "ucapan takziah",
+        "jenazah",
+        "tahlil",
+        "duka",
+        "dukacita",
+        "condolence",
+        "condolences",
+        "grief",
+        "funeral",
+        "bereavement",
+        "passed away",
+        "died",
+        "deceased",
+        "loss of a loved one",
+        "sorry for your loss",
+        "rest in peace",
+        "five stages of grief"
+      ],
+      "see_also": []
+    },
+    {
+      "id": "sc17-landlord-tenant",
+      "title": "Landlord & Tenant · 租客与房东",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc17-landlord-tenant/core.md",
+        "zh": "wiki/scenarios/sc17-landlord-tenant/zh.md",
+        "en": "wiki/scenarios/sc17-landlord-tenant/en.md",
+        "ms": "wiki/scenarios/sc17-landlord-tenant/ms.md"
+      },
+      "scenarios": [
+        "S2",
+        "S3"
+      ],
+      "triggers": [
+        "租客",
+        "房东",
+        "租房",
+        "押金",
+        "租金",
+        "退租",
+        "维修",
+        "租约",
+        "房东不退押金",
+        "tenancy",
+        "tenant",
+        "landlord",
+        "rent",
+        "deposit",
+        "lease",
+        "eviction",
+        "tuan rumah",
+        "penyewa",
+        "sewa",
+        "deposit sewa",
+        "kontrak sewa",
+        "TTPM"
+      ],
+      "see_also": [
+        "wiki/playbooks/p3-formal-writing/",
+        "wiki/scenarios/sc9-live-service/"
+      ]
+    },
+    {
+      "id": "sc18-medical-communication",
+      "title": "Medical Communication · 就医沟通",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc18-medical-communication/core.md",
+        "zh": "wiki/scenarios/sc18-medical-communication/zh.md",
+        "en": "wiki/scenarios/sc18-medical-communication/en.md",
+        "ms": "wiki/scenarios/sc18-medical-communication/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "就医",
+        "看病",
+        "看医生",
+        "问医生",
+        "医疗沟通",
+        "医患沟通",
+        "陪诊",
+        "问诊",
+        "第二意见",
+        "坏消息",
+        "副作用",
+        "doctor appointment",
+        "doctor-patient",
+        "medical communication",
+        "ask your doctor",
+        "second opinion",
+        "breaking bad news",
+        "pain description",
+        "interpreter",
+        "caregiver",
+        "pergi klinik",
+        "jumpa doktor",
+        "soalan doktor",
+        "pendapat kedua",
+        "kesan sampingan",
+        "terjemah klinik"
+      ],
+      "see_also": [
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/scenarios/sc12-asking-help/core.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ]
+    },
+    {
+      "id": "sc19-live-streaming",
+      "title": "Live Streaming & Voice Room · 直播与语音房",
+      "type": "scenario",
+      "paths": {
+        "core": "wiki/scenarios/sc19-live-streaming/core.md",
+        "zh": "wiki/scenarios/sc19-live-streaming/zh.md",
+        "en": "wiki/scenarios/sc19-live-streaming/en.md",
+        "ms": "wiki/scenarios/sc19-live-streaming/ms.md"
+      },
+      "scenarios": [
+        "S1",
+        "S2"
+      ],
+      "triggers": [
+        "直播",
+        "直播间",
+        "弹幕",
+        "主播",
+        "语音房",
+        "连麦",
+        "打赏",
+        "榜一",
+        "灯牌",
+        "直播事故",
+        "live stream",
+        "livestream",
+        "streamer",
+        "twitch",
+        "bilibili",
+        "danmaku",
+        "voice room",
+        "clubhouse",
+        "parasocial",
+        "准社会",
+        "siaran langsung",
+        "bilik suara",
+        "penstrim",
+        "hadiah live",
+        "moderator",
+        "房管"
+      ],
+      "see_also": [
+        "wiki/scenarios/sc14-online-social/",
+        "wiki/concepts/c9-manipulation-defense/",
+        "wiki/cultures/cu2-malaysia-chinese/"
+      ]
+    }
+  ],
+  "matcher": {
+    "latin": "case-insensitive word-boundary match",
+    "cjk": "substring match",
+    "scoring": "sum of matched trigger lengths; medium/channel tokens (medium_tokens) count as +1 only, so a channel word never outranks a subject word; highest wins; ties -> earlier entry in entries[]. Matching is case-insensitive everywhere: normalize latin triggers AND medium_tokens to lowercase before both the trigger match and the medium-membership lookup.",
+    "medium_tokens": [
+      "whatsapp",
+      "wechat",
+      "微信",
+      "消息",
+      "email",
+      "邮件",
+      "sms",
+      "短信",
+      "群",
+      "群里",
+      "telegram",
+      "电话",
+      "call",
+      "dm",
+      "私信",
+      "留言",
+      "评论",
+      "帖子",
+      "post",
+      "twitter",
+      "instagram",
+      "tiktok",
+      "facebook",
+      "小红书",
+      "抖音",
+      "微博"
+    ]
+  },
+  "fallback": "zero trigger hits -> load index.md + wiki/synthesis/00-how-to-use.md, then ask ONE clarifying question; never invent guidance"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "c2-persuasion-influence",
+  "title": "Persuasion & Influence · 说服与影响",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c2-persuasion-influence/core.md",
+    "zh": "wiki/concepts/c2-persuasion-influence/zh.md",
+    "en": "wiki/concepts/c2-persuasion-influence/en.md",
+    "ms": "wiki/concepts/c2-persuasion-influence/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "说服",
+    "影响力",
+    "劝说",
+    "互惠",
+    "稀缺",
+    "锚定",
+    "损失厌恶",
+    "谈判",
+    "让步",
+    "谈价",
+    "砍价",
+    "persuasion",
+    "influence",
+    "Cialdini",
+    "scarcity",
+    "reciprocity",
+    "anchoring",
+    "BATNA",
+    "negotiation",
+    "calibrated questions",
+    "door-in-the-face",
+    "foot-in-the-door",
+    "pujukan",
+    "pengaruh",
+    "rundingan",
+    "tawar-menawar"
+  ],
+  "see_also": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "p3-formal-writing",
+  "title": "Formal Writing · 正式写作",
+  "type": "playbook",
+  "paths": {
+    "core": "wiki/playbooks/p3-formal-writing/core.md",
+    "zh": "wiki/playbooks/p3-formal-writing/zh.md",
+    "en": "wiki/playbooks/p3-formal-writing/en.md",
+    "ms": "wiki/playbooks/p3-formal-writing/ms.md"
+  },
+  "scenarios": [
+    "S3"
+  ],
+  "triggers": [
+    "投诉",
+    "申诉",
+    "申请信",
+    "邮件",
+    "正式信",
+    "complaint",
+    "appeal",
+    "formal letter",
+    "refund",
+    "surat rasmi",
+    "complain",
+    "complaining",
+    "billing",
+    "internal email",
+    "cc",
+    "bcc",
+    "follow-up",
+    "抄送",
+    "密送",
+    "内部邮件"
+  ],
+  "see_also": []
+}

@@ -1,0 +1,17 @@
+{
+  "op": "update",
+  "id": "sc7-digital-messaging",
+  "set": {
+    "title": "Digital Messaging · 线上聊天",
+    "type": "scenario",
+    "paths": {
+      "core": "wiki/scenarios/sc7-digital-messaging/core.md",
+      "zh": "wiki/scenarios/sc7-digital-messaging/zh.md",
+      "en": "wiki/scenarios/sc7-digital-messaging/en.md",
+      "ms": "wiki/scenarios/sc7-digital-messaging/ms.md"
+    },
+    "scenarios": ["S1", "S2"],
+    "triggers": ["微信", "whatsapp", "消息", "已读不回", "reply", "texting", "read receipt", "mesej", "balas"],
+    "see_also": []
+  }
+}

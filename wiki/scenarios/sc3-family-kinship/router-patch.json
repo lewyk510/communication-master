@@ -1,0 +1,30 @@
+{
+  "id": "sc3-family-kinship",
+  "title": "Family & Kinship · 家庭与亲戚",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc3-family-kinship/core.md",
+    "zh": "wiki/scenarios/sc3-family-kinship/zh.md",
+    "en": "wiki/scenarios/sc3-family-kinship/en.md",
+    "ms": "wiki/scenarios/sc3-family-kinship/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "父母",
+    "家庭",
+    "亲戚",
+    "催婚",
+    "过年",
+    "family",
+    "parents",
+    "relatives",
+    "in-laws",
+    "keluarga",
+    "ibu bapa",
+    "sanak saudara"
+  ],
+  "see_also": []
+}

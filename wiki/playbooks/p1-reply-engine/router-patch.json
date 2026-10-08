@@ -1,0 +1,26 @@
+{
+  "id": "p1-reply-engine",
+  "title": "Reply Engine · 回复引擎",
+  "type": "playbook",
+  "paths": {
+    "core": "wiki/playbooks/p1-reply-engine/core.md",
+    "zh": "wiki/playbooks/p1-reply-engine/zh.md",
+    "en": "wiki/playbooks/p1-reply-engine/en.md",
+    "ms": "wiki/playbooks/p1-reply-engine/ms.md"
+  },
+  "scenarios": [
+    "S2"
+  ],
+  "triggers": [
+    "怎么回",
+    "回复",
+    "回消息",
+    "帮我想个回复",
+    "reply",
+    "respond",
+    "draft a reply",
+    "balas",
+    "cara membalas"
+  ],
+  "see_also": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "c3-nvc-conflict-repair",
+  "title": "NVC & Conflict Repair · 非暴力沟通与冲突修复",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c3-nvc-conflict-repair/core.md",
+    "zh": "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+    "en": "wiki/concepts/c3-nvc-conflict-repair/en.md",
+    "ms": "wiki/concepts/c3-nvc-conflict-repair/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "非暴力沟通",
+    "冲突",
+    "道歉",
+    "和解",
+    "NVC",
+    "conflict",
+    "apology",
+    "repair",
+    "konflik",
+    "maaf",
+    "冷暴力"
+  ],
+  "see_also": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sc18-medical-communication",
+  "title": "Medical Communication · 就医沟通",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc18-medical-communication/core.md",
+    "zh": "wiki/scenarios/sc18-medical-communication/zh.md",
+    "en": "wiki/scenarios/sc18-medical-communication/en.md",
+    "ms": "wiki/scenarios/sc18-medical-communication/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "就医",
+    "看病",
+    "看医生",
+    "问医生",
+    "医疗沟通",
+    "医患沟通",
+    "陪诊",
+    "问诊",
+    "第二意见",
+    "坏消息",
+    "副作用",
+    "doctor appointment",
+    "doctor-patient",
+    "medical communication",
+    "ask your doctor",
+    "second opinion",
+    "breaking bad news",
+    "pain description",
+    "interpreter",
+    "caregiver",
+    "pergi klinik",
+    "jumpa doktor",
+    "soalan doktor",
+    "pendapat kedua",
+    "kesan sampingan",
+    "terjemah klinik"
+  ],
+  "see_also": [
+    "wiki/scenarios/sc4-hard-conversations/core.md",
+    "wiki/scenarios/sc12-asking-help/core.md",
+    "wiki/cultures/cu1-malaysia-malay/core.md"
+  ]
+}

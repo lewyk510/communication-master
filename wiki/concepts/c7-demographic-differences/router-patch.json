@@ -1,0 +1,12 @@
+{"op": "update", "id": "c7-demographic-differences", "set": {
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c7-demographic-differences/core.md",
+    "zh": "wiki/concepts/c7-demographic-differences/zh.md",
+    "en": "wiki/concepts/c7-demographic-differences/en.md",
+    "ms": "wiki/concepts/c7-demographic-differences/ms.md"
+  },
+  "scenarios": ["S1", "S2"],
+  "triggers": ["性别差异", "代沟", "年龄", "男女沟通", "打断", "刻板印象", "digital native", "gender differences", "generation gap", "interruption", "generasi", "jurang generasi", "Gen Z", "Boomer"],
+  "see_also": []
+}}

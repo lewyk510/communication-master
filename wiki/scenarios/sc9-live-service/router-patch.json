@@ -1,0 +1,27 @@
+{
+  "id": "sc9-live-service",
+  "title": "Live Customer Service · 现场客服与投诉",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc9-live-service/core.md",
+    "zh": "wiki/scenarios/sc9-live-service/zh.md",
+    "en": "wiki/scenarios/sc9-live-service/en.md",
+    "ms": "wiki/scenarios/sc9-live-service/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "triggers": [
+    "客服",
+    "投诉",
+    "退货",
+    "customer service",
+    "complaint",
+    "khidmat pelanggan",
+    "complain",
+    "billing"
+  ],
+  "see_also": []
+}

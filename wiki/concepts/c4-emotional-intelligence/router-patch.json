@@ -1,0 +1,32 @@
+{
+  "id": "c4-emotional-intelligence",
+  "title": "Emotional Intelligence · 情绪智力",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c4-emotional-intelligence/core.md",
+    "zh": "wiki/concepts/c4-emotional-intelligence/zh.md",
+    "en": "wiki/concepts/c4-emotional-intelligence/en.md",
+    "ms": "wiki/concepts/c4-emotional-intelligence/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "情绪",
+    "情商",
+    "共情",
+    "情绪智力",
+    "情绪颗粒度",
+    "validation",
+    "emotional intelligence",
+    "EQ",
+    "empathy",
+    "active listening",
+    "affect labeling",
+    "kecerdasan emosi",
+    "empati",
+    "mendengarkan"
+  ],
+  "see_also": []
+}

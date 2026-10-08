@@ -1,0 +1,27 @@
+{
+  "id": "sc8-job-interviews",
+  "title": "Job Interviews · 求职面试",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc8-job-interviews/core.md",
+    "zh": "wiki/scenarios/sc8-job-interviews/zh.md",
+    "en": "wiki/scenarios/sc8-job-interviews/en.md",
+    "ms": "wiki/scenarios/sc8-job-interviews/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "triggers": [
+    "面试",
+    "求职",
+    "应聘",
+    "interview",
+    "job interview",
+    "temuduga",
+    "offer",
+    "谈薪"
+  ],
+  "see_also": []
+}

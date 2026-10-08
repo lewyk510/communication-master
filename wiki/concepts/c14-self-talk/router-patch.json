@@ -1,0 +1,14 @@
+{
+  "id": "c14-self-talk",
+  "title": "Self-Talk · 自我对话",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c14-self-talk/core.md",
+    "zh": "wiki/concepts/c14-self-talk/zh.md",
+    "en": "wiki/concepts/c14-self-talk/en.md",
+    "ms": "wiki/concepts/c14-self-talk/ms.md"
+  },
+  "scenarios": ["S2"],
+  "triggers": ["自我对话", "内心戏", "self-talk", "intrapersonal", "inner voice", "dialog dalaman"],
+  "see_also": []
+}

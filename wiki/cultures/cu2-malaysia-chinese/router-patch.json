@@ -1,0 +1,27 @@
+{
+  "id": "cu2-malaysia-chinese",
+  "title": "Malaysian Chinese Culture · 马来西亚华人文化",
+  "type": "culture",
+  "paths": {
+    "core": "wiki/cultures/cu2-malaysia-chinese/core.md",
+    "zh": "wiki/cultures/cu2-malaysia-chinese/zh.md",
+    "en": "wiki/cultures/cu2-malaysia-chinese/en.md",
+    "ms": "wiki/cultures/cu2-malaysia-chinese/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "马来西亚华人",
+    "华人",
+    "面子",
+    "人情",
+    "Malaysian Chinese",
+    "face",
+    "guanxi",
+    "renqing",
+    "Cina"
+  ],
+  "see_also": []
+}

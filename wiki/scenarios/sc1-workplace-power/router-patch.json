@@ -1,0 +1,35 @@
+{
+  "id": "sc1-workplace-power",
+  "title": "Workplace Power · 职场权力",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc1-workplace-power/core.md",
+    "zh": "wiki/scenarios/sc1-workplace-power/zh.md",
+    "en": "wiki/scenarios/sc1-workplace-power/en.md",
+    "ms": "wiki/scenarios/sc1-workplace-power/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "职场",
+    "老板",
+    "同事",
+    "汇报",
+    "升职",
+    "加薪",
+    "workplace",
+    "boss",
+    "colleague",
+    "promotion",
+    "tempat kerja",
+    "ketua",
+    "加班",
+    "offer",
+    "谈薪",
+    "noted with thanks",
+    "per my last email"
+  ],
+  "see_also": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "cu1-malaysia-malay",
+  "title": "Malaysian Malay Culture · 马来文化",
+  "type": "culture",
+  "paths": {
+    "core": "wiki/cultures/cu1-malaysia-malay/core.md",
+    "zh": "wiki/cultures/cu1-malaysia-malay/zh.md",
+    "en": "wiki/cultures/cu1-malaysia-malay/en.md",
+    "ms": "wiki/cultures/cu1-malaysia-malay/ms.md"
+  },
+  "scenarios": [
+    "S1",
+    "S2"
+  ],
+  "triggers": [
+    "马来",
+    "马来礼节",
+    "budi bahasa",
+    "adat",
+    "Melayu",
+    "Malay culture",
+    "Dato",
+    "boleh",
+    "boleh boleh",
+    "tak kisah",
+    "okay lah",
+    "can lah",
+    "nanti",
+    "nanti nanti",
+    "tak apa",
+    "insyaAllah",
+    "InsyaAllah",
+    "malay",
+    "orang melayu"
+  ],
+  "see_also": []
+}

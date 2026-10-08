@@ -1,0 +1,14 @@
+{
+  "id": "c8-astrology-heuristics",
+  "title": "Astrology Heuristics · 星座/生肖",
+  "type": "concept",
+  "paths": {
+    "core": "wiki/concepts/c8-astrology-heuristics/core.md",
+    "zh": "wiki/concepts/c8-astrology-heuristics/zh.md",
+    "en": "wiki/concepts/c8-astrology-heuristics/en.md",
+    "ms": "wiki/concepts/c8-astrology-heuristics/ms.md"
+  },
+  "scenarios": ["S1"],
+  "triggers": ["星座", "占星", "生肖", "astrology", "zodiac", "horoscope", "zodiak"],
+  "see_also": []
+}

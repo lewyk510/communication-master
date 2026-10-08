@@ -1,0 +1,47 @@
+{
+  "id": "p2-subtext-decoder",
+  "title": "Subtext Decoder · 潜台词解码器",
+  "type": "playbook",
+  "paths": {
+    "core": "wiki/playbooks/p2-subtext-decoder/core.md",
+    "zh": "wiki/playbooks/p2-subtext-decoder/zh.md",
+    "en": "wiki/playbooks/p2-subtext-decoder/en.md",
+    "ms": "wiki/playbooks/p2-subtext-decoder/ms.md"
+  },
+  "scenarios": [
+    "S1"
+  ],
+  "triggers": [
+    "解码",
+    "他什么意思",
+    "什么意思",
+    "暗示",
+    "decode",
+    "what did they mean",
+    "interpret",
+    "maksud tersirat",
+    "你开心就好",
+    "开心就好",
+    "随便",
+    "都行",
+    "无所谓",
+    "看你",
+    "听你的",
+    "fine",
+    "whatever",
+    "up to you",
+    "tak kisah",
+    "ikut awak",
+    "terserah",
+    "看着办",
+    "行吧",
+    "再说吧",
+    "改天",
+    "呵呵",
+    "嗯",
+    "加班",
+    "noted with thanks",
+    "per my last email"
+  ],
+  "see_also": []
+}

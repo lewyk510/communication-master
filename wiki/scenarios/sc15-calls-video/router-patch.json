@@ -1,0 +1,1 @@
+{"id":"sc15-calls-video","title":"Calls & Video · 电话/视频通话","type":"scenario","paths":{"core":"wiki/scenarios/sc15-calls-video/core.md","zh":"wiki/scenarios/sc15-calls-video/zh.md","en":"wiki/scenarios/sc15-calls-video/en.md","ms":"wiki/scenarios/sc15-calls-video/ms.md"},"scenarios":["S1","S2"],"triggers":["打电话","视频通话","语音","call","video call","panggilan"],"see_also":[]}

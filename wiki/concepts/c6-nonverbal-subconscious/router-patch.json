@@ -1,0 +1,28 @@
+{
+  "op": "update",
+  "id": "c6-nonverbal-subconscious",
+  "title": "Nonverbal & Subconscious Signals",
+  "type": "concept",
+  "paths": [
+    "wiki/concepts/c6-nonverbal-subconscious/core.md",
+    "wiki/concepts/c6-nonverbal-subconscious/zh.md",
+    "wiki/concepts/c6-nonverbal-subconscious/en.md",
+    "wiki/concepts/c6-nonverbal-subconscious/ms.md"
+  ],
+  "triggers": [
+    "肢体语言",
+    "微表情",
+    "眼神",
+    "body language",
+    "microexpression",
+    "nonverbal",
+    "bahasa badan",
+    "proxemics",
+    "eye contact",
+    "识谎",
+    "测谎",
+    "行为破谎"
+  ],
+  "scenarios": ["S1"],
+  "see_also": []
+}

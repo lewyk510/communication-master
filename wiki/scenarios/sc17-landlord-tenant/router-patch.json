@@ -1,0 +1,43 @@
+{
+  "id": "sc17-landlord-tenant",
+  "title": "Landlord & Tenant · 租客与房东",
+  "type": "scenario",
+  "paths": {
+    "core": "wiki/scenarios/sc17-landlord-tenant/core.md",
+    "zh": "wiki/scenarios/sc17-landlord-tenant/zh.md",
+    "en": "wiki/scenarios/sc17-landlord-tenant/en.md",
+    "ms": "wiki/scenarios/sc17-landlord-tenant/ms.md"
+  },
+  "scenarios": [
+    "S2",
+    "S3"
+  ],
+  "triggers": [
+    "租客",
+    "房东",
+    "租房",
+    "押金",
+    "租金",
+    "退租",
+    "维修",
+    "租约",
+    "房东不退押金",
+    "tenancy",
+    "tenant",
+    "landlord",
+    "rent",
+    "deposit",
+    "lease",
+    "eviction",
+    "tuan rumah",
+    "penyewa",
+    "sewa",
+    "deposit sewa",
+    "kontrak sewa",
+    "TTPM"
+  ],
+  "see_also": [
+    "wiki/playbooks/p3-formal-writing/",
+    "wiki/scenarios/sc9-live-service/"
+  ]
+}
