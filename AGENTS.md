@@ -11,6 +11,7 @@ A knowledge base about reading, understanding, and responding to people: subtext
 ```
 communication-master/
 ├── AGENTS.md              ← this file: schema + workflows
+├── README.md / LICENSE / CONTRIBUTING.md / .github/   ← public-repo publishing kit
 ├── router.json            ← full source of truth (query resolution, patches, lint)
 ├── router-index.json      ← compact matching index (generated; what the resolver loads)
 ├── sidecars/cards.json    ← per-topic digest cards (generated; L1.5 light-load path)
@@ -25,7 +26,7 @@ communication-master/
 │   ├── cultures/<id>/     ← cu1–cu5
 │   ├── playbooks/<id>/    ← p1–p4
 │   └── synthesis/         ← cross-topic pages; 00-how-to-use.md is router always_load
-├── tools/                 ← lint_kb.py, build_router_index.py, build_cards.py, router_match.py, ask.py, cache.py, backup.sh
+├── tools/                 ← lint_kb.py, build_router_index.py, build_cards.py, router_match.py, ask.py, cache.py, backup.sh, publish.sh
 ├── commands/              ← slash commands
 ├── sidecars/              ← machine-readable sidecar data
 └── qa/transcripts/        ← QA transcripts

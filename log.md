@@ -132,3 +132,12 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - `tools/check.sh` — adds an end-to-end resolver check (`ask.py` resolves a known query → `p2-subtext-decoder`).
 - Docs: `updating-the-kb.md` §h notes the single-scorer invariant.
 - Verified: `bash tools/check.sh` all green (lint 46/46, smoke 26/26, resolver OK, cards in sync).
+
+## [2026-10-08] schema | GitHub two-track — private backup + public dev repo
+
+- **Private** `lewyk510/communication-master-private` (remote `private`): full backup incl. `raw/`. Hardened `.gitignore` + leak-guard pre-commit installed via the `backup-and-publish` skill; leak-guard clean. Branch → `main`.
+- **Public** `lewyk510/communication-master` (remote `public`): the skill **without `raw/`** — third-party web captures aren't licensed for redistribution; source URLs stay in each page's `## Sources` (533 files, 273 tracked).
+- Publishing kit: `README.md` (with `npx skills add lewyk510/communication-master` install block), MIT `LICENSE`, `CONTRIBUTING.md`, `.github/workflows/ci.yml` (runs `check.sh`), PR + issue templates.
+- `tools/publish.sh`: overlays tracked files (skipping `raw/`) onto a persistent clone of the public repo and pushes — preserves history/community commits, no force-push.
+- `tools/lint_kb.py`: skips raw-capture checks when `raw/` is absent (public build); note printed. Public `check.sh` green without `raw/`.
+- Docs: `wiki/synthesis/updating-the-kb.md` §i rewritten for the two-track model.

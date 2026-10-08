@@ -91,18 +91,21 @@ updated: 2026-10-07
 - **一条命令走完**：`python3 tools/ask.py "<问题>"`（缓存 → 路由 → 卡片；`--full` 再展开 `core`+lane，`--json` 结构化，`--save "<答案>"` 回存缓存）。`tools/router_match.py` 是路由计分的**唯一实现**，召回门 `qa/router-smoke.py` 与 `ask.py` 共用它——门禁校验的就是运行时用的逻辑。
 - **CJK 计费提醒**：同一段中文在 cl100k 上约是英文的 1.85 倍 token，在 o200k 上约 1.35 倍。内容仍以 zh 为基准（正确性优先），成本靠卡片分层与缓存抵消。
 
-## (i) 备份与迁移（GitHub / 离线 bundle）
+## (i) 备份与发布（私有 + 公开双轨）
 
-这个库本身就是一个 git 仓库：推到 GitHub 私有仓库即可备份，换台机 clone 回来放到 `~/.agents/skills/communication-master` 就能直接用。
+本库用「双轨」：一个**私有**仓库做完整备份，一个**公开**仓库供他人使用、fork、提 PR 来促进进化。
 
-- **一次性设置（在现有机器）**：
-  1. 在 GitHub 建一个**私有**仓库（不要初始化 README/LICENSE）。
-  2. 注册部署密钥：把 `~/.ssh/id_ed25519_kb.pub` 的内容加到该仓库 **Settings → Deploy keys**，务必勾选 **Allow write access**。
-  3. `git remote add origin git@github.com:<你的账号>/communication-master.git`
-  4. `./tools/backup.sh push`
-- **换机恢复**：`git clone git@github.com:<你的账号>/communication-master.git ~/.agents/skills/communication-master`
-- **离线备份（无网络/无 GitHub）**：`./tools/backup.sh bundle` 生成单个 `.bundle` 文件，拷到任意机器后 `git clone <该文件> communication-master` 即可还原全部历史。
-- 进库内容：`raw/`、`wiki/`、`sidecars/cards.json`、所有工具与文档。**不进库**：`cache/`（本机派生数据，会自动重建）。
+- **私有（完整备份，含 `raw/`）**：`https://github.com/lewyk510/communication-master-private`
+  - git 远端名 `private`；`git push private main` 即备份。
+  - 换机恢复：`git clone https://github.com/lewyk510/communication-master-private ~/.agents/skills/communication-master`。
+- **公开（社区开发，不含 `raw/`）**：`https://github.com/lewyk510/communication-master`
+  - git 远端名 `public`。**不含** `raw/`——那是第三方网页抓取，公开再分发有版权风险；来源 URL 已在各页 `## Sources` 保留。
+  - 发布/更新：`./tools/publish.sh`（把工作区已跟踪文件覆盖到公开仓库的克隆并推送，保留历史与社区提交；自动跳过 `raw/`）。
+  - 他人用法：`npx skills add lewyk510/communication-master`；改进走 fork → PR。
+- **离线备份（无网络）**：`./tools/backup.sh bundle` 生成单文件 `.bundle`，任意机器 `git clone <文件> communication-master` 还原。
+- 进 git：`wiki/`、`router*.json`、`sidecars/cards.json`、工具与文档。不进 git：`cache/`（本机派生）；公开库不含 `raw/`。
+- 公开库 CI（`.github/workflows/ci.yml`）跑 `bash tools/check.sh`；公开库无 `raw/` 时 lint 自动跳过抓取检查。
+- 注意：社区在公开库新增的内容不会被 `publish.sh` 删除（覆盖式、不删除），但本地私有副本不会自动获得——合并 PR 后按需把改动同步回本地。
 
 ## Sources
 

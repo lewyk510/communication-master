@@ -16,6 +16,7 @@ Current focus items and priorities.
 | 8 | Recall regression gate | ✅ `qa/router-smoke.py` | 26/26 must-pass + 5 known-gap probes |
 | 9 | Freshness / updatability | ✅ `tools/freshness.py` + `updating-the-kb.md` | `tools/check.sh` runs lint+smoke+freshness |
 | 10 | Token cost reduction | ✅ compact index + digest cards + exact cache + one-command resolver | light ≈6.9k vs full ≈22.7k tok/query (~3.3×); `tools/ask.py` runs cache→route→card |
+| 11 | GitHub backup + public repo | ✅ private + public live | `private` = full backup; `public` (no `raw/`) = lewyk510/communication-master; `tools/publish.sh` |
 
 ---
 
@@ -82,4 +83,5 @@ Each `wiki/<cluster>/<id>/`: `core.md` + `zh.md` + `en.md` + `ms.md`, ≥3 `raw/
 | 2026-10-07 | Token-cost tool + compact `router-index.json` | `tools/token_cost.py`, `tools/build_router_index.py`; router.json 9,346→3,263 tok |
 | 2026-10-08 | Digest cards + exact-match answer cache | `tools/build_cards.py`→`sidecars/cards.json`, `tools/cache.py`; light path ≈6.6k vs full ≈22.4k tok |
 | 2026-10-08 | One-command resolver + shared router scorer | `tools/ask.py`, `tools/router_match.py`; recall gate now imports the shared scorer |
-| 2026-10-08 | Backup/portability tooling | `tools/backup.sh` (GitHub push + offline bundle); GitHub remote pending user auth |
+| 2026-10-08 | Backup/portability tooling | `tools/backup.sh` (GitHub push + offline bundle) |
+| 2026-10-08 | GitHub two-track live | private `communication-master-private` (full) + public `communication-master` (no `raw/`); `tools/publish.sh`; leak-guard clean |
