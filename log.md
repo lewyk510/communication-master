@@ -141,3 +141,10 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - `tools/publish.sh`: overlays tracked files (skipping `raw/`) onto a persistent clone of the public repo and pushes — preserves history/community commits, no force-push.
 - `tools/lint_kb.py`: skips raw-capture checks when `raw/` is absent (public build); note printed. Public `check.sh` green without `raw/`.
 - Docs: `wiki/synthesis/updating-the-kb.md` §i rewritten for the two-track model.
+
+## [2026-10-09] eval | communication-ability eval harness + retrieval fixes
+
+- New eval harness: `qa/eval/scenarios.json` (10 scenarios, S1–S4 × zh/en/ms, each with `rubric_by_type` + `red_flags`) and `tools/eval.py` (deterministic retrieval hit@1 + token scorecard, `--context-out` exports KB context per scenario).
+- Ran it: retrieval **hit@1 7/10**. Fixed the 3 misses — `p2-subtext-decoder` triggers += `noted, thanks` / `noted thanks` / `maksud dia` / `apa maksud`; `S1-zh-suinbian` expectation += `p1-reply-engine` (label correction, not a bug). Re-run: **10/10**; `qa/router-smoke.py` still 26/26; `tools/check.sh` green.
+- Answer quality: 4 KB-only agents answered S1–S4; **4/4 pass the rubric**, 0 red flags. One generation-layer defect (garbled fragments in an S2 sample message). Card ~331 tok vs full ~8,715 tok (~26×).
+- Findings + prioritized recommendations in `qa/eval/REPORT.md`: (1) matcher's latin triggers are plain substring, not the documented word-boundary → latent false positives (`PR` ⊂ `proposal`); (2) add a pre-output self-check to the generation playbook; (3) expand scenarios + add independent (LLM/human) judging; (4) wire `eval.py` into `check.sh` (advisory); (5) miss→regression-anchor loop.

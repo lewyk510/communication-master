@@ -17,6 +17,7 @@ Current focus items and priorities.
 | 9 | Freshness / updatability | ✅ `tools/freshness.py` + `updating-the-kb.md` | `tools/check.sh` runs lint+smoke+freshness |
 | 10 | Token cost reduction | ✅ compact index + digest cards + exact cache + one-command resolver | light ≈6.9k vs full ≈22.7k tok/query (~3.3×); `tools/ask.py` runs cache→route→card |
 | 11 | GitHub backup + public repo | ✅ private + public live | `private` = full backup; `public` (no `raw/`) = lewyk510/communication-master; `tools/publish.sh` |
+| 12 | Communication-ability eval | ✅ `qa/eval/` harness — retrieval hit@1 **10/10**, answers **4/4** rubric | `tools/eval.py` + `qa/eval/REPORT.md`; card ~331 vs full ~8,715 tok |
 
 ---
 

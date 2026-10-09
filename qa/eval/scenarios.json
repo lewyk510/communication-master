@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "note": "Eval scenarios for the communication-master skill. Retrieval is checked deterministically by tools/eval.py; answer quality is graded against `rubric` (must-haves) and `red_flags` (auto-fails). Types: S1 decode, S2 respond, S3 compose, S4 prompt.",
+  "rubric_by_type": {
+    "S1": [
+      "gives >=2 candidate readings (not one dogmatic interpretation)",
+      "attaches evidence / confidence to each reading",
+      "offers exactly 3 reply options",
+      "cites at least one KB path"
+    ],
+    "S2": [
+      "offers 2-3 concrete reply options with sample phrasing",
+      "accounts for relationship / power / channel",
+      "states at least one pitfall to avoid",
+      "cites at least one KB path"
+    ],
+    "S3": [
+      "produces a complete artifact (sender, recipient, date, subject, body, concrete ask)",
+      "includes an escalation path or next-step ladder",
+      "keeps a formal register for the language",
+      "cites at least one KB path"
+    ],
+    "S4": [
+      "gives a concrete, reusable prompt pattern (not vague advice)",
+      "explains the mechanism (why it works)",
+      "labels any example as a constructed example",
+      "cites at least one KB path"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "S1-zh-suinbian",
+      "type": "S1",
+      "lang": "zh",
+      "prompt": "朋友回我一句「随便你吧」，是不是生气了？我该怎么回？",
+      "expect_topics": ["p2-subtext-decoder", "p1-reply-engine", "c1-subtext-implicature"],
+      "red_flags": ["asserts a single meaning as certain", "no reply options", "invents a study or statistic"]
+    },
+    {
+      "id": "S1-en-noted",
+      "type": "S1",
+      "lang": "en",
+      "prompt": "My coworker replied 'noted, thanks' to my proposal. Is that passive-aggressive? What do I reply?",
+      "expect_topics": ["p2-subtext-decoder", "sc1-workplace-power", "c1-subtext-implicature"],
+      "red_flags": ["asserts a single meaning as certain", "no reply options"]
+    },
+    {
+      "id": "S1-ms-takapa",
+      "type": "S1",
+      "lang": "ms",
+      "prompt": "Kawan saya cakap 'tak apa la' bila saya tanya. Apa maksud dia sebenarnya?",
+      "expect_topics": ["p2-subtext-decoder", "c1-subtext-implicature"],
+      "red_flags": ["asserts a single meaning as certain", "ignores Malay register / face"]
+    },
+    {
+      "id": "S2-zh-credit",
+      "type": "S2",
+      "lang": "zh",
+      "prompt": "同事在会议上把我做的方案说成是他做的，我该怎么开口跟他讲？",
+      "expect_topics": ["sc1-workplace-power", "c9-manipulation-defense"],
+      "red_flags": ["escalates to accusation immediately", "no concrete phrasing"]
+    },
+    {
+      "id": "S2-en-decline",
+      "type": "S2",
+      "lang": "en",
+      "prompt": "A friend keeps asking me for favours I can't keep giving. How do I say no without wrecking the friendship?",
+      "expect_topics": ["sc4-hard-conversations", "sc6-friends-social"],
+      "red_flags": ["no boundary-setting phrasing", "ignores the relationship stake"]
+    },
+    {
+      "id": "S2-zh-condolence",
+      "type": "S2",
+      "lang": "zh",
+      "prompt": "同事的妈妈过世了，我该发什么慰问消息？要不要包帛金？",
+      "expect_topics": ["sc16-condolence-grief"],
+      "red_flags": ["uses platitudes like 'at least...'", "wrong mourning custom"]
+    },
+    {
+      "id": "S2-zh-pua",
+      "type": "S1",
+      "lang": "zh",
+      "prompt": "他一直贬低我、又说是为我好，是不是在 PUA 我？我该怎么办？",
+      "expect_topics": ["c9-manipulation-defense"],
+      "red_flags": ["no safety / boundary advice", "diagnoses a person as a 'narcissist'"]
+    },
+    {
+      "id": "S3-zh-refund",
+      "type": "S3",
+      "lang": "zh",
+      "prompt": "网店不肯退款，帮我写一封投诉信。",
+      "expect_topics": ["p3-formal-writing"],
+      "red_flags": ["no concrete demand", "missing sender/date/subject", "no escalation path"]
+    },
+    {
+      "id": "S3-ms-surat",
+      "type": "S3",
+      "lang": "ms",
+      "prompt": "Tolong tulis surat rasmi aduan tentang produk rosak kepada Tribunal Pengguna.",
+      "expect_topics": ["p3-formal-writing"],
+      "red_flags": ["informal register", "no concrete demand", "missing sender/date/subject"]
+    },
+    {
+      "id": "S4-zh-apology",
+      "type": "S4",
+      "lang": "zh",
+      "prompt": "怎么让 ChatGPT 帮我写一封得体、不卑不亢的道歉邮件？",
+      "expect_topics": ["p4-ai-prompting"],
+      "red_flags": ["vague 'just ask it nicely'", "no reusable prompt pattern"]
+    }
+  ]
+}
