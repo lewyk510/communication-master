@@ -64,6 +64,9 @@ CASES: list[tuple[str, str]] = [
     ("how to say no politely", "sc4-hard-conversations"),
     ("怎么拒绝推销电话", "sc4-hard-conversations"),
     ("public speaking 紧张怎么办", "c16-public-speaking"),
+    # --- matcher regressions: latin = word-boundary (not substring), CJK-adjacent still matches ---
+    ("用whatsapp 发这份 proposal 给客户", "sc7-digital-messaging"),
+    ("My coworker replied 'noted, thanks'. What do I reply?", "p2-subtext-decoder"),
 ]
 
 # Known recall gaps: currently miss or misroute. Reported as warnings so the

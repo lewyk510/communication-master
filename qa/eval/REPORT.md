@@ -25,7 +25,7 @@
    对每个 prompt 做路由打分，取 rank-1，看是否命中 `expect_topics`。输出 hit@1 与 token 记分卡。
 2. **回答质量**：`python3 tools/eval.py --context-out /tmp/opencode/eval-context/`
    导出每个场景的 KB 上下文，交给**只能用 KB** 的作答者按 prompt 产出答案，再对 `rubric_by_type` 逐条判分、并对 `red_flags` 做反查。
-3. **回归**：任何对 `router.json` 的改动后跑 `qa/router-smoke.py`（26 条固定路由断言）+ `tools/check.sh`。
+3. **回归**：任何对 `router.json` 的改动后跑 `qa/router-smoke.py`（28 条固定路由断言）+ `tools/check.sh`。
 
 ---
 
@@ -85,13 +85,13 @@
 
 - **能力如何**：检索**准且省**（10/10，~26× token 节省）；回答**结构完整、有据可查、按 rubric 全过**。
 - **最像"人"的地方**：敢于说"KB 没覆盖这块"、给多读法而非单一定论、按语言切换文化礼节。
-- **最薄的地方**：① 路由依赖关键词覆盖率，冷门口语/外语表述会漏（已修 3 例）；② 生成层偶发串码；③ 匹配器存在拉丁子串误命中（见 §5-1）。
+- **最薄的地方**：① 路由依赖关键词覆盖率，冷门口语/外语表述会漏（已修 3 例）；② 生成层偶发串码；③ 匹配器存在拉丁子串误命中（**已修**，见 §5-1）。
 
 ---
 
 ## 5. 升级建议（按优先级）
 
-1. **修匹配器的拉丁子串误命中（潜在 bug）**：`router.json.matcher` 声明拉丁词走 word-boundary，但实现是纯子串，导致 `PR` 命中 `proposal`、`fine` 命中 `define` 等。建议对拉丁触发器加词边界（`\b`），中文保持子串。需重跑 smoke（26 条）确认无回归。
+1. **~~修匹配器的拉丁子串误命中（潜在 bug）~~（已完成）**：`router.json.matcher` 声明拉丁词走 word-boundary，但实现曾是纯子串，导致 `PR` 命中 `proposal`、`fine` 命中 `define` 等。**修复**：`tools/router_match.py` 对 ASCII 触发器用 ASCII-alnum 词边界（CJK 仍走子串，且 `用whatsapp聊` 这类 CJK 相邻拉丁仍能命中），并加回归锚点（`proposal`→`sc7`、`noted, thanks`→`p2`）；smoke 28/28、eval 10/10 全绿。
 2. **给作答者的"输出前自检"约束**：在 playbook 生成步骤加入一条硬约束——"只输出目标语言；专有名词不得夹生造英文/日文 token；每条示例消息发出前逐字复读一遍"。用于压制 §3 的串码。
 3. **扩充评测集 + 引入独立判分**：把当前 10 场景扩到 ≥30，覆盖 S1–S4 × 中英马；引入 **LLM 独立判分**（对 rubric 逐条分级）并每类抽 1 条人工复核，降低自评偏差。
 4. **把 eval 接进 CI（advisory）**：`tools/eval.py` 以非阻塞方式跑在 `check.sh` 里，hit@1 下降即告警；不因单条 miss 阻断发布。

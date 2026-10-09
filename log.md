@@ -148,3 +148,10 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - Ran it: retrieval **hit@1 7/10**. Fixed the 3 misses — `p2-subtext-decoder` triggers += `noted, thanks` / `noted thanks` / `maksud dia` / `apa maksud`; `S1-zh-suinbian` expectation += `p1-reply-engine` (label correction, not a bug). Re-run: **10/10**; `qa/router-smoke.py` still 26/26; `tools/check.sh` green.
 - Answer quality: 4 KB-only agents answered S1–S4; **4/4 pass the rubric**, 0 red flags. One generation-layer defect (garbled fragments in an S2 sample message). Card ~331 tok vs full ~8,715 tok (~26×).
 - Findings + prioritized recommendations in `qa/eval/REPORT.md`: (1) matcher's latin triggers are plain substring, not the documented word-boundary → latent false positives (`PR` ⊂ `proposal`); (2) add a pre-output self-check to the generation playbook; (3) expand scenarios + add independent (LLM/human) judging; (4) wire `eval.py` into `check.sh` (advisory); (5) miss→regression-anchor loop.
+
+## [2026-10-09] fix | matcher: latin triggers now word-boundary (was substring)
+
+- `tools/router_match.py`: ASCII triggers match with an ASCII-alnum word boundary, per `router.json.matcher.latin`; CJK triggers stay substring. Boundary treats only `[a-z0-9]` as word chars, so CJK-adjacent latin still matches (e.g. `用whatsapp聊`) while `PR` no longer matches inside `proposal`.
+- Effect: killed the false positive where `c17-mass-media-pr` (`PR`) outranked `sc7-digital-messaging` on a "proposal" query.
+- Regression anchors added to `qa/router-smoke.py` (now 28/28): the `proposal`→`sc7` case (old substring → `c17`, new → `sc7`) and the `noted, thanks`→`p2` case.
+- Verified: `qa/router-smoke.py` 28/28, `tools/eval.py` hit@1 10/10, `tools/check.sh` all green.

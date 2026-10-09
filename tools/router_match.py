@@ -12,9 +12,20 @@ resolver), so the gate validates exactly what the resolver runs.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def _latin_hit(tl: str, ql: str) -> bool:
+    """Word-boundary match for ASCII triggers (router.json.matcher.latin).
+
+    Only ASCII ``[a-z0-9]`` count as word characters, so a latin trigger still
+    matches when it sits directly against CJK (e.g. ``用whatsapp聊``), while
+    ``PR`` no longer matches inside ``proposal``.
+    """
+    return re.search(r"(?<![a-z0-9])" + re.escape(tl) + r"(?![a-z0-9])", ql) is not None
 
 
 def load_index(path: str | Path | None = None) -> dict:
@@ -32,7 +43,10 @@ def rank(index: dict, query: str) -> list[dict]:
         matched: list[str] = []
         for trig in e.get("triggers", []):
             tl = trig.lower()
-            if tl and tl in ql:
+            if not tl:
+                continue
+            hit = _latin_hit(tl, ql) if tl.isascii() else (tl in ql)
+            if hit:
                 score += 1 if tl in medium else len(tl)
                 matched.append(trig)
         if score:
