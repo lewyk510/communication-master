@@ -16,3 +16,4 @@ id_*
 *.key
 *.token
 backup/*.age
+.local/
