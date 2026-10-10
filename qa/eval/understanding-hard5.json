@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "purpose": "Round 6 — two NEW hard dimensions: (1) MALAYSIAN MIXED-LANGUAGE (Manglish particles lah/leh/lor/meh, 'can/already/got/where got', bahasa rojak zh+en+ms code-switching) — does the decoder actually REACH the codeswitching culture page, or treat the mix as noise?; (2) information-integrity edges — messages delivered OUT OF ORDER (time-scrambled), and CONTRADICTORY signals (public vs private / words vs behavior).",
+    "labels": [
+      "genuine_yes",
+      "denial_deflection",
+      "soft_no_postpone",
+      "candid_negative_opinion",
+      "order_unreliable_ask",
+      "real_pressure_despite_words",
+      "exasperated_brushoff",
+      "skeptical_doubt",
+      "cold_procedural",
+      "warm_genuine_commitment"
+    ],
+    "grade": "Pass per case if the DOMINANT reading matches expected. MY1 passes ONLY if 'Can lah, no problem one' is read as a GENUINE warm yes (must NOT over-hedge into reluctance). MY2 passes ONLY if 'Where got' is read as denial/deflection (must NOT read it as literally asking a location). MY3 passes ONLY if 'paiseh... next time lah' is read as a soft no/brush-off (not a genuine reschedule). MY4 passes ONLY if the mixed zh+en+ms line is read as a STRONG candid negative opinion (the Malay/English carries the weight). TC1 passes ONLY if it flags the ordering as unreliable and asks (must NOT treat the last-received as the conclusion). CX1 passes ONLY if it reads real (soft) deadline pressure from the repeated nudges despite 'no rush' (behavior over words). MY-P1 (particles) passes only if the three are read DIFFERENTLY (genuine / exasperated / skeptical). MY-P2 (register) passes only if the two differ.",
+    "date": "2026-10-10"
+  },
+  "isolation": [
+    {
+      "id": "MY1",
+      "lang": "mixed",
+      "sentence": "Can lah, no problem one. You relax ah.",
+      "scene": "Malaysian colleague (Manglish) replying to your request for a moderately big favour.",
+      "expected": "genuine_yes",
+      "trap": "manglish_particle",
+      "note": "'Can'=行/lah=放心/ 'one'=性质判断 (definitely). = 真心答应、还安慰你；不是勉强。若过度怀疑读成'勉强/敷衍'=失败"
+    },
+    {
+      "id": "MY2",
+      "lang": "mixed",
+      "sentence": "Walao where got! Don't anyhow say ah.",
+      "scene": "Malaysian colleague (Manglish); you implied they were the one who leaked something.",
+      "expected": "denial_deflection",
+      "trap": "manglish_wheregot",
+      "note": "'Where got!?' = 哪有/哪至于 = 强烈反驳(来自 Mana ada/哪里有)，不是问地点。=否认+可能有点被冒犯。若读成'在问在哪里'=失败"
+    },
+    {
+      "id": "MY3",
+      "lang": "mixed",
+      "sentence": "Aiyah paiseh sia... this week damn tight. Next time lah can?",
+      "scene": "Malaysian colleague replying to your invitation/asking them to do something.",
+      "expected": "soft_no_postpone",
+      "trap": "manglish_paiseh",
+      "note": "'paiseh'=不好意思(面子语)/ 'next time lah'=礼貌性搁置=软性不，不是真心要另约。=软拒+保面子。若当'他真的想另约时间'=失败"
+    },
+    {
+      "id": "MY4",
+      "lang": "mixed",
+      "sentence": "Eh 我跟你讲，那个 plan memang tak boleh pakai one, damn jialat.",
+      "scene": "Malaysian colleague (rojak: Mandarin + English + Malay) giving you their private opinion on someone's plan.",
+      "expected": "candid_negative_opinion",
+      "trap": "rojak_strength",
+      "note": "'memang tak boleh pakai'=真的不能用(Malay，强调)/ 'jialat'=很糟。整句=私下的坦率差评，语气强。因是熟人 rojak 语域 → 比正式说法更真。若因混语没抓到强度、读成中性=失败"
+    },
+    {
+      "id": "TC1",
+      "lang": "mixed",
+      "sentence": "（三条消息到达顺序被打乱）",
+      "scene": "网络延迟导致消息乱序到达。你先后收到：(1)『ok see you there』 (2)『哎等下，我去不了了，paiseh』 (3)『你到哪了？』。发送时间其实 (3)最早、(1)其次、(2)最后。",
+      "expected": "order_unreliable_ask",
+      "trap": "time_scramble",
+      "note": "到达顺序≠发送顺序。正确=识别顺序不可靠、按发送时间重构(或直接问)，别拿最后收到的当结论。若把最后收到的(2)当对方最终态度并据此回话=失败"
+    },
+    {
+      "id": "CX1",
+      "lang": "mixed",
+      "sentence": "no rush ah, take your time. (but: pinged you 3x in 2 days; today: 'just checking')",
+      "scene": "老板嘴上说 no rush，可这两天已经私信催了你 3 次要那份东西；今天又发『just checking』。",
+      "expected": "real_pressure_despite_words",
+      "trap": "words_vs_behavior",
+      "note": "行为(两天催3次)压过字面('no rush')。=真实的(软)截止压力，别真慢。若照字面'no rush'放松=失败"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "MY-P1",
+      "kind": "manglish_particles",
+      "members": [
+        {"sentence": "Can, sure!", "lang": "mixed", "scene": "Malaysian colleague answering your request — warm, upbeat", "expected": "genuine_yes"},
+        {"sentence": "Can lah can lah...", "lang": "mixed", "scene": "Same colleague, but you've been pestering; flat tone, trailing off", "expected": "exasperated_brushoff"},
+        {"sentence": "Can meh?", "lang": "mixed", "scene": "Same colleague, sounding unsure about whether it's actually possible", "expected": "skeptical_doubt"}
+      ],
+      "note": "同一个 Can，靠颗粒词+语气分档：sure=真心；'can lah can lah...'=喔好啦好啦(敷衍/不耐烦)；'can meh?'=可以咩?(怀疑)。三者必须读出不同态度。若都读成'可以'=失败"
+    },
+    {
+      "id": "MY-P2",
+      "kind": "register_pair",
+      "members": [
+        {"sentence": "Noted.", "lang": "en", "scene": "A colleague replying to your request, single word, standard English", "expected": "cold_procedural"},
+        {"sentence": "Ok noted ah, will settle for you one, don't worry 😄", "lang": "mixed", "scene": "Same request; this time a Malaysian colleague replies in Manglish, warm", "expected": "warm_genuine_commitment"}
+      ],
+      "note": "同为'收到'：标准英文单字'Noted.'偏冷/程序化(甚至像敷衍)；Manglish 版有 lah/one/emoji=温暖、真心承诺。必须区分"
+    }
+  ]
+}

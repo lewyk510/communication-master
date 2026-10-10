@@ -26,6 +26,7 @@ Current focus items and priorities.
 | 18 | Engine hardening + Layer-1 intent fallback | ✅ shipped, lint/cards/smoke green | `p2 core.md` (baseline/multi-turn/tie=low/boleh) + `ms.md` boleh entry; `router.json.intents` + `resolve_intent` + `ask.py` + smoke 3/3 |
 | 19 | Understanding test — Round 4 (group+relay+history+baseline-deviation) | ✅ **5/8 → 8/8 after fix** | `qa/eval/understanding-hard3.json` + `UNDERSTANDING-HARD3-REPORT.md`; fix = **判别点护栏**（不许滥用【未定】）+ relay/referent/audience rules + baseline-both-ways; re-runs D1/X1/GP1 all pass |
 | 20 | Understanding test — Round 5 (long-timeline turning points + absence-as-signal + cross-language) | ✅ **8/8 first try** | `qa/eval/understanding-hard4.json` + `UNDERSTANDING-HARD4-REPORT.md`; new dimension: culture lane must fire (zh/en/ms same content → different weights); fix = **信号「存在」与「方向」拆开表态**（【有信号·方向待定】） |
+| 21 | Understanding test — Round 6 (Malaysian mixed-language / Manglish·rojak + info-integrity edges) | ✅ **8/8 first try + 路由链修好** | `qa/eval/understanding-hard5.json` + `UNDERSTANDING-HARD5-REPORT.md`; Layer-2 all reached `cu5`; fix = **Layer-1 路由链**：cu5 补 Manglish 实词触发词（where got/paiseh/jialat/lah…）、`can lah`/`okay lah` 从 cu1 归还 cu5、`p2 core.md` Step 2 新增槽位 6「混合语言」显式指向 cu5; smoke 32/32 |
 
 ---
 

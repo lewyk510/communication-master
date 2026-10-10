@@ -67,6 +67,11 @@ CASES: list[tuple[str, str]] = [
     # --- matcher regressions: latin = word-boundary (not substring), CJK-adjacent still matches ---
     ("用whatsapp 发这份 proposal 给客户", "sc7-digital-messaging"),
     ("My coworker replied 'noted, thanks'. What do I reply?", "p2-subtext-decoder"),
+    # --- Manglish / codeswitching lexicon (round-6) ---
+    ("can lah 什么意思", "cu5-codeswitching"),
+    ("他说 where got 是什么意思", "cu5-codeswitching"),
+    ("paiseh 是什么意思", "cu5-codeswitching"),
+    ("what does walao eh mean", "cu5-codeswitching"),
 ]
 
 # Known recall gaps: currently miss or misroute. Reported as warnings so the
