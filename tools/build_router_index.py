@@ -31,6 +31,7 @@ def build(src: dict) -> dict:
         "lang_default": src.get("lang_default", "auto"),
         "always_load": src.get("always_load", []),
         "engines": src.get("engines", {}),
+        "intents": src.get("intents", {}),
         "matcher": {
             "latin": m.get("latin", "case-insensitive word-boundary match"),
             "cjk": m.get("cjk", "substring match"),

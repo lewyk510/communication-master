@@ -63,6 +63,15 @@ def emit(result: dict, as_json: bool) -> None:
         print(f"[cache hit] {result['question']}")
         print(result["answer"])
         return
+    if src == "intent":
+        print(f"[intent->engine] {result['question']}")
+        print(f"  intent   {result['intent']} (matched '{result['pattern']}')")
+        print(f"  engine   {result['engine']}  {result['dir']}")
+        card = result.get("card") or {}
+        if card.get("tldr"):
+            print(f"  TL;DR    {card['tldr']}")
+        print("  -> keyword routing found nothing; coarse-read intent matched. Follow the engine in that dir.")
+        return
     if src == "no-match":
         print(f"[NO MATCH] {result['question']}")
         print(f"  fallback: {result.get('fallback', '')}")
@@ -117,6 +126,19 @@ def main() -> int:
     index = router_match.load_index()
     ranked = router_match.rank(index, q)
     if not ranked:
+        intent = router_match.resolve_intent(index, q)
+        if intent:
+            key = (intent.get("dir") or "").rstrip("/").split("/")[-1]
+            result.update({
+                "source": "intent",
+                "intent": intent["intent"],
+                "engine": intent["engine"],
+                "dir": intent["dir"],
+                "pattern": intent["pattern"],
+                "card": load_cards().get(key, {}),
+            })
+            emit(result, args.json)
+            return 0
         result.update({"source": "no-match", "fallback": index.get("fallback", "")})
         emit(result, args.json)
         return 0

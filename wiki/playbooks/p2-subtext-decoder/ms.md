@@ -134,6 +134,20 @@ LANE — authored natively, NOT a translation
 
 **Examples** — `constructed example`: rakan lama tanya "dah makan belum" lewat WhatsApp; selepas sembang 15 minit barulah timbul permintaan pinjaman — Reading 3.
 
+### Boleh（pendek, nada datar）
+
+**Context** — permintaan tolong atau sokongan; dia jawab sepatah sahaja, "boleh", nada rata tanpa mesra.
+
+**Reading** — 1) benar-boleh tapi tak bersemangat; 2) setuju berlapik kerana malu menolak — hati tak ikhlas (jaga muka dua pihak); 3) belum pasti, tunggu lihat dulu.
+
+**Response options**
+1. Kunci dengan tarikh kecil: "Ok, Khamis boleh? Kalau tak, aku cari orang lain dulu." — cites [[playbooks/p2-subtext-decoder/core]]
+2. Turunkan kos: "Kalau berat, separuh pun cukup." — cites [[concepts/c1-subtext-implicature/core]]
+
+**Pitfalls** — membaca "boleh" pendek sebagai "ya, dengan rela" — nada panjang dan mesra ("boleh~") yang berbeza biasanya lebih ikhlas; jawapan pendek+datar selalunya Reading 2.
+
+**Examples** — `constructed example`: rakan kata "boleh" pendek bila ditanya tolong; bila ditanya tarikh, dia tarik diri perlahan — Reading 2 aktif.
+
 ## Sources
 
 1. Nusantara (UIN Suska) — komunikasi berlapik Melayu (tier 1): https://ejournal.uin-suska.ac.id/index.php/nusantara/article/download/38451/13120

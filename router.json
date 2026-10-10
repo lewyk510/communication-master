@@ -10,6 +10,48 @@
     "S4": "wiki/playbooks/p4-ai-prompting/",
     "S2": "wiki/playbooks/p1-reply-engine/"
   },
+  "intents": {
+    "note": "Layer-1.5 coarse-read fallback: runs ONLY when keyword routing returns zero entries, to catch clear-intent questions that use no exact trigger (fixes the 'keyword-only -> no route' gap). First matching pattern wins; ASCII patterns are regex, non-ASCII are substrings; case-insensitive.",
+    "decode": {
+      "engine": "S1",
+      "dir": "wiki/playbooks/p2-subtext-decoder/",
+      "patterns": [
+        "什么意思",
+        "是什么意思",
+        "怎么理解",
+        "怎么解读",
+        "什么心态",
+        "为什么这么说",
+        "到底想",
+        "什么意思啊",
+        "该高兴还是",
+        "他这么说",
+        "她这么说",
+        "是不是在暗示",
+        "what does .* mean",
+        "what do (you|they) mean",
+        "how (should|do) i (read|interpret)",
+        "is (he|she|they) being",
+        "how do i read",
+        "what's the subtext"
+      ]
+    },
+    "reply": {
+      "engine": "S2",
+      "dir": "wiki/playbooks/p1-reply-engine/",
+      "patterns": [
+        "怎么回",
+        "该怎么回",
+        "如何回复",
+        "怎么回复",
+        "回他什么",
+        "回她什么",
+        "what should i reply",
+        "how should i respond",
+        "how do i reply"
+      ]
+    }
+  },
   "entries": [
     {
       "id": "c1-subtext-implicature",

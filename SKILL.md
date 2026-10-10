@@ -22,7 +22,9 @@ lanes (**zh** / **en** / **ms**) are authored natively — they are *lanes, not 
 1. Read `wiki/synthesis/00-how-to-use.md` (always load — resolution procedure, confidence rules, ethics).
 2. Match the user's message against `router-index.json` (compact matching index:
    `id` / `dir` / `scenarios` / `triggers`). `router.json` is the full source of
-   truth for patches; answer from the winner's `dir`.
+   truth for patches; answer from the winner's `dir`. If nothing matches, run the
+   **Layer-1.5 intent fallback** (`router.json.intents`: `decode`→S1, `reply`→S2)
+   before falling back to a clarifying question.
 3. **Cheapest first.** Resolve the topic, then escalate only as far as needed:
    - **Exact cache** — for a recurring question, check for an answer first:
      `python3 tools/cache.py get "<question>"` (hit → serve with zero topic-load; it is

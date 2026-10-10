@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ROUTER = ROOT / "router.json"
 
 sys.path.insert(0, str(ROOT / "tools"))
-from router_match import rank  # noqa: E402  (shared scorer — must match the resolver)
+from router_match import rank, resolve_intent  # noqa: E402  (shared scorer)
 
 # (query, expected topic id)  — must resolve exactly. Covers every cluster and
 # all three lanes; includes the reviewer round-2 regressions.
@@ -79,6 +79,14 @@ KNOWN_GAPS: list[tuple[str, str]] = [
     ("谈判时怎么让步", "sc10-negotiation-deals"),
 ]
 
+# Layer-1.5 coarse-read fallback (router.json.intents): a CLEAR-intent query that
+# uses no exact entry trigger must still route to an ENGINE. (query, engine code)
+INTENT_CASES: list[tuple[str, str]] = [
+    ("他昨天突然这么说是什么意思", "S1"),
+    ("how should I interpret her long silence", "S1"),
+    ("收到这种话我该怎么回复", "S2"),
+]
+
 
 def build_scorer(router: dict):
     def resolve(query: str) -> tuple[str | None, int, list[str]]:
@@ -112,10 +120,23 @@ def main() -> int:
             tag = "STILL-GAP" if got != expected else "NOW-OK "
             print(f"  [{tag}] {query} -> {got} (want {expected}, score {score})")
 
-    if failures:
-        print(f"router-smoke: FAIL — {failures} regression(s)")
+    intent_failures = 0
+    if INTENT_CASES:
+        print("intent-fallback (engine routing when keywords yield nothing):")
+        for query, expected_engine in INTENT_CASES:
+            got = resolve_intent(router, query)
+            ge = got.get("engine") if got else None
+            if ge == expected_engine:
+                print(f"  [PASS] {query} -> engine {ge} (intent {got['intent']})")
+            else:
+                intent_failures += 1
+                print(f"  [FAIL] {query} -> {got} (expected engine {expected_engine})")
+
+    if failures or intent_failures:
+        print(f"router-smoke: FAIL — {failures} recall + {intent_failures} intent regression(s)")
         return 1
-    print(f"router-smoke: OK — {len(CASES)}/{len(CASES)} passed")
+    print(f"router-smoke: OK — {len(CASES)}/{len(CASES)} passed, "
+          f"{len(INTENT_CASES)}/{len(INTENT_CASES)} intent-fallback passed")
     return 0
 
 

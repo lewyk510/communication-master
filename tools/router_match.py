@@ -65,3 +65,32 @@ def rank(index: dict, query: str) -> list[dict]:
 def resolve(index: dict, query: str) -> dict | None:
     ranked = rank(index, query)
     return ranked[0] if ranked else None
+
+
+def resolve_intent(index: dict, query: str) -> dict | None:
+    """Layer-1.5 coarse-read fallback (``router.json.intents``).
+
+    Used ONLY when ``rank`` finds no entry, so a clear-intent question that
+    happens to use no exact trigger still routes to the right engine instead of
+    dead-ending. ASCII patterns are regex (case-insensitive); non-ASCII patterns
+    are substring matches. First matching pattern in declaration order wins.
+    """
+    intents = index.get("intents")
+    if not isinstance(intents, dict):
+        return None
+    for name, spec in intents.items():
+        if name == "note" or not isinstance(spec, dict):
+            continue
+        for pat in spec.get("patterns", []):
+            if not pat:
+                continue
+            hit = (re.search(pat, query, re.IGNORECASE) is not None
+                   if pat.isascii() else (pat in query))
+            if hit:
+                return {
+                    "intent": name,
+                    "dir": spec.get("dir"),
+                    "engine": spec.get("engine"),
+                    "pattern": pat,
+                }
+    return None

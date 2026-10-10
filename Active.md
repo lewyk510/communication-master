@@ -22,6 +22,8 @@ Current focus items and priorities.
 | 14 | Two-track publish reliability | ✅ `tools/publish.sh` new-file detection fixed | guard now `git status --porcelain`; public CI green |
 | 15 | Understanding test — Round 1 (context-sensitivity) | ✅ context-change 5/5, common-sense 13/15 | `qa/eval/understanding.json` + `UNDERSTANDING-REPORT.md` (contrast-bias caveat) |
 | 16 | Understanding test — Round 2 (hard: isolation+traps+pairs+no-context+conflict) | ✅ **7/8 clear, 1 partial** | `qa/eval/understanding-hard.json` + `UNDERSTANDING-HARD-REPORT.md`; understanding layer holds; weakness is Layer-1 routing, not Layer-2 |
+| 17 | Understanding test — Round 3 (hardest: multi-turn+culture+calibration+reverse traps) | ✅ **7/8 → 8/8 after fixes** | `qa/eval/understanding-hard2.json` + `UNDERSTANDING-HARD2-REPORT.md`; reverse traps defeated via baseline |
+| 18 | Engine hardening + Layer-1 intent fallback | ✅ shipped, lint/cards/smoke green | `p2 core.md` (baseline/multi-turn/tie=low/boleh) + `ms.md` boleh entry; `router.json.intents` + `resolve_intent` + `ask.py` + smoke 3/3 |
 
 ---
 

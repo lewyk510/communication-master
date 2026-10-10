@@ -156,7 +156,8 @@ Fast path: `python3 tools/ask.py "<question>"` runs steps 2–5 below in one off
 2. **Cache first** — for a recurring question, try the exact-match cache: `python3 tools/cache.py get "<question>"` (hit → serve, zero topic-load). After answering, `python3 tools/cache.py put "<question>" "<answer>" --source <wiki/path>`.
 3. **Language**: `lang_default` is `"auto"` — match the user's language to a lane (`zh` / `en` / `ms`); on ambiguity fall back to `core.md`.
 4. **Intent**: match the user's request against entry `triggers` (and `scenarios` codes); direct S1/S3/S4 dispatch goes through `engines`. Best-scoring entry wins.
-5. **Escalate cheaply** — read the topic's `sidecars/cards.json` card first (~400 tok); load `core.md` + the lane only when the card is not enough. Then anything in `see_also`.
+5. **Intent fallback (Layer 1.5)** — if keyword routing yields *zero* entries, do not dead-end: run the coarse-read fallback `router.json.intents` (via `router_match.resolve_intent`), which maps a clear-intent question that used no exact trigger to an engine (`decode` → S1, `reply` → S2). Only if that also misses, fall back to `00-how-to-use.md` + ONE clarifying question.
+6. **Escalate cheaply** — read the topic's `sidecars/cards.json` card first (~400 tok); load `core.md` + the lane only when the card is not enough. Then anything in `see_also`.
 6. **Answer** with citations into the KB (`[[...]]` paths). Good answers can be filed back as synthesis pages — queries compound knowledge too.
 
 ### Router patches

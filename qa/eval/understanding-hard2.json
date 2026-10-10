@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "purpose": "Round 3 — HARDEST understanding test. Multi-turn trajectory, cross-cultural same-phrase divergence, balanced-context calibration, and REVERSE TRAPS where over-reading is the failure (baseline/style override).",
+    "labels": [
+      "literal/neutral",
+      "cold/dismissive",
+      "angry",
+      "disappointed_tired",
+      "reluctant_reserved",
+      "guarded",
+      "ask_needed_no_assert",
+      "behavior_over_words",
+      "withdrawn_bid_disappointed",
+      "resigned_not_approved",
+      "tie_low_confidence_ask",
+      "sarcasm/displeasure",
+      "noncommittal/dismissive",
+      "compliant_accept",
+      "polite_no/parked"
+    ],
+    "grade": "Pass per case if the DOMINANT reading matches expected. REVERSE-TRAP cases (A1, A2) pass ONLY if it does NOT over-read (reads literal, using the baseline/history slot). K1 passes only if overall confidence is LOW and it asks. Pairs (C1, W1) pass only if the two members are read DIFFERENTLY and correctly. Multi-turn (M1, M2) passes only if it reads the trajectory, not just the last line.",
+    "date": "2026-10-10"
+  },
+  "isolation": [
+    {
+      "id": "M1",
+      "lang": "zh",
+      "turns": [
+        "（夜 11:40）睡了吗？",
+        "没事，就是想有人聊聊",
+        "（你回了一句「在的，怎么了」）……算了，睡吧"
+      ],
+      "scene": "对你重要的人，最近你们联系变少；TA 深夜先问你睡没睡、说想找人聊聊，你回得很短之后，TA 说「算了，睡吧」",
+      "expected": "withdrawn_bid_disappointed",
+      "trap": "multi_turn",
+      "note": "轨迹：深夜开口=主动示弱求连接；你的短回=被冷落；「算了，睡吧」=失望收回。若只按字面读最后一句「就是去睡了」=失败"
+    },
+    {
+      "id": "M2",
+      "lang": "zh",
+      "turns": [
+        "老板：方案我看看",
+        "（你发出定稿）老板：收到",
+        "（20 分钟后，老板在文档里开始自己大改，并发来）老板：嗯，就这样吧"
+      ],
+      "scene": "你的直属老板，项目关键节点",
+      "expected": "resigned_not_approved",
+      "trap": "multi_turn",
+      "note": "轨迹：老板接手自己改 + 「就这样吧」=勉强接受/不满意但懒得再说。若读成「批准了、满意」=失败"
+    },
+    {
+      "id": "K1",
+      "lang": "zh",
+      "sentence": "那改天请你吃饭，不过你忙就不用了",
+      "scene": "一个认识不久、关系一般的熟人；你先帮了 TA 一个小忙，TA 说：「那改天请你吃饭，不过你忙就不用了。」",
+      "expected": "tie_low_confidence_ask",
+      "trap": "calibration",
+      "note": "证据均衡：可能真心想请（回礼），也可能是场面客套给自己台阶。正确=两个读法并列、整体低置信、并把「要不要接话」反抛。若自信单押一边=失败"
+    },
+    {
+      "id": "A1",
+      "lang": "en",
+      "sentence": "k",
+      "scene": "A friend whose ENTIRE texting history over 3 months is single-word replies; you sent a long message about your bad day, he replies: 'k'",
+      "expected": "literal/neutral",
+      "trap": "reverse_overread",
+      "note": "基线在外：他历来只回一个字，这是他的常态，不是冷漠。若因为「k 很冷」而读成 cold/dismissive=失败（过度解读）"
+    },
+    {
+      "id": "A2",
+      "lang": "en",
+      "sentence": "No.",
+      "scene": "Your manager's documented style is blunt-but-fair; she has never once been passive-aggressive; you asked if your draft was ready, she replies: 'No.'",
+      "expected": "literal/neutral",
+      "trap": "reverse_overread",
+      "note": "风格基线=直来直去，句号是她打字习惯，不是生气。若读成 hostile/cold/dismissive=失败"
+    },
+    {
+      "id": "S1",
+      "lang": "zh",
+      "sentence": "真好，又加班",
+      "scene": "团队群里，周五晚上 9 点老板又发来一个新需求，同事在群里回：「真好，又加班」",
+      "expected": "sarcasm/displeasure",
+      "trap": "irony",
+      "note": "反讽：字面是好，实际是讽刺/不满。若按字面读成「很开心」=失败"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "C1",
+      "kind": "culture",
+      "members": [
+        {"sentence": "回头再说吧", "lang": "zh", "scene": "中国老板，高语境文化；你刚提出加薪", "expected": "polite_no/parked"},
+        {"sentence": "Let's revisit later", "lang": "en", "scene": "American colleague, direct-culture team, a calm roadmap brainstorm, no tension at all", "expected": "literal/neutral"}
+      ],
+      "note": "同一功能句，文化不同读法相反。陷阱：把高语境先验套到美式场景（过度解读），或把中文场景读成「真的稍后再谈」。必须区分"
+    },
+    {
+      "id": "W1",
+      "kind": "power",
+      "members": [
+        {"sentence": "好的", "lang": "zh", "scene": "你的下属，回应你安排的紧急任务", "expected": "compliant_accept"},
+        {"sentence": "好的", "lang": "zh", "scene": "你的老板，回应你在会上提的新方案，只回了这两个字", "expected": "noncommittal/dismissive"}
+      ],
+      "note": "同一句话，权力方向不同读法相反。下属=照办；老板=敷衍/不置可否。必须区分"
+    }
+  ]
+}
