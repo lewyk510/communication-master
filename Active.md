@@ -24,6 +24,7 @@ Current focus items and priorities.
 | 16 | Understanding test — Round 2 (hard: isolation+traps+pairs+no-context+conflict) | ✅ **7/8 clear, 1 partial** | `qa/eval/understanding-hard.json` + `UNDERSTANDING-HARD-REPORT.md`; understanding layer holds; weakness is Layer-1 routing, not Layer-2 |
 | 17 | Understanding test — Round 3 (hardest: multi-turn+culture+calibration+reverse traps) | ✅ **7/8 → 8/8 after fixes** | `qa/eval/understanding-hard2.json` + `UNDERSTANDING-HARD2-REPORT.md`; reverse traps defeated via baseline |
 | 18 | Engine hardening + Layer-1 intent fallback | ✅ shipped, lint/cards/smoke green | `p2 core.md` (baseline/multi-turn/tie=low/boleh) + `ms.md` boleh entry; `router.json.intents` + `resolve_intent` + `ask.py` + smoke 3/3 |
+| 19 | Understanding test — Round 4 (group+relay+history+baseline-deviation) | ✅ **5/8 → 8/8 after fix** | `qa/eval/understanding-hard3.json` + `UNDERSTANDING-HARD3-REPORT.md`; fix = **判别点护栏**（不许滥用【未定】）+ relay/referent/audience rules + baseline-both-ways; re-runs D1/X1/GP1 all pass |
 
 ---
 

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "purpose": "Round 4 — four NEW hard dimensions: group/multi-party (audience changes weight), relayed/second-hand messages, long-term relationship history, and a COUNTER-TEST to the baseline rule (a deviation from baseline MUST still be caught).",
+    "labels": [
+      "literal/neutral",
+      "sarcasm/displeasure",
+      "indirect_jab_at_you",
+      "request_incoming",
+      "real_signal_cares",
+      "relay_needs_direct_check",
+      "hurt_withdrawal",
+      "ask_needed_no_referent",
+      "mild_concern_private",
+      "serious_public_setback"
+    ],
+    "grade": "Pass per case if the DOMINANT reading matches expected. D1 (baseline DEVIATION) passes ONLY if it reads a real signal (must NOT dismiss as 'he's always short'). N1 passes ONLY if it refuses to guess and asks which 'that thing' refers to. GP1/BP1 pairs pass only if the two members are read DIFFERENTLY and correctly.",
+    "date": "2026-10-10"
+  },
+  "isolation": [
+    {
+      "id": "G1",
+      "lang": "zh",
+      "sentence": "有些人真是会挑时间休息",
+      "scene": "工作群里（老板也在群里）；你中午比平常多休息了一会儿。一个同事在群里发了这句，没点名。",
+      "expected": "indirect_jab_at_you",
+      "trap": "group_indirect",
+      "note": "公开、不点名、但时间点与你吻合 = 影射你（面子上不撕破）。若按字面读成泛泛感慨=失败"
+    },
+    {
+      "id": "H1",
+      "lang": "zh",
+      "sentence": "在吗？",
+      "scene": "一个只在有求于你时才会找你的人（这是已确认的历史模式）；今天突然发来这两个字。",
+      "expected": "request_incoming",
+      "trap": "history",
+      "note": "历史模式=有求才来 → 大概率马上要开口求事，不是单纯叙旧。若读成普通问候/想念=失败"
+    },
+    {
+      "id": "D1",
+      "lang": "en",
+      "sentence": "hey — saw your day was rough. you ok? want to talk or should I just listen?",
+      "scene": "SAME person whose ENTIRE 3-month history is single-word replies; today he writes this full sentence about your bad day.",
+      "expected": "real_signal_cares",
+      "trap": "counter_baseline",
+      "note": "这回**偏离**基线了 → 是信号（真关心/有心事）。若因为『他平时就话少』而当成常态忽略=失败"
+    },
+    {
+      "id": "R1",
+      "lang": "zh",
+      "sentence": "你姐说你上次那句话让她挺不舒服的",
+      "scene": "你妈转述给你听：你姐觉得你上次那句话让她不舒服。你没有直接听到你姐说过。",
+      "expected": "relay_needs_direct_check",
+      "trap": "second_hand",
+      "note": "二手转述会衰减/加料；正确=重视但不全信，找本人直接确认。若当成第一手事实直接反应=失败"
+    },
+    {
+      "id": "X1",
+      "lang": "zh",
+      "sentence": "没事，我自己弄吧",
+      "scene": "你连续两次没能帮上 TA 的忙（答应过又没做到）；现在 TA 这样说。",
+      "expected": "hurt_withdrawal",
+      "trap": "signal_conflict",
+      "note": "行为信号（你已两次失手）+『没事/我自己来』= 失望+收回，不是字面独立。若读成『TA 真没事、能自己搞定』=失败"
+    },
+    {
+      "id": "N1",
+      "lang": "zh",
+      "sentence": "那个事你考虑得怎么样了？",
+      "scene": "同事发来这句；但你俩之前**没有任何上下文**说明『那个事』指的是什么。",
+      "expected": "ask_needed_no_referent",
+      "trap": "missing_referent",
+      "note": "指代缺失 → 正确=不猜、直接问『哪个事』。若自信脑补一个『那个事』并解读=失败"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "GP1",
+      "kind": "audience",
+      "members": [
+        {"sentence": "这个方案还得再想想", "lang": "zh", "scene": "老板私下找你，一对一，语气平和", "expected": "mild_concern_private"},
+        {"sentence": "这个方案还得再想想", "lang": "zh", "scene": "老板在全员会上、当着你和其他同事的面说（指着你的方案）", "expected": "serious_public_setback"}
+      ],
+      "note": "同一句，私下 vs 公开，分量与严重度不同。公开=面子代价 + 更像否决信号；私下=可谈的保留意见。必须区分"
+    },
+    {
+      "id": "BP1",
+      "kind": "baseline_direction",
+      "members": [
+        {"sentence": "k", "lang": "en", "scene": "那个 3 个月只回一个字的人，今天照旧只回一个字；你发的是你心情不好", "expected": "literal/neutral"},
+        {"sentence": "wait what happened?? you never talk about stuff like this — call me tonight, I'm serious.", "lang": "en", "scene": "同一个人，这次却写了一大段；你发的是你心情不好", "expected": "real_signal_cares"}
+      ],
+      "note": "同一个人：基线内 vs 偏离基线，读法相反——考『基线规则不误杀真信号』。必须区分"
+    }
+  ]
+}
