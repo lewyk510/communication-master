@@ -19,6 +19,9 @@ Current focus items and priorities.
 | 11 | GitHub backup + public repo | ✅ private + public live | `private` = full backup; `public` (no `raw/`) = lewyk510/communication-master; `tools/publish.sh` |
 | 12 | Communication-ability eval | ✅ `qa/eval/` harness — retrieval hit@1 **10/10**, answers **4/4** rubric | `tools/eval.py` + `qa/eval/REPORT.md`; card ~331 vs full ~8,715 tok |
 | 13 | Matcher correctness (latin word-boundary) | ✅ fixed in `tools/router_match.py` | `PR`⊄`proposal`; CJK-adjacent latin still matches; smoke 28/28 |
+| 14 | Two-track publish reliability | ✅ `tools/publish.sh` new-file detection fixed | guard now `git status --porcelain`; public CI green |
+| 15 | Understanding test — Round 1 (context-sensitivity) | ✅ context-change 5/5, common-sense 13/15 | `qa/eval/understanding.json` + `UNDERSTANDING-REPORT.md` (contrast-bias caveat) |
+| 16 | Understanding test — Round 2 (hard: isolation+traps+pairs+no-context+conflict) | ✅ **7/8 clear, 1 partial** | `qa/eval/understanding-hard.json` + `UNDERSTANDING-HARD-REPORT.md`; understanding layer holds; weakness is Layer-1 routing, not Layer-2 |
 
 ---
 

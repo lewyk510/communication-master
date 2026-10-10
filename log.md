@@ -155,3 +155,25 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - Effect: killed the false positive where `c17-mass-media-pr` (`PR`) outranked `sc7-digital-messaging` on a "proposal" query.
 - Regression anchors added to `qa/router-smoke.py` (now 28/28): the `proposal`→`sc7` case (old substring → `c17`, new → `sc7`) and the `noted, thanks`→`p2` case.
 - Verified: `qa/router-smoke.py` 28/28, `tools/eval.py` hit@1 10/10, `tools/check.sh` all green.
+
+## [2026-10-09] chore | public repo polish (description, topics, Discussions)
+
+- Public `lewyk510/communication-master`: set repo description, added 6 topics (communication/psychology/culture/...), enabled Discussions. Social-preview (og:image) still needs manual upload via web UI.
+- `.gitignore` += `.local/` (stray gh runtime dir that had been created by a gh call).
+
+## [2026-10-09] test | understanding Round 1 — same sentence, 3 contexts (context-sensitivity)
+
+- New `qa/eval/understanding.json` (5 sentences × 3 contexts) + `qa/eval/UNDERSTANDING-REPORT.md`. Each KB-only agent reads the sentence in a given context and must produce a distinct reading per context.
+- Result: **context-change 5/5** (reads shifted correctly when context changed); **common-sense match 13/15**. Weaknesses surface: over-confidence (high-confidence tags despite missing context slots) and occasional over-reading.
+- Caveat: all three contexts of a sentence were shown to the *same* agent, so a "contrast" bias can't be ruled out → motivated Round 2's isolation design.
+
+## [2026-10-09] fix | publish.sh detected new files via git diff (missed untracked)
+
+- `tools/publish.sh`: change-guard used `git diff` (ignores untracked files), so a commit consisting only of *new* files silently published nothing. Guard changed to `[ -z "$(git status --porcelain)" ]`.
+- Verified: public repo CI `success`; private + public synced.
+
+## [2026-10-09] test | understanding Round 2 — hard (isolation + traps + micro-pairs + no-context + signal-conflict)
+
+- New `qa/eval/understanding-hard.json` (6 isolation cases + 2 micro-difference pairs) + `qa/eval/UNDERSTANDING-HARD-REPORT.md`. Each case judged by its **own** agent (no contrast bias). Four harder designs: isolation, traps (真没事 but cue suggests otherwise), micro-pairs (嗯 vs 嗯嗯; fine vs Fine.), no-context + signal-conflict.
+- Result: **7/8 clear, 1 partial**. Traps resisted **2/2** (Round 1's over-reading fixed by the "boring wins" failsafe); no-context calibration **1/1** (declares all slots missing, asks); signal-conflict **1/1** (behavior over words); micro-pairs differentiated **2/2**. Only partial: my↔"boleh" short → dominant reading leaned literal "yes" though it surfaced the reserved reading in parallel.
+- Conclusion: the **understanding layer** (LLM + KB playbook) holds up under the harder set; the "keyword-only" weakness belongs to the **routing layer** (Layer 1), not understanding (Layer 2).

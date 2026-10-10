@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "purpose": "Round 2 — HARDER understanding test. Isolation (one case per call, no contrast), fine-grained cue flips, traps (where over-reading is wrong), a no-context case, and a signal-conflict case.",
+    "labels": ["literal/neutral", "cold/dismissive", "angry", "disappointed_tired", "reluctant_reserved", "guarded", "ask_needed_no_assert", "behavior_over_words"],
+    "grade": "Pass per case if the dominant reading matches expected AND, for trap cases, it does NOT over-read; for I1, pass only if it refuses to assert one reading and asks for context; for pairs, pass only if the two members are read differently and correctly.",
+    "date": "2026-10-09"
+  },
+  "isolation": [
+    {"id": "I1", "sentence": "我没事", "lang": "zh", "scene": "(没有任何语境——只有这一句；不知道谁发的、什么渠道、什么关系、之前发生了什么)", "expected": "ask_needed_no_assert", "trap": "calibration", "note": "正确行为=不单押一个意思，说明需要语境/反问；若自信断言某个含义=失败"},
+    {"id": "I2", "sentence": "随便", "lang": "zh", "scene": "多年好友，一贯随和乐天；当面，你们一起挑去哪吃饭，TA 笑着说「随便」", "expected": "literal/neutral", "trap": "over-reading", "note": "应为真随意；若主导读成生气/不满=过度解读"},
+    {"id": "I3", "sentence": "好的", "lang": "zh", "scene": "同事，今天是项目截止日；你在群里问「方案能过吗」，他简短回「好的」", "expected": "literal/neutral", "trap": "over-reading", "note": "应为收到/同意（忙、简短）；若主导读成冷淡/不满=过度解读"},
+    {"id": "I4", "sentence": "Fine.", "lang": "en", "scene": "coworker, an email reply after a tense disagreement in a meeting", "expected": "cold/dismissive", "trap": "none", "note": "不是真没事；bare period + conflict"},
+    {"id": "I5", "sentence": "boleh", "lang": "ms", "scene": "Malay colleague, you ask a favour; he answers with a short, flat 「boleh」", "expected": "reluctant_reserved", "trap": "culture", "note": "KB: 拖长软=真诚，短促干=有保留；应为礼貌但有保留，非热情应承"},
+    {"id": "I6", "sentence": "没事，你去忙吧", "lang": "zh", "scene": "对你很重要的人；TA 刚刚推掉了一个重要约会来等你，现在却发来「没事，你去忙吧」", "expected": "behavior_over_words", "trap": "signal_conflict", "note": "字面=没事，但行为信号与之冲突；应以行为为准读成有情绪/试探"}
+  ],
+  "pairs": [
+    {"id": "P7", "lang": "zh", "scene": "伴侣，你刚发了一大段心里话", "members": [
+      {"sentence": "嗯", "expected": "cold/dismissive"},
+      {"sentence": "嗯嗯", "expected": "literal/neutral"}
+    ], "note": "干「嗯」=冷/收线；「嗯嗯」=有回应/暖。必须区分；若两者读成同一个=失败"},
+    {"id": "P8", "lang": "en", "members": [
+      {"sentence": "fine", "scene": "friend, casual chat about the weekend", "expected": "literal/neutral"},
+      {"sentence": "Fine.", "scene": "coworker, email after a tense meeting disagreement", "expected": "cold/dismissive"}
+    ], "note": "无句号闲聊=ok；有句号+争执=tense。必须区分"}
+  ]
+}
