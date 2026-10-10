@@ -60,6 +60,8 @@ updated: 2026-10-07
 
 **机制。** 马来社会是尊长型层级：向长者问好先点头低头；从长者面前经过可微微躬身使头部低于对方；不在长辈面前跷腿、不跨过坐着的晚辈（Evidence-backed，见 f-culturalatlas-etiquette.md 与 f-factsanddetails-etiquette.md）。对不认识的年长者可尊称 **pakcik**（伯伯）/ **makcik**（婶婶）。家族内部还有一整套排行称谓（Abang Long、Pak Ngah、Abang Usu 等），年幼者直呼长辈为 aku/kau 属禁忌（anecdotal，tier 3，f-iluminasi-adab-bahasa.md）。
 
+**注意方向（常见困惑）。** 这条禁忌是**单向**的：**长辈对晚辈**——含 Opah 对 menantu、mertua 对女婿/媳妇——用 kau 属常见家庭语域，多数马来长辈日常就这么叫，是亲昵而非失礼；需要刻意避免的是**反方向**（晚辈直呼长辈 aku/kau）。`Practice heuristic`：被问到「长辈叫我 kau 正常吗」时，答「正常，方向反了才失礼」。
+
 **操作规则。**（Practice heuristic）不确定怎么称呼时，用「称谓 + 名字」（Encik Ali、Puan Aminah）；先高后低，对方主动降级再跟随。
 
 ### 头衔与尊称：Tun / Tan Sri / Dato' / Encik / Puan

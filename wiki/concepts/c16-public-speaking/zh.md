@@ -237,6 +237,10 @@ LANE — authored natively, NOT a translation
 
 **Examples** — `constructed example`：「汇报就三页：结论是延期两周；理由是两个测试环境没到位；需要你拍板的是——能不能借隔壁组两个人，两周。」
 
+### 「婚礼上/酒桌上让我讲两句」——场合型致辞
+
+不是演讲，是「一句 + 三点 + 一句」，2–3 分钟：先写好并背熟**收尾那句祝福**；主体三点各绑一个具体名词（人名/日期/一件小事）；开场用一句坦白或一个画面；英文弱就短句 + 具体名词，讲卡了继续讲别道歉；正式场合用标准语（婚礼不混 Manglish）。
+
 ## Sources
 
 1. XMind 官方博客，《金字塔原理》。 — https://xmind.cn/blog/minto-pyramid-principle （tier 2：结论先行、SCQA、MECE）

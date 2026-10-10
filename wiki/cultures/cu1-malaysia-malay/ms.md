@@ -76,7 +76,7 @@ Lane ini ditulis dalam Bahasa Melayu untuk situasi harian masyarakat Malaysia: o
 
 **Context** — Berjumpa jiran, peniaga pasar, saudara jauh. Orang yang jelas lebih tua dipanggil pakcik atau makcik; orang formal dipanggil Encik atau Puan dengan nama.
 
-**Reading** — Panggilan ini membawa hormat, bukan anggapan persaudaraan. Menyapa lepas tanpa panggilan, atau menyebut nama penuh tanpa gelaran, terasa kasar. Budaya Melayu menegah golongan muda menggunakan aku dan memanggil orang tua sebagai kau; ganti dengan saya dan gelaran (anecdotal, rujuk raw).
+**Reading** — Panggilan ini membawa hormat, bukan anggapan persaudaraan. Menyapa lepas tanpa panggilan, atau menyebut nama penuh tanpa gelaran, terasa kasar. Budaya Melayu menegah golongan muda menggunakan aku dan memanggil orang tua sebagai kau; ganti dengan saya dan gelaran (anecdotal, rujuk raw). Arah larangan ini satu hala: orang tua memanggil yang lebih muda — termasuk Opah kepada menantu atau mertua kepada menantu — dengan "kau" ialah register keluarga yang biasa dan mesra, bukan penghinaan; yang perlu dielak ialah arah muda→tua.
 
 **Response options**
 1. Guna "pakcik/makcik" untuk suasana santai, "Encik/Puan + nama" untuk urusan rasmi.

@@ -235,3 +235,13 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - **Upgrade** (Layer-1): **long-query head priority** in `tools/router_match.py` — for queries ≥20 chars, triggers matched in the first 12 chars are weighted ×3 (`HEAD_MIN/HEAD_K/HEAD_BOOST`, helper `_find_pos`). Grounded in the observation that real messages state intent first. Gated to long queries only, so short recall-gate cases are untouched.
 - **Verified**: reach **50/54 (92%) unchanged**, router-smoke **32/32 unchanged**, `bash tools/check.sh` all green. Controlled head-priority delta on the fixed 78-case reference: +5 (11→~16).
 - Takeaway: keyword routing has hit its ceiling on free-form text (~47% corrected). Continuing to add trigger words is whack-a-mole; the real next step is upgrading the Layer-1.5 fallback into a proper intent/domain classifier (or trusting the host LLM, which reads `index.md` by understanding — the router is only a token-saving fast path).
+
+
+## [2026-10-10] eval | Answer-quality & coverage — Round 9 (20 real questions through KB-only agents)
+
+- Data: `qa/eval/answer-quality.json` (20 Q/A + verdicts) + `qa/eval/ANSWER-QUALITY-REPORT.md`. Method: 4 agents × 5 questions, each forced to answer **using only the KB** (read SKILL/index/router-index → topic core.md + lane), then report pages used, coverage verdict, and what was missing.
+- **Result: 15 FULL / 5 PARTIAL / 0 NONE** — zero questions unanswered. Every specific claim grep-verified against real KB files, so the verdicts are trustworthy.
+- **5 gaps found and fixed**: (1) cu4 — no concrete-culture example for monochronic/polychronic (added 实务语境: 中东/拉美/南欧/东南亚); (2) c4 — one-sided (only decoding others, no venter/self-care side; added 倾诉者侧); (3) cu1 — only recorded young→old taboo, not the elder→younger/menantu direction (added 注意方向 + ms lane); (4) sc1 — no scope boundary for legal/audit/whistleblowing (added 边界 section); (5) c16 — no occasion-toast quick path (added §18 婚礼/祝酒/年会).
+- Router triggers extended: cu1 += menantu/mertua/opah/kau; c4 += 想被倾听/倾诉/找人说话/陪伴; c16 += 致辞/祝酒/祝酒词/婚礼致辞/toast.
+- **Verified**: 4/5 gap queries now route to the intended topic (Jordan query still pulls to sc6 — router limit, not content); `router-smoke` 32/32, intent 3/3, reach unchanged, `bash tools/check.sh` all green.
+- Takeaway: coverage is strong; failures were narrow missing entries, not structural. Understanding + routing + coverage all hold up on realistic input.

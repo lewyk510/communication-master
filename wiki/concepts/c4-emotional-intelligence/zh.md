@@ -186,6 +186,10 @@ LANE — authored natively, NOT a translation
 
 **Examples** — `constructed example`。
 
+### 「我就是想找人说说话」——倾诉者的一侧
+
+上面都在讲怎么接住别人；当**你**自己累到只想找人说话时：先声明「想吐槽，不用给方案」（对方急着给建议是 sympathy 不是 empathy）；挑会复述你感受、会问「后来呢？」的人；对信任的人直接说「今晚陪我聊十分钟，不用解决什么」。这是自我照顾式的沟通，不替代专业心理支持。
+
 ## Sources
 
 - Tier 1: https://iod.unh.edu/sites/default/files/media/2021-10/motivational-interviewing-the-basics-oars.pdf

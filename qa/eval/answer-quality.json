@@ -1,0 +1,233 @@
+{
+  "round": 9,
+  "type": "answer-quality+coverage",
+  "n": 20,
+  "coverage_summary": {
+    "FULL": 15,
+    "PARTIAL": 5
+  },
+  "gaps": [
+    "约旦人开会都不看表 我朋友说他们没礼貌 你觉得呢",
+    "唉 好累 就想找人说说话 没啥事",
+    "Opah saya terus panggil menantu 'kau'. Itu biasa bagi orang tua, atau ada something?",
+    "My tai kor suruh saya tutup kesilapan payment dia, tapi kalau kena audit nanti saya yang jadi kambing hitam lor. What to do?",
+    "救命 我明天婚礼 致辞还没写 我英文较差 我妈是印度裔大马人"
+  ],
+  "answers": [
+    {
+      "q": "帮我写一封给客户的道歉信 说明我们延期了 而且其实是因为我们把他的需求做错了",
+      "answer": "这封信的关键不是文笔，是道歉『组件』是否齐全。实验证据（Lewicki 2016）：六个组件里最重要的是承认责任，其次是提出修复；『对不起，但是……』里的转折会删掉道歉的一半，全文禁用『但是』。骨架：①第一句直接认责：「本次交付延期，责任在我们——对您的需求理解出了偏差，不是您方原因」，别把责任藏在第三段；②用日期时间线说清：原定时间→我们哪里理解错了→何时发现（公历 YYYY-MM-DD，禁用「上周」）；③修复：给新交付的具体日期+防再犯的流程改动（如「需求确认单经您签字后才开工」）；④抬头写具体负责人职务，收尾「顺颂商祺」。请求原谅一句可省，客户要的是确定性不是表态。给我三个数：延期天数、错的需求点、新交付日，我填成全文。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/playbooks/p3-formal-writing/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我该用什么提示词让AI帮我跟我妈解释我不想回家过年",
+      "answer": "先定策略再让AI出文字：你的目标不是「说服她同意」，是「解释+给她台阶」。直接甩给AI只会得到两边不得罪的空话。用这个填槽模板：【角色】懂中国家庭人情的沟通助手；【背景】我今年不回家过年，真实原因是{一句话，自己填}；妈妈会失落，也在乎亲戚面前怎么交代；【必须包含】①先接情绪（「知道您一直盼我回来」）②真实原因，不许编造加班/生病③补偿动作给具体日期（「初二回去陪您三天」或「每月15号固定视频」），不用「有空」「以后多回」④求助句：「您帮我想想怎么跟亲戚说」，给她一个对外说的定位；【绝不能出现】道歉超过一次、「以后一定」式空头承诺、超过120字。让它出直接/缓和两版再挑。发出前逐句读一遍——AI替你承诺的每个字，都是你说的。",
+      "pages_used": [
+        "wiki/playbooks/p4-ai-prompting/zh.md",
+        "wiki/playbooks/p4-ai-prompting/core.md",
+        "wiki/scenarios/sc3-family-kinship/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "领导 今天 找我 聊 说态度有问题 但也没说具体啥事 我要不要主动去问清楚",
+      "answer": "要问，而且要快——这类委婉黑话最大的坑就是「什么都猜但不敢问，回家细思一整周，错过说清的最好时刻」。「态度有问题」是评语级黑话，常见三种读法：①他看到你某次具体表现（迟到、会上沉默、回消息只说「好的」）；②有人背后反映了什么；③为后续安排（调岗、绩效）铺垫。问法要对：不辩解、要事实——「您说的态度，能给我一两个具体场景吗？我想精确改进」，把黑话兑换成事件。他若只给模糊答案，事后找信得过的同事核实是不是读法②，分清误传和真有积怨。接下来两周刻意做两件可见的事：回复带信息量（「收到，周四下班前给初稿，先从X开始」）、开会主动补一条观点。这类评价是积累出来的，也用积累消掉。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "组织架构调整在即 领导突然说'机会不止在内部' 这话是哪头的意思 坐不住啊",
+      "answer": "别坐不住，先拆成三种读法再对证据：①善意提醒——他真觉得你外面有行情，替你留路；②劝退引导——调整要动你但不想直说，识别特征是「泛泛肯定、没有未来时态」，不提你三个月后负责什么；③试探——想看你有没有二心，好决定把谁放进新架构。判据是行为不是语气：他最近给没给你新题、在调整相关的会上提没提你。拿不准就问，别猜：「这次调整，是扩我的职责还是换轨道？您希望我三个月后负责什么？」——有未来时态的具体答案是①或②，只有「你很有实力」就是②的味道。不管哪种，同步做两件事：悄悄刷新简历、让手头工作留痕（周报、书面交付），内部外部都看。这句话对你最稳的读法是：主动权在自己，两边都不被动。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md",
+        "wiki/synthesis/00-how-to-use.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "老板在群里@我 辛苦了 早点休息[呲牙] 这是真心客套还是话里有话",
+      "answer": "先查基线：老板平时也这么说话吗？平时就这样→中性收尾，不算信号；一向公事公办、今天突然热络→才计入信号。三种读法：①客套收尾，最常见——把中性表情脑补成话里有话是职场emoji误读最大宗；②润滑剂：他刚给你压了活或你刚交了东西，「辛苦了」是垫话，真正的内容通常在逗号之后——这句逗号之后只有「早点休息」，没有新指令，说明没有下文要等你接；③[呲牙]是在软化语气，不想显得像命令。回应只要体面+带一点信息量：「收到，明早十点前把X发群里，您也早点休息[呲牙]」。千万别追问「您是不是还有别的安排？」——把客套读成任务是最亏的回法；也别只回「好的」，回复带信息量才拉高靠谱度。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/zh.md",
+        "wiki/concepts/c13-visual-multimodal/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "下周就终面了 是视频面试 自我介绍还卡在第一句 救命",
+      "answer": "别背「从小到大」，用 KB 的「现在—过去—未来」60–90 秒结构（sc8-zh）：第一句定位「我在做 X」→ 两个证据（「之前主导过 A 和 B，把某个指标从 X 做到 Y」）→ 一句「所以对这个岗位我特别有准备」。JobStreet 的原话：这题构成第一印象，且「别复读 resume」（Maukerja: Jangan ulang apa yang ada dalam resume）——要加一条简历上没有的动机。结尾留钩子（「踩过一个挺有意思的坑，要不您问问我？」），把面试拖进你的领地。视频面专属（Indeed 清单）：测设备、屏幕名改正式、提早登录几分钟——「你第一个进，面试官最后到」；眼睛看 webcam 不看自己的画面；对方沉默多半在记笔记。焦虑峰值在头 2 分钟：把第一句背到肌肉记忆，进门前慢呼吸，峰值过去就顺了（Practice heuristic）。",
+      "pages_used": [
+        "wiki/scenarios/sc8-job-interviews/core.md",
+        "wiki/scenarios/sc8-job-interviews/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "约旦人开会都不看表 我朋友说他们没礼貌 你觉得呢",
+      "answer": "先说结论：不能下「他们没礼貌」这个判决——这是 KB 的硬纪律：禁止「X 国人就是……」句式，国家均值≠个人预测（cu4/core「文化维度批判」）。但「不看表」这个现象本身有个通用框架：Hall 的单时制 vs 多时制时间观（Evidence-backed，UF/IFAS WC498）。多时制语境里时间柔性高，「人际被打断高于日程死板」——多线并行、临时插队谈事是常态而非冒犯，含义是「我把人和关系排在日程前面」。KB 明确把「迟到/不看表」列为高频误读：把它解码成「不尊重你」是单时制者用自己的尺子量人。操作建议：把约定显式化——「几点算晚、议程多长、必须谁到场」直接说清，比各自默默按母文化执行安全得多（Practice heuristic）。至于你朋友说的那批人具体是什么情况，得看行为样本，不看国籍。",
+      "pages_used": [
+        "wiki/cultures/cu4-cross-cultural-general/core.md",
+        "wiki/cultures/cu4-cross-cultural-general/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 只有通用单时制/多时制框架与反刻板印象纪律，没有约旦/阿拉伯会议文化的专项条目或 raw 捕获（Hall 仅把阿拉伯文化作高语境示例一笔带过）；且 KB 规则要求跨文化情境不明时先按 S2 提问库提问，无法直接给出约旦专项结论。"
+    },
+    {
+      "q": "房东说押金'按规定处理' 但合同里根本没那条 我该怎么回微信",
+      "answer": "别问「什么时候退」，那逼不出东西——KB 原话：无期限、无金额的追问不构成催告（sc17-zh）。回法四步（sc17 core+zh）：① 让他把「规定」亮出来：「请您写明按合同第几条处理，条款原文发我一份」——合同里没有的「规定」在你要求落到文字时多半会缩回去。② 要逐项明细：「如有扣减，请列明各项明细、金额与对应照片」——押金只能扣超出正常磨损的损坏，你有权拿 itemised list。③ 带日期和数字：「我于 X 日搬离，今日第 N 天，押金 X 元应于 X 日前退至附上账户」。④ 预告下一步：「如 X 日前未收到退款或书面明细，我将走小额索赔程序，随附全部聊天记录与转账凭证」。最后：全程 WhatsApp 落字、导出完整记录别只截有利段（sc17 core §11）。升级预告比抱怨有成本——KB 案例（constructed example）里发出含程序预告的那条，款项次日到账。",
+      "pages_used": [
+        "wiki/scenarios/sc17-landlord-tenant/core.md",
+        "wiki/scenarios/sc17-landlord-tenant/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "妈妈六十岁刚学会用[捂脸] 但全用错场合 家族群她一发我就尴尬 要不要提醒她",
+      "answer": "KB 的答案很明确：不用提醒，别纠正。sc7-core 原话：「跨代沟通（父母群）里，接受对方的 emoji 用法，不要纠正」；zh lane 的「长辈的微笑 emoji」条目讲透了机制：同一颗表情，长辈语境里就是标准友好表情，同辈年轻人语境里才有阴阳怪气的读法——两代人读法相反，谁都没用错。你的尴尬来自拿你同辈的解码规则去读她的消息；在她那套体系里，[捂脸] 就是「哈哈哈/不好意思」的近亲，是关心和参与感的表达，不是失态。该做的：照常回你的 [玫瑰][强]（KB 建议跟随长辈表情体系），她在家族群里收获的是参与感，这对她是真实收益。唯一的例外：如果某次确实造成了具体误会（比如群里别人当真了），按 KB 对转发类内容的规则——私聊提一句、绝不在群里公开纠正，给她留面子（sc7-zh「转发谣言」条：公开戳穿=让长辈在群里丢面子）。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "爸妈天天吵 我夹在中间快疯了 到底要怎么劝",
+      "answer": "KB 先给你卸掉一个角色：你不是法官，也别当传话筒。sc13-core 的「三角化」条目直接点了你的处境——「夫妻冷战经孩子捎字条」是典型三角化，冲突借你转移而非消解。三条边界：① 拒绝纯传话：「我可以帮你们组织一次当面谈，但我不替你传话」——原样转述气话等于替双方升级；② 拒绝当长期判决者：别评「谁对」，一句「依我看是他不对」你就从中间人变成争端第四方；③ 只提供结构，不提供裁决。具体做法（sc13 家庭调解四步）：先分别一对一听（了解真正的利益——常不是对错，是「被看见、被承认」）；再把指控句改写成需求句（「他就是自私」→「他希望X」，改完让本人确认）；当面谈时先重述再讨论，加面子兜底句「这事你俩都不是恶意的」；谈成任何一条就写下来（谁、做什么、几时），口头协议保质期只有两周。翻旧账时别逐条接——那是情绪信号不是议题（sc3：不站队，给输的一方留面子）。若有暴力或恐惧信号，家庭内调解不适用，转介专业（sc13 §7）。",
+      "pages_used": [
+        "wiki/scenarios/sc13-mediation/core.md",
+        "wiki/scenarios/sc13-mediation/zh.md",
+        "wiki/scenarios/sc3-family-kinship/core.md",
+        "wiki/scenarios/sc3-family-kinship/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我总控制不住跟家人讲话很大声 讲完又后悔 怎么改",
+      "answer": "KB（c3 非暴力沟通与冲突修复）给的路径：1) 冲突升级前先做「自我共情」三问——我现在感到什么？我需要什么？对方可能需要什么？别带着没被看见的怒气回话。2) 爆发后用 NVC 四组件重说：只讲观察不评判（「这周三次你都没回消息」而非「你从来不理我」，绝对词=评判，最易引爆）；说真感受+需要（「我很着急，因为我需要被及时告知」）；用正向具体请求替代要求。3) 感觉上头（flooded）就暂停，但必须带重启时间：「我需要20分钟，8点半回来继续」——否则就成了冷战。4) 讲完后悔属于「修复尝试」：补一个带修复动作的道歉（这次是我急了，具体怎么补），并接住家人递来的橄榄枝（骂归骂菜照夹）。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/scenarios/sc3-family-kinship/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "唉 好累 就想找人说说话 没啥事",
+      "answer": "KB（c4 情绪智力）支持这个需求：累了想说话是正常的情绪需要，不用「没啥事」自我消解。KB 给的可操作点：1) 开口时说清当下要什么——「我现在想吐槽/想随便聊聊，不需要方案」，免得对方跳过倾听直接上课（KB 明确：多数人急着给建议是 sympathy 不是 empathy）。2) 挑会 validation 的听众：好的听者做的是在场（Linehan L1，stay awake）+ 反映式倾听（OARS：「后来呢？」），而不是评判或「这有什么好累的」。3) 想要的话反向用 KB 里那句话给自己留门：「想说话的时候我在。」KB 主要是教你识别和回应别人，从倾诉者侧谈「纯陪伴式聊天」的直接内容不多。",
+      "pages_used": [
+        "wiki/concepts/c4-emotional-intelligence/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 侧重解码与回应他人；缺少「倾诉者自身如何寻求陪伴/自我照顾」的专门条目（无 venting/self-care 场景页）"
+    },
+    {
+      "q": "马来客户说 insyaAllah saya check dulu 然后就没了 这算答应还是委婉拒绝",
+      "answer": "按 KB（cu1 马来文化）三种读法都存在：1) 真诚答应但结果不由人（InsyaAllah=如真主意愿，穆斯林日常高频）；2) 委婉缓冲——马来文化倾向暗示而非直陈，因为直接说 no 让人丢面子，「Saya check dulu / nanti saya bagitahu / saya cuba dulu」正是典型的包装式拒绝或拖延；3) 真的需要先去查。别当它是承诺，也别当铁定拒绝。正确操作（KB 原文）：不追问「jadi boleh ke tak boleh」（当众逼表态会让人丢脸），而是设一个具体跟进点——「Tak apa, saya tanya balik Khamis ni ya」；当天早上礼貌发消息确认（提醒而不催逼）；关键事项自备 Plan B。红线：别把 InsyaAllah 当「不靠谱」嘲笑点，也别拿「你上次说 InsyaAllah 结果没来」对账。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/zh.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md",
+        "wiki/cultures/cu1-malaysia-malay/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我一句话里混中英马三种 eh 那个promo有no deal meh 你看下 这种mixing有啥讲究吗",
+      "answer": "有讲究，KB（cu5 语码转换）管这个叫 bahasa rojak / Manglish 混打，是马来西亚日常语域，不是「不标准」。要点：1) 颗粒词承载态度——你句尾的 meh 是反问质疑（「真的没 deal 吗？」），不是否定；lah/lor 各有软化、不耐烦等固定语义，混语里语气主要靠它们走。2) 语域规则：聊天、同事、mamak 档随便混；正式邮件/对外书面别混，会被读成不专业。3) 匹配对方：对方「send 我」「check 一下」，你回「好，我 check 完 reply 你」最顺；对方突然全中文/全英文（正式化或照顾在场不懂的人），跟着切换，别追问。4) BM 词混进去（boleh、cincai、tapau）是圈层邀请信号；别在马来同事面前把 BM 词当「不标准马来语」评价——rojak 是日常温暖，标准 BM 留给公务。",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Opah saya terus panggil menantu 'kau'. Itu biasa bagi orang tua, atau ada something?",
+      "answer": "Biasa — arah larangan dalam adab Melayu ialah sebaliknya. KB (cu1) menegaskan: golongan MUDA memanggil orang lebih tua dengan aku/kau adalah tabu; gantinya ialah saya + gelaran (pakcik, makcik, Opah). Pitfall yang dinyatakan pun tertulis satu arah: \"Terus terpanggil 'awak/kau' kepada orang tua\" adalah kesalahan pihak yang MUDA. Jadi orang tua memanggil orang muda dalam keluarga dengan 'kau' ialah arah yang lebih diterima — ramai orang tua memang cakap macam tu, ia register keluarga, bukan penghinaan. Amalan lebih lembut tetap 'saya/kau + nama panggilan', dan pegangan KB ialah \"Keraguan? Naikkan panggilan, bukan turunkan\". Nota jujur: KB tak ada entri khusus arah tua→muda ke menantu/mertua, jadi bacaan 'biasa bagi orang tua' ini disimpulkan daripada arah larangan yang tercatat.",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/ms.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 仅记录了「晚辈对长辈用 kau 是禁忌」这一方向；没有专门条目覆盖「长辈对 menantu/mertua 用 kau」的方向与 in-law 语境"
+    },
+    {
+      "q": "My tai kor suruh saya tutup kesilapan payment dia, tapi kalau kena audit nanti saya yang jadi kambing hitam lor. What to do?",
+      "answer": "Jangan tutup senyap-senyap, dan jangan bertindak atas arahan lisan sahaja. KB (sc1-workplace-power): lindungi diri dengan rekod bertulis ber-timestamp — balas emel/WhatsApp: 'Encik, arahan hari ini ialah tutup kes payment X, saya catat macam ni, betul ke?' Kalau dia reply bertulis, arahan ada rekod; kalau tak reply, jangan proceed. Kekal honest — Gabarro & Kotter: 'be forthright about both good and bad news', jangan 'shade the truth'; yang menutup kesilapan akan mengambil risiko, bukan yang melaporkan. Kalau nanti dia menafikan dan serang balik ('siapa suruh awak buat?!') — itu DARVO (c9): jangan rebut siapa mangsa, tunjuk garis masa bertarikh pada pihak yang boleh bertindak. Jangan debat awam (high power-distance — penonton ingat siapa buat gaduh, bukan siapa salah); urus peribadi. Kalau dia tekan urgency 'tutup sekarang!' — standard counter (c9): 'Saya perlukan arahan dalam tulis dulu.' Kalau jumlahnya besar, itu bukan lagi isu komunikasi — dapatkan nasihat luar.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/ms.md",
+        "wiki/concepts/c9-manipulation-defense/core.md",
+        "wiki/concepts/c9-manipulation-defense/ms.md",
+        "wiki/synthesis/00-how-to-use.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB covers the communication/defence playbook fully (written record, DARVO, delay, private handling) but has no Malaysia-specific whistleblowing channel, labour-law or audit-liability escalation path (sc9's regulator map is consumer-only)."
+    },
+    {
+      "q": "Aunty kat pasar tu pushy habis, saya dah cakap 'tak nak, terima kasih' lima kali tapi dia still chase me. How to escape politely?",
+      "answer": "Lima kali tak jalan sebab setiap kali anda beri alasan baru — alasan ialah bahan api. KB ada tiga tools: (1) Tukar game, jangan debate isi (c2): dia sedang pakai FITD/urgency; jawab kali pertama je dengan penuh: 'Saya betul-betul tak beli apa-apa hari ini, aunty.' Lepas tu grey rock (c9): 'Tak nak.' 'Hmm.' — monotone, tanpa senyuman baru, tanpa penjelasan baru. (2) Gerak kaki: jangan berdiri lama depan gerai; satu ayat + langkah, bukan tunggu dia lubuhkan. (3) Menolak jelas di pasar bukan penghinaan (c2/cu1): tawar-menawar itu ritual sosial, tapi 'tak beli' pun normal. Jangan harap senyuman: cu1 merakam bahawa orang Malaysia mengatasi malu dengan ketawa — senyum anda dibaca 'kurang selesa', bukan 'lembut tapi tetap tidak'. Kalau dia kejar: 'Aunty, saya ada janji jumpa orang, saya jalan dulu ya' — jangan bagi 'nanti' (nanti ialah tempat kosong), bagi penamatan muktamad. One consequence executed beats ten repeats.",
+      "pages_used": [
+        "wiki/concepts/c2-persuasion-influence/ms.md",
+        "wiki/concepts/c2-persuasion-influence/core.md",
+        "wiki/concepts/c9-manipulation-defense/core.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "When chatting with my Malay colleagues, when does switching into English come across as showing off or distant?",
+      "answer": "cu5-codeswitching: in Malaysia the default colleague register is bahasa rojak / Manglish — so going into full standard English is itself a signal, not neutral. It reads as distant / showing off when: (1) the group was mixing and you alone shift to acrolect English — the KB notes deliberately speaking only one standard variety often signals distance, formality or dissatisfaction; (2) nothing situational changed (same topic, same people, same mood) — that is metaphorical switching, a re-definition of the relationship, and people will read the re-definition; (3) you 'upgrade' or correct their lah/can/already into proper English — the KB flags correcting mixing as often status signalling, and rojak-purism is a live sensitivity (Zahid Hamidi's complaint is cited). It does NOT read as showing off when the register genuinely changed: client meeting, officialdom, elders, written channel — the double standard is real (friends = mix fine; formal = standard expected, 71%/57% pattern). Working rule (cu5): match the current register, at most half a level more formal, never two; if someone present does not share a language you switch into, translate. Quick test: if the sentence needs a lah to sound normal, dropping it changes the message.",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/core.md",
+        "wiki/cultures/cu5-codeswitching/en.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Macam mana nak minta naik gaji dengan bos saya? Dia memang kedekut, tapi prestasi saya ok.",
+      "answer": "KB ada entry khas ini (sc1 ms lane, 'Meminta naik gaji atau pangkat'). (1) Bawa bukti, bukan emosi: senarai pencapaian tahun ini + rujukan pasaran — 'market reference + delivery list + commitment' tiga-set, dan jangan guna 'lima tahun di sini' sebagai hujah utama (khidmat bukan pencapaian). (2) Boss kedekut selalunya jawab ikut bajet, bukan mutu — bezakan 'tak layak' dengan 'tiada peruntukan'; tanya dua-dua supaya anda tahu mana satu sebenarnya. (3) Minta peta jalan, bukan angka: 'Untuk ke band seterusnya, apa gap yang perlu saya tutup, dan bila kita boleh review semula?' — kalau angka ditolak, anda masih bawa balik roadmap bertulis. (4) Momen: selepas pencapaian yang boleh dilihat, bukan masa dia puncak sibuk atau hujung kitaran bajet. (5) Anchor dulu (c2): sebut nombor pasaran awal sebelum dia anchor dengan 'gaji sekarang cukup lah'. (6) Selepas mesyuarat, emel ringkasan — 'nanti saya tengok' ialah tempat kosong; kunci dengan tarikh. Janji naik pangkat tak muncul dua kali berturut? Mula siapkan langkah lain secara senyap.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/ms.md",
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/concepts/c2-persuasion-influence/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "救命 我明天婚礼 致辞还没写 我英文较差 我妈是印度裔大马人",
+      "answer": "KB 没有现成婚礼致辞模板（这是缺口），但结构工具够用（c16）。今晚照四步做：(1) 结构 10/80/10：先写收尾那一句（祝福新人的一句话），再倒推开场 hook，主体不超过三点——一点关于新娘/你妈妈，一点关于对方家庭，一点祝福。c16 规矩：先定结尾再倒推；收尾那句话逐字写好背熟。(2) 英文差就用降级表达：PREP／「一二三」结构，短句 + 具体名词（人名、日期、一件 60–90 秒的小事），别堆长难句；核心信息原句重复三次。开头坦白式很安全：'My English is simple, but my feeling is not.' 候场出声说 'I am excited'（Brooks 2014：把紧张重评为兴奋比强迫冷静有效），讲卡了继续讲，2–3 分钟唤起自然消退。(3) 妈妈是印度裔：致辞里放一句 Tamil 问候 Vanakkam 是明确的善意信号（cu3：一两句 Vanakkam 已足，不必当众学舌 Tamil 长句）；称妈妈那边的长辈用 uncle/aunty。(4) 婚宴致辞属正式场合 → 用标准英文，别混 Manglish（cu5：正式文书/致辞要标准）。今晚出声念三遍，比默写五遍有用。",
+      "pages_used": [
+        "wiki/concepts/c16-public-speaking/core.md",
+        "wiki/concepts/c16-public-speaking/zh.md",
+        "wiki/cultures/cu3-malaysia-indian/core.md",
+        "wiki/cultures/cu5-codeswitching/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "No wedding-toast template or sample speech in KB (c16 is built around talks/reports/Q&A); no dedicated playbook for delivering in weak non-native English beyond structure + honest opener; cu3 covers Indian-Malaysian etiquette (greetings, uncle/aunty) but not wedding-speech content for the groom/bride's child side."
+    }
+  ]
+}

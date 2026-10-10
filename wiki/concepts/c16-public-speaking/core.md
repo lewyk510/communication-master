@@ -170,6 +170,20 @@ Westside Toastmasters（"Handling the Hostile Crowd"）按未被满足的需求�
 
 权威感（presence）的可拆解成分：**（a）静止的能力**——不必要时不晃、不换脚、不摸脸，静止本身传递掌控；**（b）占据空间**——站姿双脚与肩同宽、手势出框（肘部离开身体）；**（c）视线纪律**——不看屏幕、不看地面、不看稿超过 3 秒；**（d）容错姿态**——口误/忘词时不停顿道歉，直接重说正确版本继续走。`Practice heuristic`：把上台前 60 秒固定化（走到位 → 站定 → 扫视全场一圈 → 停一拍再开口），仪式化的开场动作能把唤起状态的解读权拿回自己手里（配合 §8 的 reappraisal）。
 
+### 18. 场合型致辞：婚礼 / 祝酒 / 年会（快速路径）
+
+*EN gloss: for an occasion toast, write the closing line first, then three points, then the opener — 10/80/10 at a small scale. Simple English beats clever English.*
+
+事件型致辞不是演讲，是「一句话 + 三点 + 一句」。把 §1 的 10/80/10 缩到 2–3 分钟用：
+
+1. **先写收尾那一句**（对新人/寿星/同事的一句祝福），逐字背熟——忘词时先保住结尾。
+2. **主体不超过三点**：一点给主角、一点给与你有共同记忆的人或事、一点祝福。`Practice heuristic`：每点绑一个具体名词（人名、日期、一件 60–90 秒的小事），不要形容词堆砌。
+3. **开场用一句坦白或一个具体画面**（「我英文不好，但心意不少」/「三年前他借我一把伞」）。
+4. **弱非母语降级表达**：短句 + PREP + 具体名词，核心信息原句重复三次；讲卡了继续讲，不要停顿道歉（§17 容错姿态）。
+5. **场合语域**：婚礼/正式祝酒用**标准语**，不混 Manglish（见 [[cultures/cu5-codeswitching/core]]）；若主角家庭有种族背景，一句对的语言问候（如印度裔场合 *Vanakkam*）是明确善意（见 [[cultures/cu3-malaysia-indian/core]]）。
+
+`Practice heuristic`：出声念三遍胜过默写五遍（§16）。
+
 ## Sources
 
 1. Brooks, A. W. (2014). *Get Excited: Reappraising Pre-Performance Anxiety as Excitement*. Journal of Experimental Psychology: General. — https://www.apa.org/pubs/journals/releases/xge-a0035325.pdf （tier 1：arousal reappraisal、"I am excited" 自我暗示、opportunity mind-set）
