@@ -184,6 +184,18 @@ Westside Toastmasters（"Handling the Hostile Crowd"）按未被满足的需求�
 
 `Practice heuristic`：出声念三遍胜过默写五遍（§16）。
 
+### 19. Executive presence 速查：三句能背的
+
+*EN gloss: presence = calm + space + a rehearsed first line. When asked for "executive presence", give three memorisable lines, not a theory.*
+
+`Practice heuristic`（承 §17 presence 四成分）。executive presence / 气场不是表演，是**稳定性**。被要求"三句话能背"时给这三句：
+
+1. **开场**："我先给结论，再给依据。"（夺回节奏）
+2. **被质疑**："这个点值得细看，我的依据是……"（先接住再转向，不辩解）
+3. **收尾**："需要拍板的是 X，我先说我的判断。"（给出确定性）
+
+配套：语速慢半拍、句间停一拍、手出框；把上台前 60 秒固定成仪式（§17）。
+
 ## Sources
 
 1. Brooks, A. W. (2014). *Get Excited: Reappraising Pre-Performance Anxiety as Excitement*. Journal of Experimental Psychology: General. — https://www.apa.org/pubs/journals/releases/xge-a0035325.pdf （tier 1：arousal reappraisal、"I am excited" 自我暗示、opportunity mind-set）

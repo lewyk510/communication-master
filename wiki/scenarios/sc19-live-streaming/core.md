@@ -38,7 +38,19 @@ updated: 2026-10-07
 
 # Live Streaming & Voice Room · 直播与语音房（核心参考）
 
-本页是「直播/语音房」主题的基准参考（zh-first，标准术语保留英文）。覆盖范围：host↔audience（主播↔观众 / 房主↔听友）的双向动力学；parasocial interaction（准社会互动）研究与「illusion of intimacy」；弹幕/blob chat 与 chat rhythm；弹幕和直播 chat 的毒性治理（moderation）；主播端的 boundary-setting（粉丝请求、打赏、过度依附）；语音房（Clubhouse-style voice room）的 turn-taking 规范；直播中的突发危机（crisis on a live stream）；以及把观众转化为社群（viewer → community）。两个视角都写：主播端（怎么读房间、怎么设边界、怎么带节奏）与观众端（怎么读主播的真假、怎么不被氛围带走）。S1（解码弹幕/语音信号、房间氛围、主播意图）与 S2（回应：打赏与不打赏、插话与守麦序、举报与劝退）两条场景码都适用。所有命名研究、量化主张均溯源至 `## Sources` 的 raw 捕获或 URL；无来源的实操建议一律标 `Practice heuristic`；社区轶事标 `anecdotal`。
+本页是「直播/语音房」主题的基准参考（zh-first，标准术语保留英文）。覆盖范围：host↔audience（主播↔观众 / 房主↔听友）的双向动力学；parasocial interaction（准社会互动）研究与「illusion of intimacy」；弹幕/blob chat 与 chat rhythm；弹幕和直播 chat 的毒性治理（moderation）；主播端的 boundary-setting（粉丝请求、打赏、过度依附）；语音房（Clubhouse-style voice room）的 turn-taking 规范；直播中的突发危机（crisis on a live stream）；以及把观众转化为社群（viewer → community）。两个视角都写：主播端（怎么读房间、怎么设边界、怎么带节奏）与观众端（怎么读主播的真假、怎么不被氛围带走）。S1（解码弹幕/语音信号、房间氛围、主播意图）与 S2（回应：打赏与不打赏、插话与守麦序、举报与劝退）两条场景码都适用。所有命名研究、量化主张均溯源至 `### 卖货话术（jualan）：从留人到成交
+
+`Practice heuristic`（兼取 c2 说服与直播行业经验，非统计规律）。上面的 retention 让观众**留下**，这一节让他们**下单**：
+
+- **先给价值再给价格**：开场 30 秒给一个"现在看就赚到"的具体点（限量款、今日价、福利），别一上来喊价。
+- **结构 = 痛点 → 演示 → 证据 → 行动**：说清谁需要、当场演示、给一个证据（销量/回购/实拍），最后给明确指令（"点左下角购物袋，拍下留言尺码"）。
+- **可信的紧迫**：限量/限时/前 N 名加赠——但要**真实**；虚假倒计时被识破，信任和人一起走（见 [[concepts/c9-manipulation-defense/core]]）。
+- **应答成交化**：有人问价别只报数，回"这个价今天只在直播间，外面贵 X"；对沉默观众给低门槛动作（"先关注、先加购"）。
+- **越界红线**：观众逼问住址/隐私时，转移 + 平台规则挡（见"连麦与失控"），热度不换安全。
+
+`Practice heuristic`：成交力 ≈ 价值密度 × 信任 ÷ 阻力；结账/库存疑虑每降一步，成交上一台阶。
+
+## Sources` 的 raw 捕获或 URL；无来源的实操建议一律标 `Practice heuristic`；社区轶事标 `anecdotal`。
 
 ## 一、Parasocial interaction：直播关系的底座
 

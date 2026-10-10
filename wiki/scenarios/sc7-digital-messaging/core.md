@@ -186,6 +186,15 @@ WhatsApp、iMessage 显示"已读/双蓝勾"；微信则只有"已发送"。技�
 
 **constructed example**。第二条给出内容、时间、退出选项，对方一次可回。
 
+### 纯缩写 / 极简收尾消息的解码（ASAP / bye / confirm plus chop）
+
+`Practice heuristic`。英文聊天里几个高频信号：
+
+- **ASAP**：命令式急迫，重点在"别拖"，不是情绪；回一句带 ETA 最稳（"收到，X 点前给"）。
+- **孤立的 "bye"**：多是**对话已结束**的标记，不是冷淡；不必追问。
+- **"confirm plus chop" / "can can"**：Manglish 里"百分百确认、包没问题"的夸张保证——按**承诺**接收，但关键事项仍落文字（见 [[cultures/cu5-codeswitching/core]]）。
+- **孤立 "ok" vs "ok。"**：句号版偏冷或终结（见"句号如何改变读法"）；无句号版多为中性确认。
+
 ## Sources
 
 - The Conversation — When texts suddenly stop: Why people ghost on social media (Dubar, 2022)：https://theconversation.com/when-texts-suddenly-stop-why-people-ghost-on-social-media-171932 （tier 2，含 76 人焦点小组研究与 Pew 数据）

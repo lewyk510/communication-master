@@ -245,3 +245,13 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - Router triggers extended: cu1 += menantu/mertua/opah/kau; c4 += 想被倾听/倾诉/找人说话/陪伴; c16 += 致辞/祝酒/祝酒词/婚礼致辞/toast.
 - **Verified**: 4/5 gap queries now route to the intended topic (Jordan query still pulls to sc6 — router limit, not content); `router-smoke` 32/32, intent 3/3, reach unchanged, `bash tools/check.sh` all green.
 - Takeaway: coverage is strong; failures were narrow missing entries, not structural. Understanding + routing + coverage all hold up on realistic input.
+
+
+## [2026-10-10] eval | Full coverage scan — Round 10 (all 126 remaining real questions)
+
+- Data: `qa/eval/coverage-scan.json` (126 rows) + `qa/eval/COVERAGE-SCAN-REPORT.md`. Method: 14 KB-only agents × 9 questions, each forced to answer from the KB and rate coverage.
+- **Result: 88 FULL / 28 PARTIAL / 10 NONE — 69.8% FULL.** The **10 NONE are all genuinely out-of-scope** (food choice, bank hours, SQL-injection string, turtle training, mortgage maths, Python error, wifi) — a communication KB *correctly refusing* these is scope discipline, not a coverage gap.
+- **6 real gaps (of 28 PARTIAL) filled**: (1) sc19 live-selling sales/close talk; (2) c16 §19 executive presence; (3) c1 showing-off reading; (4) sc1 dual-boss/matrix conflict; (5) sc2/ms proposal-moment tips; (6) sc7 chat-abbreviation/idiom decoding. Router triggers extended.
+- **Grand total Rounds 9+10: 146 questions → 103 FULL / 33 PARTIAL / 10 NONE (70.5% FULL), 0 real no-answer gaps.**
+- **Verified**: `router-smoke` 32/32, intent 3/3, `bash tools/check.sh` all green; several fixed queries confirm correct routing.
+- Takeaway: coverage confirmed at scale; residual gaps are thin and thematic, nothing structural missing.

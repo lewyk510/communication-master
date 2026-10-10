@@ -98,3 +98,4 @@ Each `wiki/<cluster>/<id>/`: `core.md` + `zh.md` + `en.md` + `ms.md`, ≥3 `raw/
 | 2026-10-08 | Backup/portability tooling | `tools/backup.sh` (GitHub push + offline bundle) |
 | 2026-10-08 | GitHub two-track live | private `communication-master-private` (full) + public `communication-master` (no `raw/`); `tools/publish.sh`; leak-guard clean |
 | 2026-10-10 | Answer-quality + coverage test (Round 9) + 5 gap fixes | `qa/eval/answer-quality.json`, `qa/eval/ANSWER-QUALITY-REPORT.md`; cu4/c4/cu1/sc1/c16 content adds + `router.json` triggers |
+| 2026-10-10 | Full coverage scan (Round 10) + 6 gap fixes | `qa/eval/coverage-scan.json`, `qa/eval/COVERAGE-SCAN-REPORT.md`; sc19/c16/c1/sc1/sc2/sc7 content adds + `router.json` triggers |

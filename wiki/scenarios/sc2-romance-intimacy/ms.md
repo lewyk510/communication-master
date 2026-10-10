@@ -193,6 +193,16 @@ Ditulis terus untuk penutur Melayu dengan norma tempatan: ajakan lepak, budaya m
 
 **Examples** — `constructed example`: Gaduh kecil berlarutan tiga hari. A hantar: "Saya tak suka kita diam ni. Nanti saya singgah, belikan awak ayam gunting. Kita cakap elok-elok." (Repair attempt yang kecil, spesifik, dan budaya-sesuai.)
 
+### Momen lamaran: buat ia istimewa
+
+`Practice heuristic`. Soalan "macam mana nak propose" bukan tentang keluarga/restu (lihat atas), tapi tentang **momen itu sendiri**:
+
+- **Pilih masa & tempat yang memang 'kamu berdua'** — bukan tempat bising atau depan orang ramai kalau pasangan pemalu; kejutan yang hormati dia, bukan yang buat dia malu.
+- **Kata-kata ringkas & jujur** menang dari skrip panjang: satu ayat kenapa dia, satu janji, satu soalan. Hafal tiga ayat, bukan sepuluh.
+- **Urus nervous**: label perasaan ("saya memang gementar sebab ini penting"), tarik nafas, ucap perlahan.
+- **Rekod**: minta kawan ambil gambar/video dari jauh — momen ini jarang berlaku sekali.
+- Praktikal: cincin saiz betul (sukat senyap dulu), dan bersedia terima "fikir dulu" tanpa panik.
+
 ## Sources
 
 Kunci tier: 1 = rasmi/akademik; 2 = media/penerbitan mantap; 3 = komuniti/anekdot.

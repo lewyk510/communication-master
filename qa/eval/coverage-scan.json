@@ -1,0 +1,1267 @@
+{
+  "round": 10,
+  "n": 126,
+  "coverage_summary": {
+    "FULL": 88,
+    "PARTIAL": 28,
+    "NONE": 10
+  },
+  "answers": [
+    {
+      "q": "方案被老板当众调坎 还补了句'年轻人要多想' 全场都看着我 到底怎么接",
+      "answer": "别当场自辩——高权力距离环境里当众争辩是双输。KB 给的接法（sc1）：先复述你听到的，再问意图，不先解释。一句：「收到，我想精确改进——您能给我一个具体的场景或例子吗？」把黑话兑换成事件（sc1 zh 绩效评语条目）；或用复述降温：「听起来您担心的是 X 环节，对吗？」（c16 zh）。点一个具体点表态度，其余会后书面跟进，别让沉默过夜。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/zh.md",
+        "wiki/concepts/c16-public-speaking/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "同事甩锅给我 领导真信了 现在我讲什么都像狡辩 怎办啦",
+      "answer": "KB（sc1 core 背锅条目）说得直白：澄清要用「事实核对」语气，不是「自辩」语气。别说「不是我」，改说「我核对一下时间线——我当时的邮件是 X，抄送了谁，日期是几号」。把贡献和动作留在有 timestamp 的书面渠道（邮件抄送、周报），让记录替你说话；对质走私下一对一，不当众开撕——高 PDI 场合旁观者记住的是惹事的人。持续被泼脏水才升级，按 c9 处理。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "两个leader互相卡我资源 一个管headcount一个管预算 两头都要讨好 这要我命",
+      "answer": "KB 有两条可用原则（sc1 core）：(1) managing up 是双向供给线——对每位 leader 主动供信息、可预测性、诚实，换回资源与优先级，讨好不如供给；(2) 办公室政治的稳定策略是「多样性联盟」，不押注单一山头。操作上：把资源请求写成书面 one-pager，同时给两位留痕，让冲突显性化、往上走，而不是私下两头磕头。但「双头管理/资源被卡」本身没有专门剧本，KB 只有原则级指导。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "无「dual-boss 资源冲突/矩阵式汇报被两头卡」的具体条目，只有 managing up 与办公室政治的一般策略"
+    },
+    {
+      "q": "boss讲 lets cirle back 都第三次了 结果一次都没回 这到底是婉拒还是真在忙",
+      "answer": "KB（p1 en \"Let's circle back.\"）三种读法：真延后 / 软埋葬（没人会回）/ 决定挪去别处。第三次落空，大概率是软拒绝。解法不是重问原题，而是锚定：「您看这事是先挂起，还是下周定个时间过？」（同机制见 sc4 zh「再研究研究」、sc1 en \"we'll look into it\"）。再不给时间点，答案就出了：自设 re-escalation 期限或绕道。",
+      "pages_used": [
+        "wiki/playbooks/p1-reply-engine/en.md",
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "拖了三天才回客户的邮件 今天必须处理 怎么写道歉才专业 不要那种一眼模板的东西",
+      "answer": "KB 有道歉科学（sc4 core，Lewicki 2016 六要素）：最重要的是承认责任，第二是提出修复；c3 zh 禁用「对不起，但是…」——but 会清零道歉。骨架：一句认责不列借口 + 一句具体修复 + 新期限，例：「回复晚了是我的疏忽。您的 X 我已在处理，{动作}今天 {时间}前给您。」KB 无「迟复客户」专用模板，例句需按六要素自己拼。",
+      "pages_used": [
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/playbooks/p3-formal-writing/en.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "无客户服务/迟复道歉邮件的专门条目与完整例信，只有道歉六要素+正式信骨架可套用"
+    },
+    {
+      "q": "有人能给我一个拒绝周末团建的措辞吗 领导爱面子不想伤他 but 周六我是真的有安排",
+      "answer": "KB 拒绝四步（p3 en refusal skeleton）：acknowledge → decline → reason → alternative；配 cu2 core 面子机制——间接拒绝，不给对方「被拒」的脸面损失。措辞：先接（「谢谢您组织，我一直想跟」）→ 拒得早、理由私有（「周六家里早定了事，走不开」——不编不细描）→ 给替代（「下次一定到，工作上的事周一一早我优先」）。提前说、不临时放鸽子，面子就保住了。",
+      "pages_used": [
+        "wiki/playbooks/p3-formal-writing/en.md",
+        "wiki/cultures/cu2-malaysia-chinese/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "下周术职报告不会组织 老板说不要流水账要讲impact 有点慌",
+      "answer": "KB（c16 zh）给了全套结构：结论先行（金字塔原理）——开口第一句「先说结论：……」，结论+代价一次说完；然后「汇报就三页：结论、理由、需要你拍板的事」，附录留弹药库。流水账换 impact 的关键：每件事挂一个具体代价/收益数字（「这个坑我们去年踩过一次，成本是两周」），给数据装一张人脸（人名/金额/日期），收尾一页请示页写明要老板拍板什么。注意：是「述职报告」，KB 条目偏汇报/演示，通用够用。",
+      "pages_used": [
+        "wiki/concepts/c16-public-speaking/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "涨薪申请信的英文版怎么开场 才不会看起来像在要挟公司",
+      "answer": "KB（sc1 en raise 条目）：Bring evidence, not emotion——\"Last year I shipped X, Y, Z; peers at this level sit at A–B range; what's the gap to the next level for me?\" 要挟感来自三件事：拿 tenure 说事、用没到手的 offer 威胁、挑老板最差的一周开口。改问 \"What would make me unambiguous for the next level?\"——有地图的拒绝好过没下文的同意。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/scenarios/sc1-workplace-power/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "想跟老板谈调底薪 佣金结构改了以后差距太大 他脾气又爆 要怎么开这个口",
+      "answer": "KB 组合拳（sc1 core + sc10 zh）：别在情绪低谷/季度末开口；脾气爆就用书面+数据降对峙感，先发材料再约十分钟口头。开口走「预算有限」条：承认+转议题——「佣金改后 base 和产出差距拉大了，市场同类在 X–Y；base 动不了的话，签字费或 review 周期有空间吗？」或 calibrated question 抛回：「以我的产出和市场价，这差距该怎么补？」最后要明确时间线。",
+      "pages_used": [
+        "wiki/scenarios/sc10-negotiation-deals/zh.md",
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Boss keep pushing OT to me lah, other colleagues semua can balik on time. I paiseh to say no leh, how ah?",
+      "answer": "KB rule (sc4): a clean no = clear no + short reason + optional alternative; the more you decorate it, the more it sounds like a negotiation opener. So don't paiseh-blur — say: \"This week I really can't OT, got commitment. But I can come early tomorrow to clear it.\" sc1 says a conditional yes (\"Friday data, Monday analysis\") scores higher trust than a forced \"no problem\" — only promise what you can keep. Malaysia is the world's highest power-distance workplace (sc1 core), so pushing back feels scary, but the research says the failure is silent upward communication. Set the pattern once in writing: \"I check messages 9-6; if it's on fire, call me.\"",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/scenarios/sc4-hard-conversations/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "She texted 'I'm fine' but her voice went flat when she said it and she looked away. Is she actually okay or is something wrong?",
+      "answer": "The KB says: trust the tone over the words (c11 — when tone and content clash, people believe the tone), but don't jump to \"she's lying\" — single cues have weight zero (c6), and lie-detection accuracy is only ~54%, so read *state*, not deception. sc4's misread table has this exact case: \"I'm fine\" + tightened voice usually means \"something's up, but I don't want to talk here.\" Don't confront on the spot. Follow up privately later: \"Last time you said you were fine, but I felt something was off — want to talk about it?\" If still unclear, ask an open question instead of guessing (p2 Step 7): \"You seemed a bit down just now, what's up?\"",
+      "pages_used": [
+        "wiki/concepts/c6-nonverbal-subconscious/core.md",
+        "wiki/concepts/c6-nonverbal-subconscious/en.md",
+        "wiki/concepts/c11-paralanguage-prosody/core.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md",
+        "wiki/scenarios/sc4-hard-conversations/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "i always get talked over in meetings lol, my ideas just disappear. how do i make ppl actually listen and say yes",
+      "answer": "KB tools: (1) c15 — airtime imbalance is the #1 meeting killer; force a structure: write your idea first (NGT style: \"let's do silent 3 minutes, everyone writes\"), or ask the facilitator to poll: \"the two who haven't spoken — what do you think?\" Getting the floor via process beats talking louder. (2) sc1 en lane: re-enter non-hostile — \"Adding to that, the data I pulled shows...\" and keep your work on timestamped written channels (email/minutes) so the record exists before anyone speaks. (3) c2: to get yes, ask for advice not opinions (\"advice gets you a partner\"), frame in the other side's interests, and close with decision/owner/deadline. Psychological safety helps most when the leader models it; if yours doesn't, use written pre-reads.",
+      "pages_used": [
+        "wiki/concepts/c15-group-team-communication/core.md",
+        "wiki/concepts/c15-group-team-communication/ms.md",
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/concepts/c2-persuasion-influence/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Nak propose kat girlfriend bulan depan, cincin pun dah beli, tapi nervous gila. Boleh share tips macam mana nak buat moment tu istimewa?",
+      "answer": "KB ada panduan fasa hubungan sebelum/atasi lamaran, tapi tak ada skrip khusus momen propose itu sendiri. Yang KB boleh bagi: (1) restu keluarga hampir wajib di Malaysia sebelum perkahwinan — bincang dengan keluarga dia lebih awal, jangan \"melangkau\" ibu bapa (sc2 ms lane); (2) kalau keluarga awak ikut adat, merisik/meminang boleh jalan serentak dengan cara moden; (3) pilih masa tenang dan peribadi, macam prinsip SPIKES dalam sc4: duduk, tempat tenang, tak terkejar; (4) bagitahu dia awak nervous — \"jujur itu menawan\" (entry kenalkan dengan kawan). Tapi idea-idea kreatif (lokasi, kejutan, fotografi, apa nak cakap) tiada dalam KB.",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/ms.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB tak cover tip praktikal momen lamaran itu sendiri: pilihan lokasi/kejutan, skrip kata-kata propose, pengurusan nervous, atau dokumentasi (fotografi). Yang ada cuma lapisan keluarga/restu/merisik dan prinsip umum pilih masa & tempat tenang."
+    },
+    {
+      "q": "Dapat panggil interview next week. Bila depa tanya 'tell me about yourself' saya memang blank. Boleh tolong practice dengan saya?",
+      "answer": "Boleh! KB sc8 ada jawapan persis untuk soalan ni. Formula \"kini-dulu-hadapan\": 1 ayat posisi sekarang + 2 bukti pencapaian + 1 ayat kait dengan jawatan ini. Contoh struktur: \"Saya eksekutif pemasaran digital, lima tahun urus kempen; engagement naik 70% dalam enam bulan. Sebab tu jawatan ni menarik saya — ada satu keputusan berisiko di sebalik angka tu, awak nak dengar?\" Perangkap: jangan cerita dari sekolah lagi, jangan lebih 90 saat, jangan ulang resume bulat-bulat, dan tinggalkan satu 'hook' tak lengkap supaya soalan susulan panel masuk kawasan awak. Mari practice: bagitahu saya kerja sekarang dan satu pencapaian terbaik awak, saya tolong susun jadi 60 saat.",
+      "pages_used": [
+        "wiki/scenarios/sc8-job-interviews/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Aunty kat pasar tu pushy habis, saya dah cakap 'tak nak, terima kasih' lima kali, dia masih dok follow. How to escape without rude?",
+      "answer": "KB sc4 ms ada entry khas \"cara Melayu berkata tidak\": penolakan berulang yang sama ayat memang tak berkesan sebab kedai bukan relasi yang perlu dijaga — tukar strategi. Struktur penolakan stabil: tak jelas + sebab pendek + jangan hias (ayat berhias akan didengar sebagai buka tawar-menawar). Perangkap KB sebut: \"nanti saya usahakan\" bila maksud hati tak — lebih baik \"tak dapat\" yang jelas. Untuk berulang: garis lembut tapi tetap, sekali saja, tanpa kuliah — lepas tu keluar, kerana orang yang ikut biasanya berhenti bila tiada respons baharu, bukan bila ayat dah lima kali. Jangan beri sebab panjang; sebab panjang = bahan untuk dia patah balik.",
+      "pages_used": [
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/scenarios/sc4-hard-conversations/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Every time we makan outside my friend 'lupa' bawa wallet. How to hint at her nicely to pay her share lah, tak boleh tahan already.",
+      "answer": "KB sc6 ada entry persis untuk ni. Cara lembut dengan sempadan: (1) tetapkan peraturan sekali untuk selamanya: \"Kita lepas ni AA je, minuman masing-masing\" — runding sekali, habis cerita; (2) kalau dia tumpang gurau minta belanja: balas gurau tapi pegang garis — \"Aku belanja Milo ais je, nasi awak bayar sendiri\"; (3) kalau memang selalu: cakap sekali, jelas tanpa drama — \"Bukan kedekut, tapi tiap kali aku yang bayar, tak fairness la\"; (4) guna kalkulator/app: \"Aku dah kira ikut order, link TnG kat bawah\" — nombor lebih meyakinkan daripada perdebatan. Perangkap KB: diam-diam bayar sebab malu, simpan rasa tak puas hati — satu hari meletup, dan orang lain cuma nampak awak yang pelik.",
+      "pages_used": [
+        "wiki/scenarios/sc6-friends-social/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Group assignment ada satu member asyik MIA, submission minggu depan. Macam mana nak settle without jadi drama kat group chat?",
+      "answer": "KB c15 bagi alat tepat: (1) setiap deliverable kena satu hala tuju — guna RACI: Responsible buat, Accountable (seorang je!) jawab, Consultant diminta pendapat, Informed dimaklumkan; ahli MIA biasanya sebab \"Accountable lebih dari satu = takde siapa\". (2) Tutup setiap topik dengan tiga serangkai: keputusan / pelaksana / tarikh — lepas tu tulis dalam satu mesej ringkasan (keputusan dalam chat tamat tempoh 48 jam kalau tak direkod). (3) Peraturan KB untuk isu sensitif: jangan bombard kat group chat — tegur secara berdua (satu-satu), bukan panggil diri di depan semua; dalam group hanya tinggal fakta: \"Bahagian X belum masuk, deadline Khamis, siapa ambil?\" (4) Kalau dia masih hilang, pecahkan bahagian dan bagitahu dengan tenang — rekod pola sebagai fakta, bukan serang peribadi, jadi tak jadi drama.",
+      "pages_used": [
+        "wiki/concepts/c15-group-team-communication/core.md",
+        "wiki/concepts/c15-group-team-communication/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "My aircon sudah rosak 2 weeks liao, landlord keep saying 'esok saya call orang' but never come. Next step how ah?",
+      "answer": "KB sc17 ada entry tepat untuk ni. Next step: (1) tulis satu ayat setiap kali dia kata \"esok\" — senyap mental score tak cukup; contoh: \"Reported [tarikh], you said you'd arrange (screenshot saved). If no one comes by [tarikh+3], I'll arrange a technician myself and submit the invoice under clause [X] of the TA.\" (2) Tambah urgency pada fakta: \"Dah 2 minggu; kalau berpanjangan, karat/bocor akan caj lebih.\" (3) Kalau dia masih diam, betul-betul arrange sendiri dan hantar invoice ikut klausa TA — kerosakan yang landlord wajib baiki tak boleh dilepas ke tenant. (4) Kalau sebab aircon ni awak withholding rent, jangan — bahaya undang-undang; saluran betul ialah Tribunal TTPM. Prinsip KB: janji lisan tak boleh bukti; setiap \"yes\" lisan convert jadi teks WhatsApp.",
+      "pages_used": [
+        "wiki/scenarios/sc17-landlord-tenant/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "gm, plz hlp. my flatemate nvr wash the dishis 2 week alr, i dun wan fight but how to tell him",
+      "answer": "Open with the KB's \"third story\" — the neutral difference, not blame: \"I think we've got different habits about dishes\" beats \"you never wash\". Then the I-statement template (the en lane literally names roommate negotiations): \"I feel frustrated when the dishes pile up for two weeks because I need a clean kitchen — can we set a roster?\" Keep it one countable event, no \"you always\" — that starts an evidence war. End with a small checkable ask: chore chart, or split a cleaner; the flatmate entry warns one \"just this once\" yes becomes the custom. Private, calm, then a short follow-up to confirm the agreement.",
+      "pages_used": [
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/scenarios/sc4-hard-conversations/en.md",
+        "wiki/concepts/c3-nvc-conflict-repair/en.md",
+        "wiki/playbooks/p1-reply-engine/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "hw to tell my dad im moving out wout upsetting him, he very tradisional one",
+      "answer": "KB sequence for negotiating with parents: private, on a good day — never at the big dinner. (1) Give face first: \"I know you all worry about me.\" (2) Anchor the shared goal: \"I also want you to have peace of mind.\" (3) Offer a concrete alternative that treats the real fear: video-call schedule, safe condo, visit plan. (4) Leave a retreat clause: \"Give me six months — if it doesn't work out, I'll listen.\" Decode \"you're still young, listen to us\" as fear plus decision-rights, so catch the fear first and shrink the dispute to one concrete item (e.g. a savings floor). Stay warm everywhere else; consistent calm beats one dramatic showdown.",
+      "pages_used": [
+        "wiki/scenarios/sc3-family-kinship/core.md",
+        "wiki/scenarios/sc3-family-kinship/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Balik kampung tiap Raya my mak mesti cakap 'aiyo dah gemuk la you'. Every. Single. Year. How to not let it spoil my mood the whole trip?",
+      "answer": "Read it as habit, not malice — the KB says recurring family intrusion is \"habit never blocked before\", so no showdown at the table. Response ladder: (1) light humour deflection — \"Ala Mak, gemuk sikit baru muat baju raya\"; (2) for the \"just joking\" dig, hold the line lightly once, then change topic: \"That one retired lah. Kuih mana sedap tahun ni?\"; (3) one calm boundary sentence repeated identically every year beats a big fight; (4) keep warmth high everywhere else (festivals, food, visits) so the boundary isn't love-withdrawal. Internally, swap the mental replay for one action line — the self-talk page's fix for the 3 a.m. rerun.",
+      "pages_used": [
+        "wiki/scenarios/sc3-family-kinship/core.md",
+        "wiki/scenarios/sc3-family-kinship/en.md",
+        "wiki/playbooks/p1-reply-engine/en.md",
+        "wiki/concepts/c14-self-talk/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Opah saya terus panggil menantu 'kau'. Itu biasa bagi orang tua, atau ada maksud tersirat dia tak berkenan?",
+      "answer": "Biasa sahaja — arahnya betul. Dalam register keluarga Melayu, orang tua memanggil yang lebih muda dengan \"kau\" — termasuk Opah kepada menantu atau mertua kepada menantu — adalah biasa dan mesra, bukan tanda tak berkenan. Larangan bahasa itu satu hala: anak/pinetu yang memanggil orang tua \"aku/kau\" barulah kasar; yang muda patut guna \"saya\" + gelaran (Opah, Mak Long). Jadi jangan baca ia sebagai sinis. Tandanya lain kalau ada: Opah jarang bergurau, jawab sependek-pendek, atau jauhkan diri — itu isyarat hati, bukan panggilan \"kau\" itu sendiri.",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/core.md",
+        "wiki/cultures/cu1-malaysia-malay/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Live jualan saya lambat, penonton tinggal lapan orang. Macam mana nak bercakap supaya mereka tak keluar dan terus bertahan?",
+      "answer": "KB ini ada cara pegang penonton, bukan teknik jualan (closing/urgensi tiada). Ikut lane BM sc19: (1) ekonomi pengiktirafan — sebut nama penonton, \"X, masuklah\", kos rendah kesan besar; (2) ganjaran terkuat untuk penonton biasa ialah diingati — sebut semula apa dia kata minggu lalu; (3) kraf parasosial: sapaan terus, aliran small talk, \"reliable sameness\" — rentak tetap mencipta rasa hubungan bersemuka, dan jangan janji keintiman palsu untuk pancing hadiah; (4) bina tangga komuniti lurker → biasa → penyumbang → ahli, beri ritual setiap anak tangga. Nilai bilik ikut anak tangga 3–4, bukan jumlah chat — lapan yang setia boleh jadi teras.",
+      "pages_used": [
+        "wiki/scenarios/sc19-live-streaming/ms.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB covers attention/retention craft (recognition, parasocial mechanics, community ladder) but has no sales-livestream techniques: pitching, closing, urgency, or conversion talk for jualan."
+    },
+    {
+      "q": "我 boss 讲 'next time lah' bila saya minta leave. 到底 he 答应了还是没有? How ah?",
+      "answer": "大概率没答应。KB 把 \"next time la\" 列为面子文化的软拒绝，三种读法：礼貌性 no / 真 maybe / 有难处的 yes——直接说 no 在面子文化里对双方都贵，所以他挑了最不伤人的说法。验法：别当场逼答案（\"just tell me yes or no\" 会把软 no 变成关系擦伤），事后文字跟进一次留台阶：\"No pressure, but if 那两周可以我提前排 work\"。规则：出现第二个软 no，就是 no，别再问。想拿真答案就把话换硬一点：\"那哪一段时间请比较合适？\" 给得出具体日期才算 yes。",
+      "pages_used": [
+        "wiki/cultures/cu2-malaysia-chinese/en.md",
+        "wiki/scenarios/sc1-workplace-power/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "When chatting with my Malay colleagues, when does switching into English come across as showing off or being distant? Any rules of thumb?",
+      "answer": "The KB's core rule: in a rojak society, deliberately sticking to one standard language often signals distance, formality, or displeasure — the switch itself is a social signal, not a language skill. Rules of thumb: (1) match the room's register — half a level more formal is safe; register-blind is the real offence; (2) switching to a shared language is solidarity (\"I'm one of you\"); staying in English while everyone's in BM reads as standing apart; (3) with elders/senior Malays keep formal BM or standard English, corrections and disagreement go private, one-on-one; (4) in meetings and client emails, standard English is expected — dropping it there reads unprofessional. Temperature check: does the group code-switch back at you?",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/core.md",
+        "wiki/cultures/cu5-codeswitching/en.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Eh you watch that new KL crime drama on Netflix? Episode 3 twist gila babi!",
+      "answer": "That's a chat bid, not a quiz — answer with texture, not a yes/no. KB rules: openers get answered with a reason or story (\"Watched! Episode 3 tu tak sangka dia yang buat — you team siapa lagi?\"), then hand the turn back with a question. Match the register and the particle system — Manglish back, \"gila babi\" and all — that's the in-group signal; replying in stiff English misses the mood. If you haven't caught up, own it cheerfully and guard the spoilers: \"Belum sampai episode 3, jangan spill!\" Banter stays light; no lectures, no one-word replies that kill the thread.",
+      "pages_used": [
+        "wiki/scenarios/sc5-networking-first-impressions/en.md",
+        "wiki/scenarios/sc6-friends-social/en.md",
+        "wiki/cultures/cu5-codeswitching/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Nasi lemak or roti canai for breakfast? Quick, deciding now.",
+      "answer": "Honest answer: this KB is about communication — subtext, conflict, culture, replies — and has nothing on choosing breakfast, so I can't give you a KB-grounded pick either way. The nearest thing it offers is that food is a legit small-talk bridge topic, but that's about chatting, not deciding. For the nasi lemak vs roti canai call itself, you're on your own — I won't invent an answer the KB can't back.",
+      "pages_used": [],
+      "coverage": "NONE",
+      "missing": "The KB has no food, preference-decision, or daily-choice content; nothing in concepts/scenarios/cultures addresses picking between breakfast options."
+    },
+    {
+      "q": "What time does the Maybank branch at KLCC close today?",
+      "answer": "This KB is a trilingual communication knowledge base (subtext, replies, workplace, refusal letters) — it contains no bank branch hours, no Maybank branch data, and nothing on KLCC. Please not ask the branch on its official line or maybank2u; this KB cannot answer it.",
+      "pages_used": [],
+      "coverage": "NONE",
+      "missing": "The KB has zero content on business/branch opening hours or any factual lookup of this kind; closest topic is sc9-live-service (complaint phrasing), not store hours."
+    },
+    {
+      "q": "已读不回",
+      "answer": "三种读法：1) 看到了、被事情岔开；2) 重要问题在想怎么回；3) 委婉的拒绝，用沉默代替「不」——ghosting 研究显示很多人只是缺乏拒绝的沟通技巧（Evidence-backed，Dubar 焦点小组，见 core.md）。回应：非紧急就等一个对方平时的回复周期再补；紧急就补一条带新信息的消息（「来不及也没事，我先按 X 推进」）；暧昧期反复已读不回 → 降低投入，按对方实际行为校准期待。别直接读成「讨厌我」。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/scenarios/sc7-digital-messaging/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "怎么拒绝",
+      "answer": "KB 给的模板：温和拒绝 = 一句理由、不展开、不连发「不好意思」（连发三个「不好意思」会把拒绝变成求饶）。示例句：「这周末有安排去不了，周一我提前到补进度。」「这事我让不了，但您的情我记下了，别的事随叫随到。」也可以给有条件接受：「今天可以，周六不行。」、将自己设底线：「如果年内没有明确答复，我会按另一个方案规划。」上级/长辈当面追问会损双方体面，用「约时间结结论」更稳。",
+      "pages_used": [
+        "wiki/playbooks/p1-reply-engine/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "……",
+      "answer": "半句「……」或句尾省略号 → 低承诺试探（读情绪练习里明确标注）；对方在克制表达（deamplification），像「周末聚餐能不能不去啊……」。同族信号：单字「嗯」和单发「哦」也多读作敷衍/想收尾，「哦哦」才是软的。回应：话题重要就点破情绪层（「你好像不太想聊这个？」），不重要就贴图体面收尾；自己别用单「哦」收人。注意 KB 对「……」只有一条直接判读，其余靠相邻条目外推。",
+      "pages_used": [
+        "wiki/concepts/c4-emotional-intelligence/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "No dedicated entry for the bare ellipsis reply; KB has only one line (低承诺试探/deamplification) plus adjacent single-word/单「哦」 entries to lean on."
+    },
+    {
+      "q": "？？？",
+      "answer": "连串问号是焦虑/压迫信号：KB 对「怎么不回？？」这类消息的判读是「发送方焦虑外溢；接收方感受到压迫」，用「？」轰炸表现在乎在早期关系里降低吸引力与回复意愿；发送侧也是一样，「hello??」「you there?」读作压力。若是你收到「？？？」：先当对方在追问/困惑，补一条确定的新信息而不是情绪。若是你想连发：停，等一个正常回复周期，补东西必须带新选项。注意：KB 有「？？」场景条目，但没有单独的「？？？」条目。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/scenarios/sc7-digital-messaging/en.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "No entry literally named 「？？？」; the reading is assembled from 连环追问（？轰炸）and double-texting \"hello??\" entries."
+    },
+    {
+      "q": "OK??",
+      "answer": "Two layers. Bare \"ok\"/\"k\": widely read as cold, annoyed, or done with the conversation (\"k\" alone is community-rated a low-blow; \"ok!\" or \"will do\" reads neutral-warm). The \"??\" on top reads as anxious pressure/confrontation — double-texting with \"?\" reads as pressure, not curiosity. If it follows an emotional message, address the temperature directly: \"That felt short, are you annoyed?\" If purely transactional, let it close and don't fire back another \"k\". Cross-generational note: a boss/parent's punctuation may mean nothing at all.",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "!!",
+      "answer": "Exclamation marks are the cheapest warmth token: \"sounds good!\" is friendlier than \"sounds good\" with identical words — so \"!!\" usually = high warmth/enthusiasm. But context rules: a sudden burst of exclamation marks in a normally flat thread can read as sarcasm; in a disagreement, punctuation escalation escalates the fight. Match the other person's exclamation density (going from zero to three reads off). Cooling down? Strip punctuation before rewriting any words.",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我老板在开会时说'这个想法很有趣' 是不是其实в否定我",
+      "answer": "三种读法：1) 真有兴趣（少见，特征是有追问）；2) 礼貌停靠：不知道怎么处理，先 parking；3) 敷衍性轻赞（damning with faint praise）/留到日后婉拒。判读关键：**没有追问 = 没兴趣**；会场上没人 follow up 你的想法，就当是 2/3。正确动作不是自我否定，而是把模糊话转成具体标准：「要什么条件您才 fully 支持？」「先做 phase one 排期给您？」一周内看他的实际行为而非这句话。Pitfall：把「有趣」当成绿灯。字面不是否定，但没有追问就是缓期的不。",
+      "pages_used": [
+        "wiki/concepts/c1-subtext-implicature/en.md",
+        "wiki/scenarios/sc1-workplace-power/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "摩羯女突然不回我消息了怎么办",
+      "answer": "KB 的立场：星座是民俗刻板印象，占星没有可验证的预测力（c8 引 Carlson 1985 Nature 双盲实验），别用「摩羯」给具体的人下结论——答案要从她的行为找，不能从星盘找。行为层：突然不回属于「已读不回/突然沉默」，三种读法：被事情岔开、需要时间组织回复、委婉拒绝。做法：非紧急等一个正常回复周期；补一条带新信息/新选项的消息（不追问情绪）；暧昧期连续两次冷处理即停，换时间换通道；反复不回就降低投入，按实际行为校准期待。别连环「怎么了？？」轰炸。",
+      "pages_used": [
+        "wiki/concepts/c8-astrology-heuristics/zh.md",
+        "wiki/concepts/c8-astrology-heuristics/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "他吃醋的样子好可爱哦（笑",
+      "answer": "KB 的基准读法：嫉妒是信号，不是指令。它只说明三件事之一——你在乎/他在乎、关系里有某个具体的不确定处、或是控制欲的前兆。「可爱」是你在欣赏这个信号，但别把它当梗一直逗（_QUERY 查手机、试探、限制社交）——把嫉妒当行动指令几乎总是破坏性的。可走的还嘴：轻打一轮就具体化（「你吃哪门子醋，说个具体情境」），刚说完就查岗审问那才是危险信号，可爱归可爱、边界照立。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "哇 你're SO good at 直播带货 一定赚到很多钱吧 😊",
+      "answer": "这句是标准的表面夸、实则带钩子。按 KB 三层读法：事实层是赞美，成一层是「一定赚到很多钱」在给你定标签，一致层看他平时对谁都这样还是只对你。候选读法：(1) 阴阳式的讽刺（类比 KB 里的「Good for you.」反语模式）；(2) 真好奇+玩笑；(3) 预期交换的试探（直播语境里，钱话题≈在测你的底价/对你的定义）。回应选项：不接钱硬辩，轻打+自定框架（「够吃饭啦，主要图个乐」），然后观察他后面跟不跟刺——跟刺就是 Reading 1。",
+      "pages_used": [
+        "wiki/scenarios/sc19-live-streaming/zh.md",
+        "wiki/concepts/c1-subtext-implicature/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "extinction. 全人类都用英文思考 所以学手势没意义 对吧",
+      "answer": "「对吧」是在求附和，KB 的工具是拆前提而不是直接否定：这句的结论建立在两层前提上——「全人类都用英文思考」（未经检验的绝对化/hasty generalisation）和「手势只是语言的附属品」。别只甩「你这是以偏概全」五个字，要问样本怎么来的：有证据全人类都用英文思考吗？第二个前提 KB 给反证方向：非语言信号是「看得见但不说话」的独立信息系统（手势、停顿、姿态自成一路），读人本来就要双通道。术语 extinction（语言消亡？）和这个论断本身 KB 没有专页，直接证据缺，所以只能给拆解方法不给终判。",
+      "pages_used": [
+        "wiki/concepts/c18-propaganda-fallacies/zh.md",
+        "wiki/concepts/c6-nonverbal-subconscious/zh.md",
+        "wiki/concepts/c18-propaganda-fallacies/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 没有语言相对论（语言影响思考）或语言消亡/extinction 的专页，无法直接裁决该前提；只给了谬误拆解与非语言信号独立性的材料"
+    },
+    {
+      "q": "要我直接告诉他 我失恋了她跟我没关系 对吧 这种说法可以吗",
+      "answer": "KB 的 Wording 原则：清楚大于委婉，但这句话本身是矛盾的捆绑——「我失恋了」和「她跟我没关系」放在一句里，对方会优先解码你想撤回的那半句，反而留下辩论接口。分开说干净：要么「我们结束了，我需要一段时间不看这事」（明确的不+不解释原因+停止接触），要么按边界模板「当 X 被提起时，我需要 Y」。不安排「做朋友」这种止痛药替代，除非你真愿意。他追问原因时重复同一句即可，换说法就是新辩论。你原句里两个信息互相打架，所以不建议原样说。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 没有针对『向第三者/知情者声明失恋状态』这句话式本身的专条；给的是拒绝与边界的通用原则，具体场景拟合靠你自己套"
+    },
+    {
+      "q": "我 table flip 了 老板就把我叫进房间 说是 Signalokışı olmaz",
+      "answer": "情绪爆炸后被 boss 叫进房间，KB 的流程是：修复要早、隔天用低压力渠道再试都合法。有效道歉六组件（到 [c3 core] 156 节）：认责任、说明白哪里错（用 SBI 式的观察链，不给形容词请补全为：不给形容词）、不跟「但是」。禁用「对不起，但是……」——那是折扣道歉，主句其实是转折。职场侧：把对话拉回流程（下一步、时间表、是否书面记录），部门的 room 谈话带上 IC/HR presence 时留痕意识更重要。修复成功率取决于平时关系存款，一段对话救不回长期信用——之后几周用说到做到的小承诺补。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/scenarios/sc1-workplace-power/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": "消息尾部文本疑似编码错乱（土耳其语），KB 按通用『失控后向老板修复』处理"
+    },
+    {
+      "q": "可以教我 executive presence 吗 不要理论 只要三句话能背的",
+      "answer": "KB 没有 executive presence 这个专页，给不了现成的三句冠名课，但可背的三句都出自它的职场页：(1)「我理解优先级是 X、交付物是 Y、deadline 是 Z，对吗」——接管模糊任务的确定性；(2)「有个问题 + 我的初步判断/止损动作 + 我需要你拍板什么」——坏消息三句，先事实后情绪；(3) 异议三段式：「我们都想……→ 数据指出……→ 如果维持原案我全力执行」。这三句的机制（供给信息、先事实后情绪、交回决定权）就是 KB 侧的 presence 模型。会前先送书面、会中不带形容词地讲观察链，是气场可操作的核心。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/concepts/c16-public-speaking/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 没有以 executive presence / 气场为专题的内容（storytelling、voice 等都散件），只能用 managing-up 与汇报话术拼出可背句"
+    },
+    {
+      "q": "他被裁员的 financial 当天还来帮我搬家 是不是圣母",
+      "answer": "先给判断框架不给人格判决。KB 的反模式是「突然翻旧账式付出」——付出要成为勒索，需要对方拿它做筹码（「你知道我为你付出了多少吗」）。这位是：自己当天刚被裁、主动来、没等你请、也没提条件——读法一：真心朋友；读法二：裁员后的缓冲需要（有事做比落空强，帮助别人本身就稳情绪）；读法三：情感记账，但要观察他之后有没有翻账再说。你的动作：收下+一句到位的感谢，别当场拒绝成「你都被裁了还帮我」——对方刚丢了收入，重提就是扎心。他没开账单，你也别急着替他预支圣母。",
+      "pages_used": [
+        "wiki/concepts/c9-manipulation-defense/zh.md",
+        "wiki/concepts/c1-subtext-implicature/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 没有直接讲『利他行为怎么解读』的专条；判读框架是反推来的（付出什么时候不是债），正面动机学（receivers 也欠航道）覆盖薄"
+    },
+    {
+      "q": "妈妈生日快乐 我在code review走不开 你先切cake吧",
+      "answer": "KB 对家人暖度的基准：节日、生日这类非冲突区要保持温暖——缺席可以，但缺席+零补偿会被读成「人不在=心不在」。妈妈端读法大概率是想念加一点委屈（类比「最近怎么不回来吃饭」的机制：表面是陈述，底下在等一个具体的时间承诺）。所以这句的补法：把「你先切cake吧」换成具体替代——补蛋糕的视频连线时间（「十分钟后我上楼视频陪你切」或「礼拜六我补一场」），外加把物理到场挂到日历。马上能做的一件小动作，胜过解释 code review 有多忙；解释是给她加班，承诺才是给她确定性。",
+      "pages_used": [
+        "wiki/scenarios/sc3-family-kinship/zh.md",
+        "wiki/scenarios/sc3-family-kinship/en.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 没有 birthdays 专条（zh lane 无生日缺席目），只化了「非冲突区保持温暖」与家人消息解码的通则"
+    },
+    {
+      "q": "lah",
+      "answer": "颗粒词之王，只能这个待遇。It simultaneously asserts a position and entices solidarity——同时表立场又招你入伙。起源多源并存（Malay 句尾 -lah 软化命令、粤语「啦」、泰米尔也有用法），功能上：祈使句缓和语气（Drink lah 不是催是热邀）、Yah lah/No lah 让否定不冲、表安心（Don't worry, he can do it one lah）。两个坑：不能用在 yes-no 问句；「Okay lah」常是「勉强/算了」不是「很好」。读法跟语调走，不能只看字面。回复策略：闲聊里回一句 lah 是入圈信号，正式文件里收起来。",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/core.md",
+        "wiki/cultures/cu5-codeswitching/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Must lah confirm plus chop",
+      "answer": "KB 能解码那句里的 lah：en 车道讲明末端 lah 是 warm/solidary，断立场同时邀你同意；「okay lah」常是 resignation，不是兴奋。所以「Must lah…」读作熟人间的强调确认而非冷淡。但「confirm plus chop」这 Manglish 成语本身 KB 没收录，只能按 lah + context 推它是「板上钉钉」式确认。建议照匹配精神回应一个同样带颗粒词的确认句（en.md 策略：不确定时用自己的语气词重述确认）。",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/en.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无「confirm plus chop」成语条目；只覆盖 lah/leh 等 Manglish 机制"
+    },
+    {
+      "q": "我的 kako 姐姐每次 video call 都要 show off 她的 diamond ring",
+      "answer": "KB 没有炫耀/婚戒/攀比的专门条目。只能套通用解码法：同一条信号至少给三种读法——分享喜悦（新婚/新物想被见证）、维系社交仪式性话题、确认自己在亲属圈里的位置；别一上来就定贪慕。回应建议也就给两条：顺着具体细节夸一句（成本最低、给足面子），或把话题引到共同经历。想做完整判断需要 KB 补「showing off / 面子与比较」条目。",
+      "pages_used": [
+        "wiki/concepts/c1-subtext-implicature/zh.md",
+        "wiki/scenarios/sc15-calls-video/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无炫耀/showing off、婚礼展示、亲属攀比信号的专门解析"
+    },
+    {
+      "q": "ASAP bye 不用回",
+      "answer": "KB 的判断框架：Chat = 碎片、缩写、即时（sc7 core），所以 ASAP/bye 这类缩写先按语域读，别按字面焦虑读。KB 对「不用回型」消息的立场很明确：那是发件人留零负担通道、不催复的善意（sc6/zh「不用回这条」用法），收件人可以轻松晚些回甚至不回，不算失礼。具体「ASAP」「bye 如不回」这类英文缩写逐词解码表 KB 没有建。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/core.md",
+        "wiki/scenarios/sc6-friends-social/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "缺英文聊天缩写（ASAP/bye 等）逐词解码条目"
+    },
+    {
+      "q": "Ru космической станции на орбите(','');DROP TABLE topics;--",
+      "answer": "这句不是沟通问题，是带 SQL 注入片段的混合字符，KB 里没有也不该有对应内容。按规则我不编造：回答不了。若你其实是想问某句俄语消息的意思，把消息正文（不带注入片段）发来，我用潜台词解码器帮你读。",
+      "pages_used": [
+        "wiki/synthesis/00-how-to-use.md"
+      ],
+      "coverage": "NONE",
+      "missing": "非人际沟通/语码内容，KB 无任何相关条目"
+    },
+    {
+      "q": "怎么让我的乌龟学会握手",
+      "answer": "这个 KB 全是「读懂人＋写好回应」：潜台词、说服、冲突修复、文化语用、正式写作、AI 提示。动物训练完全不在覆盖范围，我不凭空答。唯一沾边的建议是 meta 层面的：把目标写具体（情境＋可观察行为）这种表述原则来自 AI 提示词页，对 instructional 清单或许有一点点用，但训练 乌龟本体知识缺位。",
+      "pages_used": [
+        "wiki/synthesis/00-how-to-use.md",
+        "wiki/playbooks/p4-ai-prompting/en.md"
+      ],
+      "coverage": "NONE",
+      "missing": "KB 不含动物训练 / 兽医 / 行为矫正内容"
+    },
+    {
+      "q": "我的冰箱在夜里唱歌",
+      "answer": "KB 答不了物理/家电：整个库 42 个主题都是人际沟通（从潜台词到马来西亚礼仪），没有家电维修、噪音排查或任何工程内容。它唯一可能「回应」的是怎么跟楼里邻居写那句投诉/知会信——那是 p3 正式写作的车道。若要那封 formal letter，告诉我收件人（物业/室友/房东），我按 KB 写。冰箱本身，请查维修渠道，不猜。",
+      "pages_used": [
+        "wiki/synthesis/00-how-to-use.md"
+      ],
+      "coverage": "NONE",
+      "missing": "无家电诊断/维修/噪音话题；仅正式投诉信写作沾边"
+    },
+    {
+      "q": "打开 双 h 通道 我要和我的潜意识开会",
+      "answer": "玩笑话，但 KB 确有自我沟通这一条线（c14 自我对话）：「把心里话写下来」「三行睡前复盘」「睡前反刍怎么停」就是和潜意识开会的现实版本——不劝你玄学双通道，给三件可落地：1) 118 行附近表达性写作，把会记成本上；2) 反刍条目专门处理夜里大脑开会；3) 用名字自我对话降低情绪温度。比喻读法 sans 神秘框架，全是这点。",
+      "pages_used": [
+        "wiki/concepts/c14-self-talk/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "无潜意识/催眠/α 脑波类概念；只有自我对话的实务方法"
+    },
+    {
+      "q": "The mitochondria is the powerhouse of the cell. 帮我 transcribe 这个",
+      "answer": "这句已经是纯文本，没有需要转写的对象；而 KB 的范围没有语音转写工具或生物学内容——p4 里那位「meeting transcript 变 prose」是反向用法（从 transcript 提结构），cover 不了这里。所以按 KB 只能回：没有可转写的东西，也缺转写能力。若你是想测试我代笔，那给我原始素材（语音/音频/会议记录），KB 的 p4 提示词部分可以处理摘要与重写。",
+      "pages_used": [
+        "wiki/playbooks/p4-ai-prompting/en.md"
+      ],
+      "coverage": "NONE",
+      "missing": "无语音转写（speech-to-text）能力条目，输入本身非语音"
+    },
+    {
+      "q": "我前任把我删了 但又给我的 LinkedIn 每条动态点赞 So what is he saying",
+      "answer": "KB 的社媒信号条目直接适用：点赞是最廉价的投入，「几乎不构成兴趣证据」；私聊层面的主动开启话题、追问你，才是真信号。被删后又来点赞，常见读法有三：1) 保持窗口性存在（低成本不承诺）；2) 好奇身分发展，不必然想重联；3) 习惯顺手，无深意。回应建议：把社媒当播种不当主战场，别逐条做互动审计——「他给谁点赞没给我点」是焦虑驱动、信息价值极低。想验证他意思，用一次具体核验（私下接触一次）再定性，不靠点赞数据推论。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/zh.md",
+        "wiki/concepts/c1-subtext-implicature/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "刚下视频会 客户在会上当场发飙说拿他当冤大头 我是主持的 现在到底要怎么补救啊",
+      "answer": "KB 的 frontline 侧增量：先放完 60 秒不打断，再标记情绪（「听得出来这次真的很耽误您，我先听完，再来解决」）；把怒气复述成事实清单（订单、问题、他要什么），用信息置换音量；千万别说「你冷静一点」。客户说被当冤大头＝威胁/指控，把它翻译成需求：「您要的是（退款/重做/解释），对吗？这个现在就能办。」超权限就给明确通道和时限。会后书面补一件具体修复动作，别只道歉——只有道歉没有方案的场次是第二波怒气的标准来源。给自己一个 caucus 式暂停也合规：「我们先停十分钟。」",
+      "pages_used": [
+        "wiki/scenarios/sc9-live-service/zh.md",
+        "wiki/scenarios/sc9-live-service/core.md",
+        "wiki/scenarios/sc13-mediation/zh.md",
+        "wiki/concepts/c16-public-speaking/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "要跟跟了我三年的下属谈话 他绩效没达标 要进cut名单 这人还蛮拼的 怎么开这场话",
+      "answer": "KB 有完整辞退脚本（SHRM）。前提是流程已走完（口头/书面/最终书面警告俱全）。开场：私密场合、坐下来、直接 AND caring、马上进正题——「我们围绕你的绩效谈过好几次，很遗憾，今天需要结束你的雇佣关系。」理由段三件套：重述干预过程、体认他的努力（「我知道你一直在拼，我领情」）、归因于匹配而非人格（「岗位需求和你的长处不匹配」，不是「你不行」）。收尾给退场选择：现在收拾/错峰回来/公司寄送，问一句要不要跟同事道别。全程 15 分钟内，语气克制——你的态度决定他日后能不能体面回忆这段。他情绪上来先接情绪（「我看见你的情绪了，这很正常」）再谈内容。",
+      "pages_used": [
+        "wiki/scenarios/sc4-hard-conversations/core.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "下周就终面了 是视频面试 自我介绍还卡在第一居 救命",
+      "answer": "35–60 秒结构：现在一句、过去两证、未来一句——「我在做 X，之前主导过 A 和 B，所以对这个岗位特别有准备」。绝不复读简历原句，加一条简历上没有的动机或细节；结尾留钩子（「踩过一个挺有意思的坑，要不您问问我」）把面试拖进你的领地。video 面：眼线看镜头不看自己的画面；对方静默多半在记笔记，别慌；被抢话是延迟造成，主动让轮「您请说，我说完这句就停」；断线重连第一句「抱歉，是我这边网络，我们继续刚才说的 X」。坑：背户口史从小学讲起、超 90 秒、结尾说「就这些」。",
+      "pages_used": [
+        "wiki/scenarios/sc8-job-interviews/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "行业酒会全是不认识的人 太考我这种i人了 握手交换名片完就站角落 给点实际能用的开场",
+      "answer": "KB 的低风险开场：1)「你也是第一次来吗？」——同是新人天然同盟，承认证就把姿态放低、话语权给对方，或委托式请求「待会带我去认识下会长」。2) 环境当第三方话题（「今天这地方比上次好找」），零风险不评人。3) 自我介绍压一句：名字＋做什么＋好接的钩子（「我做设计，最近在做茶餐厅的整套视觉，你们公司物料有需要吗？」）。4) 有人问「你是做什么的」就行业＋具体动作＋好接的尾巴，别回「就打工啦」。退出用「回头微信上联系」＋当场种跟进钩子（「我把那本书名发你」）。称呼拿不准先高后低（Puan/Lim 经理），对方说叫英文名再降级。",
+      "pages_used": [
+        "wiki/scenarios/sc5-networking-first-impressions/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "团队群里的消息个个已读不回 线下碰到又热络得很 这是嘛情况 我群规也没立错啊",
+      "answer": "KB 机制：群里冷、线下热，很常见。读法三种：1) 责任稀释——人人被 @ 等于没人被 @，不是关系问题；2) 请求不清（没写清谁＋做什么＋何时要）；3) 通道习惯差异：「不秒回＝不尊重」是主流误读，频道习惯不等于态度。解法：把群体消息点名化（「@李四 你那边有上周的表吗？下班前」），责任落地；急事换渠道打电话或私聊，群聊不适合救火；事后立硬规矩「群里请求必须谁＋什么＋期限」。已读不回的读法：看到了被岔开／要时间组织回复／沉默代拒绝。加一句请求要省力，「行」或「不行」二选一即可。",
+      "pages_used": [
+        "wiki/concepts/c15-group-team-communication/zh.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "她每次开口都'我都是为你好' 然后顺理成章把case丢给我 这次又来 我不是她的backup啊",
+      "answer": "KB 有模板。「我都是为你好」＝义务杠杆：好意被当撤回你选择权的筹码；真心与越界常混杂，要分开评价。回应：拆分式——「谢谢你的好意，但这个 case 我接不了/这决定我自己做」；明确边界——「如果是建议，我有权不听；如果是请我接 case，我们换个谈法」；给替代参与感——「这件事我心里有数了，有结果第一个告诉你」。坑：别跟她辩「到底是不是真的为我好」，那是她的赛道；单次不算数，同一句式反复出现才成模式。她若祭出「你知道我为你付出了多少」（内疚杠杆），答「谢谢，但这件事我的答案不变」，拒收账单，不进对账战。",
+      "pages_used": [
+        "wiki/concepts/c9-manipulation-defense/zh.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "新来的00后开会直接讲'前辈你那套资历逻辑在会上没用' 😤 好家伙 我还怎么带他",
+      "answer": "KB 纪律：人口学标签只生成假设不下结论——迄今最全面的 meta 分析（143 样本、15.8 万人）显示工作上没有系统的世代差异，别把个案写成「00 后都这样」。先把标签收窄成具体事件：「你说资历逻辑没用，是哪件事/哪条流程让你这么想？我们对着说。」方向可以提，但给边界而非羞辱：「带上数据更有说服力。」他第一次在会上顶撞其实也是心理安全感测试时刻——你怎么接，全场在算：这个团队收不收异议。接内容再给地位（「这个点我没想到，你依据的是哪个数据？」），异议被好好处理，他留下的可能性更大。管理方式和期待设定，才是翻车点不在代际。",
+      "pages_used": [
+        "wiki/concepts/c7-demographic-differences/zh.md",
+        "wiki/concepts/c15-group-team-communication/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "突然被cue上台给部门做五分钟总结 稿子都没有 腦子一片空白 怎么撑过这五分钟",
+      "answer": "KB 的即兴框架：「一二三」即兴表态法＝口语版 PREP：观点→理由→例子→观点，环形结构保证被打断也完整。第一句直接给结论：「先说结论：这个季度我们做成了三件事。」观点必须出现在第一个十秒内，最忌先铺背景。结构预告降观众认知负担：「只讲三件事」。没例子就用「在我团队里/上个项目」起头，比抽象概括省一半思考。核心数字前说「这点很关键，我讲慢一点」当节奏刹车。紧张别压「别紧张」，出声说「我很兴奋」——研究显示重评为兴奋比试图冷静更有效（Brooks 2014）；快走两分钟＋深呼吸把唤起用掉再上台。收尾：「最后一点：一句话总结，先保交付，再谈优化。」",
+      "pages_used": [
+        "wiki/concepts/c16-public-speaking/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我老板开会自动跳粤语 过三句变英语 再过五句出马来话 完全跟不上 怎么应才不失礼",
+      "answer": "KB 这套语码转换应对：1) 对方切语言通常是场合逻辑不是针对你——粤段可能是讲给同代人/情感核心，英马段是在调频进入你的世界或正式化，跟 register 走，别追问「你怎么突然讲英文」。2) 关键词抓方向，猜错再问。3) 不懂直接问，语气要好奇不问责：「老板，刚才那段能慢点/翻译一下吗？」——请他慢一点而不是换成单一语言，保住他的表达主场，是大体面。4) 每段尾用复述确认：「所以结论是交期推一周，对吗？」复述错了他会纠正，纠正即降温。5) 会后私聊补漏比当堂硬拦安全。不懂憋着假装听懂，才是真正的失礼读法。",
+      "pages_used": [
+        "wiki/cultures/cu5-codeswitching/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": "KB 覆盖语码转换的动机与应对通则；「会议中段多语疾速切换」无专门条目，但通用应对（跟 register、复述确认、请教慢讲）可直接套用。"
+    },
+    {
+      "q": "公司annual dinner跟我一桌的是马来同事 平时没话聊 有什么安全话题 不想无意踩雷",
+      "answer": "安全话题：开场先寒暄再谈事（跳过问候直接进议题在马来礼节里算轻慢）；「你是哪个单位的」是马来西亚标准暖场——大方报公司/部门/家乡，再回问对方，共同认识的人最能拉近距离；食物（halal 美食）、家乡、运动也稳。避雷：酒精、猪肉、宗教不深聊不争论；不拍肩等异性身体接触；递物用右手；指人别用单根食指；别当众纠正或逼问。对方莫名发笑≈尴尬（malu），不是不在乎，笑着换话题即可。称呼 Encik/Puan + 名字最稳。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/core.md",
+        "wiki/cultures/cu1-malaysia-malay/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "晚上十一点半 boss还在teams上@我提醒明早汇报 回是秒回认命 不回又怕明天穿小鞋 到底标准操作是什么",
+      "answer": "KB 的标准操作：被 @ 不能只回「好的」——回「收到，明早 9 点汇报，我再过一遍 X 和 Y」，带时间承诺 + 信息量；sc1 也强调别让沉默过夜。深夜不必干活，用一条有内容的确认把明早交付锚死（deadline + 交付物），把「秒回认命」换成「可预测」，这正是 managing up 的互赖供给线。穿小鞋的怕属于高权力距离（马来西亚全球最高档）下的权威恐惧，KB 的解药是拆中介：用书面、用数据回应，降低即时恐惧。KB 缺一条明确的「下班后消息边界」规范。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "进度汇报发给老板他已读三天没回 再问怕显得催命 不问项目又要凉 这条跟进消息怎么措辞 😭",
+      "answer": "按 sc7：等一个回复周期不催命，补发必须带新信息而不是情绪追问（✗「在吗怎么看」✓ 新信息+退路）。措辞模板：「老板，周报已发您（结论：A 完成、B 有风险）。我先按 A 方案推进，周五要定稿——您有意见我随时改，不急，这周内给个方向就行。」职场消息三件套：结论先行 + 一行上下文 + 明确诉求/期限。若再冷处理，别再文字拉锯，升级通道：当面或电话十分钟；给 boss 发消息永远自带 deadline（「不急，这周内就行」）。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/scenarios/sc1-workplace-power/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "在想要不要裸辞了 每天上班像上坟 领导也从来不表扬人 就想找人听我说说",
+      "answer": "先接住你想倾诉这件事：开口前声明「我现在想吐槽，不用给我方案」；挑会问「后来呢」、会复述你感受的人，避开只会上课的（那是 sympathy 不是 empathy）；直接约「今晚陪我聊十分钟，不用解决什么」。关于辞：领导长期零反馈本身是危险信号（要么不投资你，要么冲突已积累）；决定走就走得体面——书面辞职信写明最后工作日、留通知期、千万别网上吐槽（「发到网上就是永久墨迹」）；先问老板「我离下一个职级还差什么」，把不满兑换成路线图再决定。长期低落建议转专业支持。",
+      "pages_used": [
+        "wiki/concepts/c4-emotional-intelligence/core.md",
+        "wiki/concepts/c4-emotional-intelligence/zh.md",
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/scenarios/sc1-workplace-power/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "开斋节今年是哪两天啊 要出年度leave表了 boss喊我搞定",
+      "answer": "KB 只能给你文化面：开斋节（Hari Raya Aidilfitri）是马来穆斯林最大节日，排在斋月（Ramadan）之后，cu1 明确建议「Raya 期间安排工作前先查假期」、别把硬 deadline 排进去。但 KB 是离线知识库快照，没有具体年份的公历日期——开斋节按伊斯兰历走、以见月为准，两天连假的具体日期每年浮动。做年度 leave 表请以政府宪报/官方公假表为准；KB 能确认的只有「Raya 附近别排重要交付」，以及马来西亚整体假期常连着 open house 期。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无任何年份的公历节日日期表（Raya 按伊斯兰历见月定，需查官方公假表）"
+    },
+    {
+      "q": "quick q is this friday a public holiday for thaipusam in kl",
+      "answer": "KL (and Selangor, Penang, Negeri Sembilan, Johor, Perak) do observe Thaipusam as a public holiday — but it only falls on the full moon of the Tamil month Thai, i.e. January/February. So a Friday in October cannot be Thaipusam, hence not a holiday. The KB gives the rule but no per-year calendar; if you need Thaipusam's exact 2027 date for leave planning, check the official gazette.",
+      "pages_used": [
+        "wiki/cultures/cu3-malaysia-indian/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "my monthly 1-1 with skip level always turns into me reading off my status list, how do i make it less like a report",
+      "answer": "Two KB mechanisms: (1) Managing up (Gabarro & Kotter) = supply info, predictability and honesty upward — first figure out if your skip level is a 'reader' (send a one-pager before) or a 'listener' (brief verbally), and find out their expectations instead of assuming. (2) 汇报金字塔：结论先行 + 3 supports, never chronological status-reading. Restructure: open with one conclusion (\"three things on track, one needs your call\"), compress status into an appendix, spend the time on decision options / risks / resources you need; pre-write the five questions they'll most likely ask.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/core.md",
+        "wiki/concepts/c16-public-speaking/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "刚被领导一句话顶回来 一肚子火 明天还要碰面 现在怎么先把这口气咽下去别半夜发消息",
+      "answer": "先自我共情再回话：给情绪起名（「我现在是委屈+火」，affect labeling 本身就会给杏仁核降温）；情绪淹没时明确暂停——但暂停必须带重启时间，否则成了冷战：「今晚不发消息，明早 10 点当面聊十分钟」。半夜发消息正是 double-texting 式情绪外溢，两天都不做；深夜的话白天未必认账。明天只用 NVC 四件套回应：观察（只说摄像机拍得到的）+ 感受 + 需要 + 请求，不猜动机、不用「总是/根本」。若事小，可明确选回避模式并告知「这事我先放一放」。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/concepts/c4-emotional-intelligence/core.md",
+        "wiki/scenarios/sc7-digital-messaging/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "他三天没回我消息了 是不是不喜欢我了😭",
+      "answer": "别按单条信号下结论：暧昧期解法看三条基线（他平时对谁都热情吗？对别人的渠道热过对你吗？你升级他跟上还是退回？）和跨时间模式，单一信号几乎不携带承诺信息。行动上用「两条消息测试」：正常节奏再发一次（带新信息，别「在吗？？」），仍无回应就换一个明确低门槛的问题（「周末有空吗？不行也没事」）。慢回复≠ghosting（ghosting 是无解释永久消失）；被冷处理时优先做外部归因（他忙、他不会处理拒绝），别默认「我做错了什么」。若他真给出清晰的不，那句话是完整信息，不二审。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/core.md",
+        "wiki/scenarios/sc2-romance-intimacy/zh.md",
+        "wiki/scenarios/sc7-digital-messaging/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我妈又在饭桌上催婚 我说一句她顶十句 怎么办",
+      "answer": "KB（sc3 家庭篇）指出催婚的核心是「交代」二字——她在别人面前缺一个能报的进度条，这是面子账，不是当天在给你的人生开会。所以别辩论婚姻观（当场反驳=收走她的面子，会换来更猛的施压）。三个选项：①幽默卸力：「正在面试呢，帮我留意物色」；②把成功标准换到她认可的字段：「工资今年涨了30%，婚事我不糊弄」；③边界句年年同一句：「这事我自己定，定了第一时间告诉你们。」顶嘴没用，因为话题根本不是婚，是面子。",
+      "pages_used": [
+        "wiki/scenarios/sc3-family-kinship/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "how to tell my best friend she has been ignoring me and it hurts",
+      "answer": "KB (sc6 friends core) treats drifting as the default adult-friendship outcome: being drifted isn't necessarily 'you don't matter'. Key moves: 1) Don't interrogate or accuse ('why are you ignoring me') — the standard adult restart is one short, no-blame message: 'we haven't hung out in ages' plus a concrete invite (a specific date/place, not 'sometime'). 2) Friendships run on a time ledger — close friends need ~200 hours, so budget effort accordingly. 3) Rule of three: if you initiate 3 times and get soft-rejections (rescheduling, vague replies), downgrade to passive maintenance. If the friendship feels toxic rather than drifting, one private, brief, non-accusatory closing talk — no ghosting.",
+      "pages_used": [
+        "wiki/scenarios/sc6-friends-social/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "男生回哦哦是什么意思 在线等",
+      "answer": "KB（sc7 线上聊天篇）有专门条目：「哦哦」和单「哦」是两种温度。单「哦」＝敷衍或不满，信息收到但情感为零；「哦哦」是软的，表示理解、恍然大悟，多数中性偏暖，不必过度解读。应对：①话题重要且你在意他的态度，用文字补一句感受：「你好像不太想聊这个？」；②话题不重要，贴图体面收尾；③注意判定要结合此人平时习惯——长辈或不爱打字的人「哦哦」就是正常确认。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "wtf 我闺蜜居然跟我ex出去吃饭 她到底什么意思",
+      "answer": "KB（sc6 朋友社交）覆盖了友谊的边界与忠诚（loyalty vs boundaries：忠诚是对人的忠诚不是对行为的忠诚；朋友要求你站队时的处理），也覆盖了 breakup 场景，但没有专门写「朋友和你的前任来往」这一具体情境的解读与话术，只能部分迁移。可用的框架：先问事实不先问动机（fb 讲究「直接问源头一次」，别私下脑补），再用边界话术直说一次：「这件事我不舒服，我希望你知道」。具体怎么定性她和ex的关系，KB没有语料。",
+      "pages_used": [
+        "wiki/scenarios/sc6-friends-social/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB lacks a dedicated entry on a friend socialising with your ex — only general loyalty/boundary frameworks apply."
+    },
+    {
+      "q": "女朋友说没事 她真的没事吗",
+      "answer": "KB（sc4/sc3）都有专条：「没事」在中文语境里多数不是字面义。三种读法：①真没事（少数）；②假性和解——有事但判断说出来会吵，选择吞下；③处罚式沉默——有事且想让你自己意识到。判断线索：语气平、脸沉、手上还在忙，微信里短句加句号，这些信号指向2或3。应对：连问三次「真的没事吗」最错，是把人往翻脸上推；正确动作是给一次具体化的机会（「我猜有事，是刚才那句话还是整件事？」），或留门不逼问（「好，你随时叫我」），她若超过一天仍冷淡，再升级一次观察式关心。",
+      "pages_used": [
+        "wiki/scenarios/sc4-hard-conversations/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "想跟他谈结婚 但他每次都转移话题 这话到底怎么开得了口啊。。",
+      "answer": "KB 有两块可用素材但缺专条。sc2 的 DTR 规则：直说、给出自己的答案、把选择权给对方，「顺其自然」通常读成拒绝或逃避；sc4 教了对付精度语：把模糊兑换成节点，「我们约个时间看结果？下周五前给我个准信」。迁移到结婚话题：①不动情绪战场，只要具体——「我不是要你现在定，我是想知道你对这事是『不考虑』还是『没想过』」；②每次转移话题就一次核验，连续两次躲避且无替代信息，按已有答案处理；③时机选平静期，别在吵架后。KB 没有写「伴侣回避长期承诺话题」的具体剧本，所以算 PARTIAL。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/zh.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "No dedicated entry on a partner deflecting long-term commitment talks; guidance is extrapolated from DTR and vague-answer entries."
+    },
+    {
+      "q": "我朋友借了我三千块在也不提了怎么开口要回来啊",
+      "answer": "KB（sc6 朋友借钱条目）正好覆盖：催款最大错误是道歉式开口（「不好意思哈……」），那会让对方反而理直气壮。正确做法靠事实与日期：发消息「15号过了，这周方便还吗」——有记录、有日期，催款不伤人也不伤己（马来西亚语境：friendly loan 法律上承认，但务必落到文字，WhatsApp 写清金额和还款日就是证据，没协议的纠纷里有人被迫整理190笔转账记录自证）。对策：①直接说事不对人：「上次那3000，你看是这周五还是月底转我？」给选项不给台阶；②对方真困难就给分期方案；③催两次仍躲，就是信息——这笔钱按送出去校准期待。",
+      "pages_used": [
+        "wiki/scenarios/sc6-friends-social/zh.md",
+        "wiki/scenarios/sc6-friends-social/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "刚match到的girl怎么开场 不想只会说hi",
+      "answer": "KB covers icebreakers (sc5 networking) and general flirting/asking-out (sc2 core: invites work when they are specific, low-cost to decline, upgradable), but has no dating-app-matching opener entry — hi vs hi is your only real gap. Transferred best practice: give a reason or a hook, not a role/filler; answer with texture instead of bare pleasantries; one line with a specific detail + an open question that hands the turn back (\"I'm Mei Lin... lately that's mostly food brands. What's your side?\"). Low-cost, upgradable invite: one concrete activity, decline needs no explanation, and never bake in lifetime commitment on day one.",
+      "pages_used": [
+        "wiki/scenarios/sc5-networking-first-impressions/en.md",
+        "wiki/scenarios/sc2-romance-intimacy/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB has no dating-app-specific opener entries; rules are transferred from event icebreakers and general invite mechanics."
+    },
+    {
+      "q": "我弟又偷玩我手机 说了八百遍了 我真的要炸了",
+      "answer": "KB（c3 NVC 中文篇）给的是通用冲突框架：①别再用「你从来没听」这种绝对词开场——反驳「总是/从来」只会滑进举证大战；先接情绪层面，把第八百次和第八百零一次分开：只谈这次怎么防（设密码、建访客模式），不翻旧账。②「说八百遍=在对方那里说过一次」的越界逻辑，KB 家篇的解释是：越线多半因为从没被真的拦过，不是刻意针对——边界句要「讲一次、讲清、温度还有」，且配一次性自防措施比反复吼有效。③你现在「要炸」的状态，先 fp 暂停：「我现在听不进去，半小时后我们好好说。」KB 没有兄弟妹专属条目，属部分覆盖。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/scenarios/sc3-family-kinship/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "No entry specifically on sibling boundary violations / sibling repeatedly taking your things."
+    },
+    {
+      "q": "室友的碗永远不洗 呵呵 我是不是太好欺负了",
+      "answer": "不是你好欺负，是「迁就模式」在攒怨气（c3：迁就型冲突的风险=怨气累积）。换协作式：别用「你从来不洗碗」这类绝对词开场，最易被听成批评；改 NVC 四件套——观察+感受+需要+请求：「碗在水池堆了五天，我很烦，厨房得能用。碗归你洗还是轮流？」。sc6：把要求框进关系声明，「合租就要能用的厨房」是正常边界，一次谈清、写下来，别憋到爆发。",
+      "pages_used": [
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/scenarios/sc6-friends-social/core.md",
+        "wiki/scenarios/sc6-friends-social/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "老婆突然发了个🌹😊然后就没下文了 我是不是做错啥了",
+      "answer": "别急着定罪。KB 规矩：一条消息有多个合理解读时全列出，不强行收敛——①心情好随手发，没话想说（最常见）；②示好/求关注，发完等你接（c13：emoji 常是「斗图邀请」类试探，接了=关系正常）；③带刺版可能性低（夫妻非职场上下级）。最稳动作（sc7）：补一条带新信息的消息自然接话，如「🌹收到啦，晚饭想吃什么？」。单条 emoji 几乎不携带承诺信息，跨时间的模式才算数——大概率你什么都没做错。",
+      "pages_used": [
+        "wiki/concepts/c13-visual-multimodal/zh.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/concepts/c1-subtext-implicature/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "跟天蝎男谈恋爱好累 他们是不是都这么记仇",
+      "answer": "KB 直接回答（c8）：「天蝎神秘记仇」只是流行文案画像，是文化刻板印象；占星无预测效度——Carlson 1985《Nature》双盲实验显示星座解读不优于随机猜测。所以答案：他记不记仇是行为问题，不是星座问题。用星座预判伴侣会掉进确认偏误：每次翻旧账都算「证据」，每次放过都被无视，越贴标签越累。正确动作：按具体事件处理——「上次那件事我们说开了吗？」事实对事实；星座只配当玩笑外壳。",
+      "pages_used": [
+        "wiki/concepts/c8-astrology-heuristics/core.md",
+        "wiki/concepts/c8-astrology-heuristics/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我infj他estp 为什么我们聊天永远不同频 求解",
+      "answer": "KB 有机制解释（c5）：外向者思考靠说——ESTP 当场输出第一版想法；内向者思考靠想——INFJ 发言延迟是加工深度，不是冷漠。调整：给内向方提前发议题、会后留书面反馈；跟外向方即时接话、允许跑题；别把安静误读为反对。同时 KB 提醒：MBTI 信效度一般、重测常变（39–76% 换类型），只当词汇别当诊断——把「你太闷/你太跳」翻译成具体需求才是解法。",
+      "pages_used": [
+        "wiki/concepts/c5-personality-typology/core.md",
+        "wiki/concepts/c5-personality-typology/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我妈句句『我都是为你好』听得我好内疚 这算不算pua",
+      "answer": "先别急着贴 PUA 标签。c9：内疚杠杆（guilt-tripping）是真实操纵手法，但判「模式」要三问——重复（至少三次）、方向（你的自由度扩大还是收缩）、后果（你是否持续为TA改写自己）。单句更像 c3/sc4 说的「真心关心+控制并存」。回应：拆框架不拆感情——「我知道你是为我好，这事我要建议不要决定」；再问「你担心哪件事，我们一件件说」。回「你根本不是为我好」必升级。",
+      "pages_used": [
+        "wiki/concepts/c9-manipulation-defense/core.md",
+        "wiki/concepts/c3-nvc-conflict-repair/zh.md",
+        "wiki/scenarios/sc3-family-kinship/zh.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "朋友的爸爸过世了 我只会说节哀 到底还能讲什么",
+      "answer": "sc16 核心：慰问是「给力量」，不是「给解释」。三件套：①点名损失——「听到伯父的事很难过」；②一句具体记忆——「他每次见我都先问我吃了吗」；③不设条件的在场——「不用回，我随时在」。禁语：至少…、别哭了、我懂你的感受（自检：结尾能接「所以别难过」的都别说）。比措辞更值钱的是具体帮助：「周四我送晚饭过来」；两三周后再发第二条，第三周房子才安静。",
+      "pages_used": [
+        "wiki/scenarios/sc16-condolence-grief/core.md",
+        "wiki/scenarios/sc16-condolence-grief/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "『行 那你以后都别来找我了』这句发出去会不会太冲 帮我改改",
+      "answer": "冲，而且你未必真执行。KB 规矩（sc4）：通牒只在真会执行时说，说而不执行等于教对方「你的边界都能谈」；p1：情绪热度里别回升级版，别以火攻火。改成事实+需要（NVC 三选）：⚔「这事没谈拢，我先冷静，明天再谈」；💛「我现在很失望，怕说出口的话收不回。明天我们好好说一次，我想把话说清楚」；🛡「先各自静静，晚上想聊我都在」。核心：说需求不说绝交，带时间点不带威胁。",
+      "pages_used": [
+        "wiki/playbooks/p1-reply-engine/core.md",
+        "wiki/playbooks/p1-reply-engine/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/core.md",
+        "wiki/scenarios/sc4-hard-conversations/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "马来同事请我去他家open house 我要带什么 注意什么 才不会失礼",
+      "answer": "cu1 全套：带 buah tangan（伴手礼）——halal 糕点、水果、椰枣、巧克力；忌酒精猪肉相关和刀剪，包装避开白、黄两色；双手递，主人先推辞是礼数（先拒后受），坚持一下再放下，不当面拆。进屋脱鞋；递接一律右手；见长辈等对方伸手，女士同事不握手就右手抚心口点头。主人劝食浅尝领情，盘里留一小口表示吃饱了；open house 时间弹性，晚到正常、别催；先向长辈问候再落座。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/core.md",
+        "wiki/cultures/cu1-malaysia-malay/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "咋哄女朋有啊 在线等挺急的",
+      "answer": "KB 的哄人顺序（sc2/p1/c3）：①先接情绪再认领——「你生气是我 X 做错了」，别辩论谁对谁错；②道歉补齐六组件里最重的两件：承认责任+修复动作（「错在我 X，我打算这样补」），禁「对不起，但是……」；③给台阶+具体回归时间：「我八点再找你」比干等强；④修复要早要勤（Gottman），配真实行动：订她提过的展、带宵夜。忌：「你怎么这么黏」、连环求饶式道歉、只空说「都是我的错」没有下文。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/core.md",
+        "wiki/scenarios/sc2-romance-intimacy/zh.md",
+        "wiki/playbooks/p1-reply-engine/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "2026年马来西亚长假怎么拼 怎么请年假最划算",
+      "answer": "KB 里没有 2026 假期日历和请假攻略——它是沟通知识库，只涉及请假「沟通」侧：cu1 有条提醒「Raya 期间安排工作前先查假期」（马来西亚最大节日，请年假避开开斋节连假）；sc10 把「年假、弹性办公」列为谈判筹码，可在谈薪资/offer 时一并争取。具体哪几天拼长假，请查大马公共假期官方日历，KB 帮不上。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/core.md",
+        "wiki/scenarios/sc10-negotiation-deals/core.md"
+      ],
+      "coverage": "NONE",
+      "missing": "KB 无 2026 公共假期日历、拼假策略或年假 HR 规则"
+    },
+    {
+      "q": "帮我算下 房贷利率4.2%借35万 月供多少",
+      "answer": "答不了——communication-master 是「读懂人 / 写回复」的知识库，index.md 全目录里没有任何金融计算、房贷或利率内容。月供这种纯算术题请用银行/社保官网的贷款计算器或表格：等额本息公式 M = P·r(1+r)^n/((1+r)^n−1)（r=月利率，n=月数）代入即可。KB 唯一沾边的是借钱沟通类内容（朋友借钱的 sc6），和房贷数学无关。",
+      "pages_used": [
+        "index.md"
+      ],
+      "coverage": "NONE",
+      "missing": "KB 无任何贷款计算、利率、房贷内容"
+    },
+    {
+      "q": "最近狂掉头发 吃什么维生素比较好 有推荐的吗",
+      "answer": "KB 不能推荐维生素——sc18 医患沟通页开头就有边界声明：「本主题是沟通指南，不是医学建议……具体医疗问题请交给注册医师与药剂师」。它教的是你对医生怎么说：症状三连「多久了/多严重/什么让它变好变坏」提前写成开场白（狂掉=突然还是渐进？），并把正在吃的全部药物+保健品清单带去问（brown bagging，防冲突）。缺铁、甲状腺、压力性脱发等原因只能让医生查，别自己补。",
+      "pages_used": [
+        "wiki/scenarios/sc18-medical-communication/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无任何营养学/脱发成因/维生素剂量内容，只覆盖就医沟通的形状"
+    },
+    {
+      "q": "wx上他回我一个哦 这是什么意思😭 之前都是秒回一大段的",
+      "answer": "KB 有专门条目：单「哦」=信息已接收但情感为零，多半敷衍或不满；「哦哦」才是理解的软信号（sc7/zh）。按 p2 的 baseline 规则，这次更重要：他以前秒回大段、现在单字回——偏离基线本身才是信号，别脑补（可能是烦这个话题、有事、或情绪不满）。三步走：①补情感层直接问「你好像不太想聊这个？」②给台阶不逼问，换一个省力的新话题③若冷淡持续、对你们重要，48 小时后「是话题问题还是我的问题」当面/语音核一次。先给最无聊解释：他单纯在忙。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "发了条语音让微信转文字 稍等哈变成小邓哈 客户那边已读了 怎么补救",
+      "answer": "KB 没有语音转写错误的具体场景，但有对应机制可拼：①sc7 说语音里的事务信息收到后必须「用文字复述确认防错」——你自己发错同理，补救就是立刻用文字重发正确版；②用 c3 的有效道歉三件套（Lewicki 2016：承认责任+说清修什么+给修复动作最重要，别只说抱歉）。建议 60 秒内发：「不好意思，刚那条语音我发音含糊了，转文字变成'小邓哈'——我的意思是'稍等哈'，方案我 X 点前发您，以文字为准。」已读不代表已消化，一条干净的更正+时间承诺基本能翻篇。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/core.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/concepts/c3-nvc-conflict-repair/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 未覆盖语音→文字转写错误的场景；补救逻辑由 voice-note 确认规则+道歉六组件推出"
+    },
+    {
+      "q": "buyer之前讲好包邮 现在又说再减20马上转 不想亏也不想丢单 咋回",
+      "answer": "这正是 sc10 的「nibble（捡漏）」：一切谈定之后冒出来的新要求。反治两条：①让步纪律——每次让步必须换回东西，别白送（单方面连续让步=训练他继续等）；②「可以，那我们把总数一起写进」/对称交换。实操回复：「包 Stef 已让到位了，20 也可以谈——收货后给个 5 星+晒图我微信返你 10，或拼单两件一起发再减 20。」既不亏又不把升级变撕破脸（本地砍价要点：笑着还价、把最后让头留给他保面子）。若他只是压价试探，flinch 不必理，站稳包邮换条件即可。",
+      "pages_used": [
+        "wiki/scenarios/sc10-negotiation-deals/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "zoom interview next week 面我的是hc manager 大概会问什么 要准备啥",
+      "answer": "按 sc8：对面是 hiring manager，大概率考行为题（Tell me about a time...）+逐项评分，准备法：按「情境」备故事不按题备（压力/领导/冲突/失败重做，一库多用），STAR 结构且 Action 占 75-80%，全程 1.5-2 分钟、用 I 语态、结果要量化。开场题 tell me about yourself 用 60-90 秒「现在-过去-未来」，别背resume。Zoom 要专门排练虚拟面：测麦/摄像头、屏幕名专业、第一个进会议室、看镜头不看屏幕、延迟时等对方讲完，备热点+备用设备。收尾 24 小时内发 thank-you email。最后一轮别问福利，问战略层问题。",
+      "pages_used": [
+        "wiki/scenarios/sc8-job-interviews/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "client replied \"let's circle back next quarter\" — is that a polite no or a real maybe",
+      "answer": "Per the KB (p1/en.md, \"Let's circle back.\"): it has three candidate readings — (1) a real deferral where they hold a deadline; (2) a soft burial — nobody will circle back; (3) politics, the decision moved to a quieter room. \"Next quarter\" is a longer horizon than the usual meeting deferral, so the soft-burial prior goes up, but it stays a maybe. Don't accept the fog: anchor it — \"Circling back on what — budget or timing?\" and propose a concrete checkpoint (\"I'll send a one-pager by Nov 15; happy to restart then\"). Re-anchor per p2/zh's 挂钩具体日期 move. If it's the second deferral, ask directly whether the item is parked. That way the \"no\" reveals itself cheaply.",
+      "pages_used": [
+        "wiki/playbooks/p1-reply-engine/en.md",
+        "wiki/playbooks/p2-subtext-decoder/core.md",
+        "wiki/playbooks/p2-subtext-decoder/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "小红书评论区有人阴阳我 还上升到人身攻击 要怼回去还是直接拉黑",
+      "answer": "KB 的 sc14 有一套现成答案：先辨 troll——人身攻击、你认真回他换靶子继续逗（「急了急了」）= troll，跟观点输赢无关；三条分界满足两条就按 troll 处理。回应三档：①ignore 零回应；②rebut-once-and-lock——只回一条克制、对事、给来源的话（写给围观者不是写给他），然后该串不再回；③已上升人身攻击 → 交给治理层：拉黑+举报@平台，附截图，不缠斗。要点：你的情绪不是必须当场出口的账，骂战消耗的是围观者的耐心；小红书帖子是作品集不是辩论场，怼赢一条评论的成本远高于拉黑+一条置顶自证。",
+      "pages_used": [
+        "wiki/scenarios/sc14-online-social/core.md",
+        "wiki/scenarios/sc7-digital-messaging/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "房东微信说下个月租金涨300 问我是不是只能接受 还有得谈吗",
+      "answer": "有得谈。KB 里很明确：租期内除非合约本身有 rent review/escalation 条款，房东不能涨租；涨租只能作为续约提议，你有权接受、还价或拒绝走人。微信里先锁条款：「租约 X 月 X 日才到期，期间租金按 TA 不变；续约我们下月初一起谈。」续约还价的基准是市场可比租金（同区同户型挂牌价），不是客气——附上挂牌截图，把年限一起打包（如按持平租金续两年，帮房东省空置期和中介费），并要求一切书面确认。",
+      "pages_used": [
+        "wiki/scenarios/sc17-landlord-tenant/core.md",
+        "wiki/scenarios/sc17-landlord-tenant/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "相亲对象凌晨一点发我睡了吗 这算什么意思 要怎么回",
+      "answer": "KB 把深夜「睡了吗」归为深夜情绪消息，三种读法：(1) 真心话窗口——夜里防御低，说白天不敢说的话；(2) 孤独借宿——想聊的是「有人可聊」的感觉，未必是你；(3) 试探水温，看你接不接。回法：① 接住不升级：「没睡，怎么了？」把球递回去；② 已有好感可以半玩笑确认：「说吧，明天清醒了再聊一遍」；③ 只想保持普通关系就温和降温：「早点睡，明天聊」。注意：深夜说的话白天未必认账，重大回应等天亮再发。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "马来客户说insyaAllah saya check dulu 然后就没了 这算答应还是委婉拒绝",
+      "answer": "都不算——这是马来语里的典型「垫着」话术。InsyaAllah 三种读法：真诚承诺但承认结果不由人；委婉「再说吧」；纯口头禅别过度解读。「cuba dulu」（我先试试/先查查）同理：真的会去试但不打包票，或委婉的「不行」，或要先问过上级。不该当成 yes 干等，也不能当面追问逼对方 malu（难堪）。对策：礼貌收下并自行加确认——「好，周五前我再跟您确认一次」，关键节点留 Plan B，当天早上发提醒但不催逼。",
+      "pages_used": [
+        "wiki/cultures/cu1-malaysia-malay/zh.md",
+        "wiki/cultures/cu1-malaysia-malay/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "客服踢皮球第三天了 退款永远在系统处理中 真的想骂人 教我骂人不带脏字那种",
+      "answer": "KB 不教骂人，教的是比骂更有效的「让循环断掉」：「在处理了」无限循环的解药不是更客气也不是开骂，而是更具体。三句式：① 要时限与负责人：「请给我预计完成日期和处理人姓名/工号。」② 升级：「本案已超 X 天无实质进展，按升级流程转主管，我要书面最终回复。」③ 预告渠道：「若 X 日前无书面答复，我将提交 TTPM 并附全部截图。」亮出日期、负责人、书面、下一步渠道任何一样，循环通常就断。骂人只会让对方从「解决问题」切到「保护自己」，你反而赢不了。",
+      "pages_used": [
+        "wiki/scenarios/sc9-live-service/zh.md",
+        "wiki/scenarios/sc9-live-service/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我妈六十岁刚学会用[捂脸] 但全用错场合 家族群她一发我就尴尬 要不要提醒她",
+      "answer": "KB 有部分答案：emoji 有代际词表差异——长辈手里的表情是按官方义/字面义用的，没有年轻人那层「阴阳怪气」包袱（如长辈的😂就是真觉得好笑；微信微笑对长辈就是礼貌脸）。PLOS ONE 2024 证据也说明 emoji 解读随年龄不同而不同。你的尴尬多来自两套词表并存且互不知情。建议：在家庭群场景别用年轻人的词表去校正她的「品味」，跨代群里用文字「哈哈哈哈」谁都 不踩雷。真要提醒，私下一句温和教她说「这个是笑场/这个是尴尬」就行，别在群里纠正让她丢面子。",
+      "pages_used": [
+        "wiki/concepts/c13-visual-multimodal/zh.md",
+        "wiki/concepts/c13-visual-multimodal/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 讲清了代际 emoji 词表差异与群里相处，但没有专门条目回答「要不要提醒六十岁长辈、怎么纠正长辈 emoji 用法」这个具体决策。"
+    },
+    {
+      "q": "直播有人连刷礼物 一直逼问我住哪做什么 主播怎么接话不冷场也不越界",
+      "answer": "KB 的框架：这属于情感型/交易型打赏的边界问题——最危险的一种是想买一对一亲密。原则是「给仪式、不给关系」：公开谢礼物但不接受私人化要求。接话示范（constructed 思路）：收到连刷先公开致谢并转回节目节奏（「谢谢大哥撑场，大家一起来感谢」）；逼问住址等隐私时，先减少公开性，不零售私人信息，用群体回应替代一对一：「隐私先不聊啦，直播间人杂，咱们聊上次说的那局。」要求超出关系原定边界时，恢复房规、留存证据、必要时退场——规则一致性就是人格一致性。",
+      "pages_used": [
+        "wiki/scenarios/sc19-live-streaming/zh.md",
+        "wiki/scenarios/sc19-live-streaming/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 有大额打赏边界、parasocial 机制与「给仪式不给关系」话术，但没有专门针对「被逼问住址/隐私保护」的条目。"
+    },
+    {
+      "q": "她发 你人真的很好 但是…… 后面就没了 帮我把这句拆开看看",
+      "answer": "这句就是「好人卡」，KB 拆得很直接：「好人」是止痛垫，核心在「但是」后面那部分——完整拒绝。极少数情况是客观障碍（异地、家人反对、时机），但对方选了最含糊的表达。关键读法：不存在「再努力一下就有机会」这个解码结果。怎么回：① 体面收下：「明白了，谢谢你直接告诉我，祝你一切都好。」不追问、不辩论、不要理由；② 最简回复后物理降温，减少看她的动态；③ 千万别回「那我再努力对你好一点」——追加投入只会变成纠缠。拒绝的原因表述是礼貌包装，不是待办清单。",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "python一直报indexerror list index out of range 快帮我看看哪错了",
+      "answer": "这个问题（编程报错）不在本 KB 覆盖范围内——communication-master 是沟通/潜台词/文化知识库（S1 解读消息、S2 拟回复、S3 正式写作、S4 AI 提示词），没有解读报错、调试代码的条目。建议另用编程渠道求助。",
+      "pages_used": [],
+      "coverage": "NONE",
+      "missing": "KB 无任何编程/技术问题内容。"
+    },
+    {
+      "q": "wifi路由器红灯一直闪 网完全断了 有懂的吗",
+      "answer": "这个问题（路由器报障排查）不在本 KB 覆盖范围内。communication-master 只收录人际沟通与话术，没有设备排障内容。唯一沾边的是马来西亚投诉渠道：若 ISP 长期不解决，电信服务可走 CFM/MCMC（aduan.mcmc.gov.my、1800-188-030）投诉；但红灯灯义与维修步骤请找技术支持或运营商客服。",
+      "pages_used": [
+        "wiki/scenarios/sc9-live-service/zh.md"
+      ],
+      "coverage": "NONE",
+      "missing": "KB 无硬件/网络排障内容；仅有电信投诉渠道信息。"
+    },
+    {
+      "q": "帮我写个prompt 让AI帮我想微信回复 要显得情商在线那种",
+      "answer": "直接套这个模板（KB 的 S2 代笔模板）：「你是有十年经验、擅长中文职场沟通的沟通顾问。关系：【对方是谁/关系】。这是原文：【贴消息】。我的立场：【想答应/想拖/想拒】。回复必须包含：【……】；绝不能出现：【不许替我承诺任何事】。请给三个版本（直接/缓和/拖一给时点），每个版本附一行『对方可能怎么读』，每版不超过80字。」关键点：①角色要带专业域，不要只说「情商高」；②贴2-3段你真实的聊天记录当few-shot示例，比形容词管用；③发出前逐句读一遍——AI爱替你多答应，责任在你。",
+      "pages_used": [
+        "wiki/playbooks/p4-ai-prompting/zh.md",
+        "wiki/playbooks/p1-reply-engine/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "shipment晚了三天 给客户的道歉邮件求个英文模板 语气别太卑微也别太冷",
+      "answer": "KB 没有专门的「致歉客人」模板（它是投诉/申诉导向），但 firm-but-polite 原则可迁移：'(1) state the facts: \"Your order #A123 was scheduled for delivery on Oct 5 and has been delayed by three days; it now ships on Oct 8.\" (2) one-line cause, no over-explaining: \"The delay was caused by [X].\" (3) what you ARE doing: \"We have expedited the shipment and confirmed the new delivery date of Oct 10.\" (4) closing, open-ended: \"I appreciate your patience and remain available if anything needs adjusting.\" 语气的度：道歉只说一次、放在事实后；把重心放在补救动作上——firmness lives in facts，politeness lives in closing。",
+      "pages_used": [
+        "wiki/playbooks/p3-formal-writing/en.md",
+        "wiki/scenarios/sc9-live-service/en.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 缺直面客户（非投诉方）的致歉信 canonical 模板；只用其 firm-but-polite register 原则拼装"
+    },
+    {
+      "q": "同事又在群里阴阳我 15分钟后开会 必须回一句 但不能失态",
+      "answer": "KB 的建议：别在群里开火，回复只对事实，且群里是公开记账处（同事偷功+阴阳的常见雷区是当场对质，旁观者记住的是失态者）。一句话推荐：回干活的信息量而不是情绪——「这块周四前我给初稿，有具体问题会上或私聊说。」它同时做到：不接阴阳、把话题拽回交付物、提前散会沟通的钩子；若阴阳里有事实指控，补一句「具体是哪一条？我会上澄清」。三忌：当天回击带情绪、把阴阳当人身攻击去辩论、装死不回积累成「默认」。",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/zh.md",
+        "wiki/playbooks/p3-formal-writing/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "跟她语音聊了两个小时 她的语气突然就冷下去了 是我哪句话说错了吗 听不出来",
+      "answer": "KB 的解码规则：单一信号不能定罪，先给三个候选再核实。语气突然冷下来的常见读法：①你某句话踩雷/触到她不想聊的事；②话题或时间本身——聊到两个小时人会累，「冷」可能不是对你；③她在试探你察觉不察觉。核实法：用低成本台阶问，不审问——「感觉你好像没那么想聊这个话题了？换一个？」；若她给出降调式的短应，就体面收尾：「今天聊得挺好，睡了，改天再说」。大忌：当场反复追问「我是不是说错了什么」，把气氛问题升级成审讯。两周内只看她真实行为模式，单日波动不计入。",
+      "pages_used": [
+        "wiki/concepts/c11-paralanguage-prosody/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/zh.md",
+        "wiki/scenarios/sc2-romance-intimacy/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "老板晚上十一点发在吗 然后就没了 我现在很慌 要不要马上回",
+      "answer": "「在吗」几乎只剩一个含义：ta 有事找你、想先确认你在不在线；正文没发出来，真正的信息在第二条里，现在慌是替空气解读。可行的处理：①回一句中性占位，「在的，什么事？」——把球打回去，但注意：回「在」就默认接住任何请求，所以别再多说「随时叫我」；②如果他没下文，常见是他改主意、打完发现明天说更好，或误触——不追「怎么了？？ToString」式的连环追问；③不是暖心紧急事项就不需要熬夜守着，明早正常回复即可，深夜秒回反而把自己架住。真急的事他会直接打电话。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/playbooks/p1-reply-engine/zh.md",
+        "wiki/scenarios/sc2-romance-intimacy/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "采购说budget frozen 明年年初再谈 一听就是托词吧 有什么破局办法",
+      "answer": "「预算有限/锁死」在 KB 里有专门条目，三种读法：①真有预算上限（决策真实存在）；②谈判开场白，等你先退让；③只限某些科目，别的空间没关。破局三步：①把「托词」变成可验证的钩子——要时间线：「如果今年预算锁死，明年 review 时我们以什么为基准来谈？」把口头回议钉到书面约期（「回头再说=黑洞；无第二次钩子=永远搁置」）；②拆科目谈：base frozen 不等于全部 frozen——「验收条款、付款节奏、明年调价机制这块，有没有讨论空间？」；③收小赌注：把大offer换成可批的小问句（「砍到 X 万是否可行」），比追问全案更先拿到答复。",
+      "pages_used": [
+        "wiki/scenarios/sc10-negotiation-deals/zh.md",
+        "wiki/playbooks/p2-subtext-decoder/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "我狗今天三岁生日 帮它写首生日歌",
+      "answer": "这事在 KB 范围外——communication-master 只有沟通解码/回复/正式文书/AI提示词四个引擎，没有歌词创作或歌曲内容。能给的只有一个 p4 风格的提示词骨架，让你拿去问能写的 AI：「你是写儿歌风格的歌词作者。主角：我家的狗，今天三岁生日，性格【填：活泼/粘人/拆家】。写一首生日歌，4段×4行，副歌重复『祝它三岁生日快乐』，押韵、无生僻词。」（槽位记得换成你家狗的真实信息——直接转发模板不换槽位，AI 会把别人的示例当你的真事写。）",
+      "pages_used": [
+        "wiki/playbooks/p4-ai-prompting/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无歌词/歌曲创作内容，只能提供 p4 的提示词方法论"
+    },
+    {
+      "q": "二面完hr说这周给feedback 现在第五天了 要follow up吗 怎么发才不显得pushy",
+      "answer": "KB 规则（Harvard OPIA 派）：感谢信在面试后24小时内发；查进度的正确时机是「面试官承诺的时间点过后1-2天」。hr 说「这周给」——第五天还没过完这一周，严格说还不到追的时点，但只要你之前没发过 thank-you note，现在补发完全顺理成章。发法：三行为限，不问结果——「Hi [Name], thank you again for the conversation on [day] — the [specific detail from interview] part especially stuck with me. I remain very interested in the role; happy to share anything extra you may need.」。大忌：当场追问「是不是没戏了」、follow-up 越写越长像求情。若过了整周仍无回音，再跟进一句才算名正言顺。",
+      "pages_used": [
+        "wiki/scenarios/sc8-job-interviews/zh.md",
+        "wiki/scenarios/sc8-job-interviews/core.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "bf三天没回我dm 但每条story都看了 他什么意思",
+      "answer": "已读不回（回来了story、不回私信）在 KB 有三种候选读法：①看到了、想回但被事情岔开；②没想好怎么回（问题或情绪有分量）；③用沉默代替表态——ghosting 研究显示常见动机之一正是缺少说「不」的技巧。重点是：回复速度不是唯一温度计，单日波动不计入，观察两周模式（他回复回来时带内容还是只丢字）。可做的：①非紧急就等一个他正常的回复周期；②补一条带新信息的消息（「周末找你，X号有事吗」），不是情绪追问「你怎么不回我」；③两次冷处理即停，按他的实际行为而非承诺校准期待。注意：story 观看≠已读私聊，别把两者合并定罪。",
+      "pages_used": [
+        "wiki/scenarios/sc7-digital-messaging/zh.md",
+        "wiki/scenarios/sc2-romance-intimacy/zh.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 覆盖已读不回与回复速度，但没有专门讨论「看 story 却不回 dm」这种 passive engagement 信号"
+    },
+    {
+      "q": "cs全是机器人循环 听不懂我要什么 转人工都转不了 有没有能用的转人工话术",
+      "answer": "KB 的 AI 提示词库专门收录了「客服机器人一直道歉就是不办事」：机器人默认走安抚脚本，开放式提问只会喂它继续绕圈。可用话术：改封闭式提问——「请回答：能办理／不能办理，二选一」，并加禁令「禁止说我们会尽快处理」；再上组合拳模板（core §17-T6）：单一诉求＋金额＋期限＋强制复述订单号＋明确转人工出口——「如果你无权办理，直接告诉我需要输入什么关键词才能转人工。」若仍在「在处理了」无限循环，用升级句式：「本案已超 X 天，请按升级流程转主管，我要书面最终回复；否则我将提交 TTPM／CFM／BNMLINK 并附全部截图。」",
+      "pages_used": [
+        "wiki/playbooks/p4-ai-prompting/zh.md",
+        "wiki/scenarios/sc9-live-service/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "开会录音转文字发大群了 回款变汇款 张总变脏总 当场社死 有没有补救话术",
+      "answer": "回复引擎有可借用的补救原则：道歉只给一次（连环道歉把立场变成哀求）；用一句轻量更正代替长解释——「更正一下：是回款不是汇款，是张总，语音转写打错了，抱歉。」然后立刻把视线拉回内容本身，不做第二种定性。演讲页的口误容错姿态同理：不停顿逐字道歉，直接重说正确版本继续走。但库里没有专门针对「大群社死／语音转写谐音笑话」的完整条目，只能套用这些一般原则。",
+      "pages_used": [
+        "wiki/playbooks/p1-reply-engine/zh.md",
+        "wiki/playbooks/p1-reply-engine/core.md"
+      ],
+      "coverage": "PARTIAL",
+      "missing": "KB 无「群内转写/打字错误社死当场」的专门话术条目；只有一次道歉、事实澄清等一般原则"
+    },
+    {
+      "q": "Macam mana nak minta naik gaji dengan bos saya? Dia memang kedekut, tapi prestasi saya dah bertahun tak pernah diiktiraf.",
+      "answer": "Lane ms ada entri khusus 'Meminta naik gaji atau pangkat'. Prinsipnya: bawa bukti, bukan emosi — senarai pencapaian tahun ini + rujukan pasaran, bukan 'gaji saya terlalu rendah'. Contoh: 'Tahun ini saya siapkan X dan Y. Untuk band seterusnya, apa gap yang perlu saya tutup, dan bilakah kita boleh review semula?' Minta peta jalan, bukan angka: jawapan terikat bajet, bukan mutu anda — bezakan 'tak layak' dengan 'tiada peruntukan'. Jangan jadikan 'bertahun di sini' hujah utama (khidmat bukan pencapaian), dan pilih momen selepas pencapaian yang boleh dilihat, bukan semasa ketua paling sibuk.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "My manager keeps presenting my work as his own in meetings. How do I call him out without damaging my career here?",
+      "answer": "The en lane has an entry for exactly this ('A peer takes credit in the meeting'). Options: (1) Preempt — keep deliverables on timestamped written channels (email cc, weekly note: 'Completed X analysis') so the record exists before anyone speaks; one line there becomes your evidence chain at review time. (2) Same meeting, one non-hostile sentence: 'Adding to that, the data I pulled shows...' — visible without accusing. (3) Private nudge later: 'Next time that deck goes to the VP, could you name the folks behind the analysis?' Pitfall: confronting publicly — observers remember the disruptor, not the credit-taker; but silence forever converts one incident into a precedent.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Apa maksud bila crush saya balas 'hmm' je selepas saya taip mesej panjang lebar?",
+      "answer": "Ada dua muka KB untuk ini. Lane romance ms: balasan pendek tanpa soalan balik salah satu bacaannya ialah minat menurun — 'perhati pola dua minggu, jangan buat keputusan atas satu hari sahaja'. Lane digital messaging (zh) ada perumpamaan 'sebutir balasan' dengan tiga bacaan sama untuk satu patah balas: (1) sibuk betul, (2) minat menurun / topik tamat, (3) tabiat balas biasa tanpa emosi. Langkahnya: kalau topik habis secara rasmi, balas ringkas dan tutup; kalau masih nak sambung, hantar satu soalan baru yang mudah dijawab (bukan 'kenapa awak tak balas?'); kalau pola berulang dua minggu terus pendek, bawa topik ke panggilan atau jumpa terus.",
+      "pages_used": [
+        "wiki/scenarios/sc2-romance-intimacy/ms.md",
+        "wiki/scenarios/sc7-digital-messaging/zh.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "CNY dinner my auntie keep anyhow comment - I fat already, salary so low, when want marry. Where got people talk like that one! How to tahan without balas?",
+      "answer": "Family lane ada entri ini di CNY table. Untuk「催婚」('When are you getting married?'): auntie bukan tengah serang — teks asalnya ialah orang tua perlu 'accountability' di hadapan kaum keluarga, jadi (1) humour deflection: 'Still interviewing! If you meet a good engineer girl, let me know', (2) reframe success pada medan nilai mereka sendiri (health, salary, savings), (3) satu ayat boundary yang sama setiap tahun: 'This one I decide; you'll be the first to know.' Untuk komen perbandingan gaji/BMW: jangan berteka-teki kuat — itu ambil muka semua orang termasuk ibu bapa awak; dapatkan satu ayat kuat untuk ibu bapa, contoh: 'she's in AI'. Pitfall: debat teori kesejahteraan kahwin dengan auntie di tengah reunion = muka dia hilang, tekanan naik ke atas ibu bapa awak.",
+      "pages_used": [
+        "wiki/scenarios/sc3-family-kinship/en.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Kawan baik saya baru kehilangan ibu. Saya nak hantar mesej tapi takut tersalah kata. Apa yang patut saya tulis?",
+      "answer": "Lane ms memang ada 'Mesej takziah WhatsApp yang tidak janggal'. Rumus tiga baris: sebut kehilangan → satu ingatan/kualiti arwah → janji hadir terbuka. Contoh: 'Baru dengar pasal arwah mak you. Dari cerita you, dia orang yang penyabar. Saya dekat je — you nak teman ke nak diam pun, saya sedia.' Mesej pendek yang sampai malam ini mengalahkan mesej panjang esok; mengakui tak reti kata pun jujur: 'Tiada kata yang tepat. Saya cuma nak you tahu saya di sini.' Elak: stiker RIP, soal 'macam mana boleh pergi?', cerita penderitaan sendiri, ayat panjang penuh petikan internet. Yang paling lama diingati ialah mesej susulan dua-tiga minggu kemudian — 'Jumaat ni saya bawa makanan ke rumah, tak payah layan pun takpe.'",
+      "pages_used": [
+        "wiki/scenarios/sc16-condolence-grief/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Setiap kali nak present depan kelas, suara saya gementar dan tangan sejuk. Macam mana nak atasi gementar ni?",
+      "answer": "Public speaking ms lane ada kaedah tepat. (1) Arousal reappraisal (Brooks 2014, Evidence-backed): gugup dan teruja kongsi keadaan fisiologi yang sama — 'jangan gugup' tak berfungsi; sebut 'saya teruja' kuat-kuat tiga kali sebelum naik. (2) Versi jujur untuk bilik yang selamat: label tangan sejuk sebagai kepentingan — 'Tangan saya sejuk sebab saya betul-betul sayang topik ini.' (3) Buang tenaga berlebihan: jalan laju dua minit + tiga tarikan nafas dalam sebelum naik, supaya ia tak bocor jadi suara gementar. (4) Ritual 60 saat: jalan ke tempat → berdiri dengan dua kaki rapat bahu → skan dewan sekali → berhenti seketika → baru bermula. Gugup tak perlu dihapuskan; ia dibaca semula sebagai teruja.",
+      "pages_used": [
+        "wiki/concepts/c16-public-speaking/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    },
+    {
+      "q": "Saya tanya boss pasal promotion, dia reply 'we see first'. Itu maksudnya dah kena reject atau masih ada harapan?",
+      "answer": "En lane ada entri 'The boss says we'll look into it' — 'we see first' ni lebih kurang kelas sama: tiga bacaan — (1) benar nak, tapi low priority: akan mati dalam backlog dia; (2) soft no: takut cakap 'tak' terus; (3) dia bawa isu itu peringkat lebih tinggi dan belum boleh umumkan. Lane ms setanding: 'nanti' yang tak bertarikh boleh bermaksud esok, boleh bermaksud tak pernah. Bacaannya tak boleh dipastikan, tapi tindakan awak boleh: (1) tetapkan tarikh sendiri — 'Noted. Saya susul semula selewat-lewatnya Jumaat ni'; (2) bertukar kepada tulisan sehalaman — 'Saya emel ringkas peta jalan supaya senang untuk review'; (3) kalau dua kali susulan pun tiada pergerakan, itu sendiri sudah jawapannya. Assurances bukan komitmen; tarikh bertulis baru komitmen.",
+      "pages_used": [
+        "wiki/scenarios/sc1-workplace-power/en.md",
+        "wiki/scenarios/sc1-workplace-power/ms.md"
+      ],
+      "coverage": "FULL",
+      "missing": ""
+    }
+  ]
+}
