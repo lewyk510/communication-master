@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "purpose": "Test whether the skill CHANGES its dominant reading when the SAME sentence appears in different contexts (context-sensitivity of understanding).",
+    "method": "One sentence, 3 contexts. A KB-only agent produces, per context, >=2 candidate readings + confidence + the single most-likely reading. Pass per case if (a) >=2 readings are listed, (b) the dominant reading matches the expected label, (c) >=1 context slot is used explicitly. Pass per sentence if the 3 dominant readings are NOT all identical.",
+    "engine": "wiki/playbooks/p2-subtext-decoder/core.md (S1)",
+    "grade_us": "labels: literal/neutral | angry | disappointed_tired | reluctant_forced | guarded | dismissive",
+    "date": "2026-10-09"
+  },
+  "labels": ["literal/neutral", "angry", "disappointed_tired", "reluctant_forced", "guarded", "dismissive"],
+  "sentences": [
+    {
+      "id": "U1-suinbian",
+      "sentence": "随便你吧",
+      "lang": "zh",
+      "contexts": [
+        {"id": "U1a", "scene": "伴侣，刚吵完架，微信文字，这是她最后一条消息", "expected_label": "angry", "note": "冷战式让步，其实是生气/失望"},
+        {"id": "U1b", "scene": "好朋友，当面，一起挑去哪吃饭，语气轻松", "expected_label": "literal/neutral", "note": "真的都行、无所谓"},
+        {"id": "U1c", "scene": "同事，工作群里，你问他用不用他的方案", "expected_label": "reluctant_forced", "note": "不情愿、懒得管、被动让步"}
+      ]
+    },
+    {
+      "id": "U2-womeishi",
+      "sentence": "我没事",
+      "lang": "zh",
+      "contexts": [
+        {"id": "U2a", "scene": "女朋友，刚拌完嘴，文字消息", "expected_label": "angry", "note": "有事、在生气、等你哄"},
+        {"id": "U2b", "scene": "同事，通宵加班后你关心他，当面", "expected_label": "literal/neutral", "note": "确实还撑得住、一般"},
+        {"id": "U2c", "scene": "家人，电话里你问他工作压力大不大", "expected_label": "guarded", "note": "藏着、不想让家里担心、不愿多说"}
+      ]
+    },
+    {
+      "id": "U3-xingba",
+      "sentence": "行吧",
+      "lang": "zh",
+      "contexts": [
+        {"id": "U3a", "scene": "老板，当面给你加了一个活", "expected_label": "reluctant_forced", "note": "被接受、无奈、不敢拒绝"},
+        {"id": "U3b", "scene": "朋友，微信约你周末出来", "expected_label": "literal/neutral", "note": "就是答应、可以"},
+        {"id": "U3c", "scene": "伴侣，文字里向你提一个要求", "expected_label": "dismissive", "note": "勉强、敷衍、不太情愿"}
+      ]
+    },
+    {
+      "id": "U4-fine",
+      "sentence": "fine.",
+      "lang": "en",
+      "contexts": [
+        {"id": "U4a", "scene": "coworker, email after a disagreement in a meeting", "expected_label": "angry", "note": "not fine; irritated/tense"},
+        {"id": "U4b", "scene": "partner, text when you ask how their day was", "expected_label": "literal/neutral", "note": "actually okay"},
+        {"id": "U4c", "scene": "friend, after cancelling plans on you again", "expected_label": "disappointed_tired", "note": "annoyed/resigned"}
+      ]
+    },
+    {
+      "id": "U5-takapala",
+      "sentence": "tak apa la",
+      "lang": "ms",
+      "contexts": [
+        {"id": "U5a", "scene": "Malay colleague at work, after you apologize for a small mistake", "expected_label": "literal/neutral", "note": "really okay, forgiving"},
+        {"id": "U5b", "scene": "friend, after you cancel on them last minute", "expected_label": "disappointed_tired", "note": "a bit upset but letting it go"},
+        {"id": "U5c", "scene": "someone, right after you pushed back on their idea", "expected_label": "dismissive", "note": "brushing off / doesn't want to argue"}
+      ]
+    }
+  ]
+}

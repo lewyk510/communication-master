@@ -33,7 +33,7 @@ while IFS= read -r -d '' f; do
 done < <(git ls-files -z)
 
 cd "$work"
-if git rev-parse -q --verify HEAD >/dev/null 2>&1 && git diff --quiet && git diff --cached --quiet; then
+if git rev-parse -q --verify HEAD >/dev/null 2>&1 && [ -z "$(git status --porcelain)" ]; then
   echo "publish: no changes to publish"
   exit 0
 fi
