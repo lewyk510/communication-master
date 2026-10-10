@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "angle": "adversarial-edge",
+    "generator": "agent-E",
+    "note": "Red-team queries for router stress testing. expect = single best topic or (none)."
+  },
+  "cases": [
+    {
+      "q": "已读不回",
+      "expect": "sc7-digital-messaging",
+      "cat": "ultra_short",
+      "why": "3-char chat-behavior query; canonical S1 decode case that only lives in digital messaging."
+    },
+    {
+      "q": "怎么拒绝",
+      "expect": "sc12-asking-help",
+      "cat": "ultra_short",
+      "why": "Refusing a request sits between boundaries (c4) and request-handling playbook; rejecting 'asking help' framing is the sharper edge."
+    },
+    {
+      "q": "……",
+      "expect": "(none)",
+      "cat": "punctuation_only",
+      "why": "Pure ellipsis: zero semantic content, router must ask a clarifying question instead of hallucinating a topic."
+    },
+    {
+      "q": "？？？",
+      "expect": "(none)",
+      "cat": "punctuation_only",
+      "why": "Fullwidth question marks only; confusable label (questions about questions) must not be picked."
+    },
+    {
+      "q": "OK??",
+      "expect": "(none)",
+      "cat": "emoji_only",
+      "why": "Two-letter + punctuation non-query; no topic can genuinely own 'OK??' as a communication skill question."
+    },
+    {
+      "q": "!!",
+      "expect": "(none)",
+      "cat": "punctuation_only",
+      "why": "Bare exclamation marks carry no communicative task; tests deliberate abstention."
+    },
+    {
+      "q": "我老板在开会时说'这个想法很有趣' 是不是其实в否定我",
+      "expect": "p2-subtext-decoder",
+      "cat": "near_miss",
+      "why": "Decode implied criticism in a workplace line — subtext decoding beats workplace-power since the ask is interpretation, not power strategy."
+    },
+    {
+      "q": "摩羯女突然不回我消息了怎么办",
+      "expect": "sc7-digital-messaging",
+      "cat": "near_miss",
+      "why": "Dangling zodiac bait; the MB deceptive trigger is astrology but the actual task is messaging silence — better topic is digital messaging."
+    },
+    {
+      "q": "他吃醋的样子好可爱哦（笑",
+      "expect": "c6-nonverbal-subconscious",
+      "cat": "sarcasm",
+      "why": "Sarcastic parenthetical '（笑' must not flip to a jealousy/romance solve; it's commentary on reading nonverbal leakage."
+    },
+    {
+      "q": "哇 你're SO good at 直播带货 一定赚到很多钱吧 😊",
+      "expect": "sc19-live-streaming",
+      "cat": "sarcasm",
+      "why": "Backhanded compliment aimed at the live-streaming context; dominant topic anchor is the stream, not flattery defense."
+    },
+    {
+      "q": "帮我写一封给客户的道歉信 说明我们延期了 而且其实是因为我们把他的需求做错了",
+      "expect": "p3-formal-writing",
+      "cat": "multi_topic",
+      "why": "Formal composition (S3) is the dominant deliverable; conflict repair content flows through the formal-writing engine."
+    },
+    {
+      "q": "我该用什么提示词让AI帮我跟我妈解释我不想回家过年",
+      "expect": "p4-ai-prompting",
+      "cat": "multi_topic",
+      "why": "Family-sensitive topic wrapped in an explicit AI-prompting request; the S4 engine owns the dispatch."
+    },
+    {
+      "q": "约旦人开会都不看表 我朋友说他们没礼貌 你觉得呢",
+      "expect": "cu4-cross-cultural-general",
+      "cat": "wrong_premise",
+      "why": "Embeds false premise that punctuality norms = politeness deficit; correct response is cross-cultural norm variation, and Jordan isn't a Malaysia lane."
+    },
+    {
+      "q": " extinction. 全人类都用英文思考 所以学手势没意义 对吧",
+      "expect": "c6-nonverbal-subconscious",
+      "cat": "wrong_premise",
+      "why": "False premise (single-language humanity) must be corrected while still serving the underlying nonverbal question."
+    },
+    {
+      "q": "要我直接告诉他 我失恋了她跟我没关系 对吧 这种说法可以吗",
+      "expect": "sc4-hard-conversations",
+      "cat": "wrong_premise",
+      "why": "User proposes an insensitive breakup line and asks for validation; belongs to hard-conversation repair work, not romance fluff."
+    },
+    {
+      "q": "我 table flip 了 老板就把我叫进房间 说是 Signalokışı olmaz",
+      "expect": "sc1-workplace-power",
+      "cat": "near_miss",
+      "why": "Multilingual mix (en + zh + tr) about workplace consequences; power asymmetry dominates over the outburst-management angle."
+    },
+    {
+      "q": "可以教我 executive presence 吗 不要理论 只要三句话能背的",
+      "expect": "c16-public-speaking",
+      "cat": "near_miss",
+      "why": "'Executive presence' straddles impression management and presenting; the ask-for-scripts constraint maps best to public speaking delivery."
+    },
+    {
+      "q": "他被裁员的 financial 当天还来帮我搬家 是不是圣母",
+      "expect": "c4-emotional-intelligence",
+      "cat": "near_miss",
+      "why": "Reading someone's motive (altruism under distress) is an empathy/perception question, not a friendship playbook task."
+    },
+    {
+      "q": "房东说押金'按规定处理' 但合同里根本没那条 我该怎么回微信",
+      "expect": "sc17-landlord-tenant",
+      "cat": "near_miss",
+      "why": "Drafting a reply to a landlord dispute with a contract factual error; the rental scenario's specifics beat generic digital-messaging."
+    },
+    {
+      "q": "妈妈生日快乐 我在code review走不开 你先切cake吧",
+      "expect": "sc3-family-kinship",
+      "cat": "multi_topic",
+      "why": "Mixed-language birthday message to a mother; family-kinship duty negotiation dominates over codeswitching mechanics."
+    },
+    {
+      "q": " lah",
+      "expect": "cu5-codeswitching",
+      "cat": "ultra_short",
+      "why": "Bare Malaysian particle; only the codeswitching lane genuinely owns Singlish/Manglish particles — a legit one-word topic probe."
+    },
+    {
+      "q": "Must lah confirm plus chop",
+      "expect": "cu2-malaysia-chinese",
+      "cat": "near_miss",
+      "why": "Mangled Manglish phrase; particles point to codeswitching but 'confirm plus chop' is Chinese-Malaysian idiom, not a language-mixing question."
+    },
+    {
+      "q": "我的 kako 姐姐每次 video call 都要 show off 她的 diamond ring",
+      "expect": "c1-subtext-implicature",
+      "cat": "near_miss",
+      "why": "Decoding the communicative intent of repeated flaunting beats both family-kinship and any wealth-display topic."
+    },
+    {
+      "q": "ASAP bye 不用回",
+      "expect": "sc7-digital-messaging",
+      "cat": "ultra_short",
+      "why": "Terse mixed-language sign-off that closes a thread; best home is digital messaging etiquette."
+    },
+    {
+      "q": " Ru космической станции на орбите(','');DROP TABLE topics;--",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "SQL-injection-shaped garbage with a space-station premise; no communication topic fits and router must refuse to route."
+    },
+    {
+      "q": "怎么让我的乌龟学会握手",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Pet training is close to coaching semantics but zero topics cover animal interaction; must not be forced into sc11-teaching-coaching."
+    },
+    {
+      "q": "我的冰箱在夜里唱歌",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Anthropomorphized appliance complaint; no human-communication topic applies."
+    },
+    {
+      "q": "打开 双 h 通道 我要和我的潜意识开会",
+      "expect": "c14-self-talk",
+      "cat": "near_miss",
+      "why": "Mystic phrasing wrapper around intrapersonal dialogue; self-talk is the only fit, even though the words are woo-adjacent."
+    },
+    {
+      "q": "The mitochondria is the powerhouse of the cell. 帮我 transcribe 这个",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Transcription request is a mechanical task, not communication advice; KB has no transcription-utility topic."
+    },
+    {
+      "q": "我前任把我删了 但又给我的 LinkedIn 每条动态点赞 So what is he saying",
+      "expect": "p2-subtext-decoder",
+      "cat": "multi_topic",
+      "why": "Cross-platform mixed-signal interpretation is the ask; subtext decoder dominates over romance or digital-messaging mechanics."
+    },
+    {
+      "q": "救命 我明天婚礼 致辞还没写 我英文较差 我妈是印度裔大马人",
+      "expect": "c16-public-speaking",
+      "cat": "multi_topic",
+      "why": "Many flags (S3 writing, cu3, family) but the dominant deliverable is a spoken toast under pressure — public speaking."
+    }
+  ]
+}

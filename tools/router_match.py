@@ -111,10 +111,28 @@ def _fuzzy_hits(entries: list[dict], ql: str) -> list[dict]:
     return out
 
 
+# Long-query head priority: in a long/context-rich message the intent is usually
+# stated in the opening clause, so a trigger matched early should outweigh an
+# incidental trigger matched later. Only applies to long queries, so short
+# punchy queries (and their recall-gate cases) are unaffected.
+HEAD_MIN = 20
+HEAD_K = 12
+HEAD_BOOST = 3
+
+
+def _find_pos(tl: str, ql: str) -> int:
+    """Start index of a trigger in the query, or -1 (latin=word-boundary, cjk=substring)."""
+    if tl.isascii():
+        m = re.search(r"(?<![a-z0-9])" + re.escape(tl) + r"(?![a-z0-9])", ql)
+        return m.start() if m else -1
+    return ql.find(tl)
+
+
 def rank(index: dict, query: str) -> list[dict]:
     entries = index["entries"]
     medium = {t.lower() for t in index.get("matcher", {}).get("medium_tokens", [])}
     ql = query.lower()
+    long_q = len(ql) >= HEAD_MIN
     out: list[dict] = []
     for i, e in enumerate(entries):
         score = 0
@@ -125,7 +143,10 @@ def rank(index: dict, query: str) -> list[dict]:
                 continue
             hit = _latin_hit(tl, ql) if tl.isascii() else (tl in ql)
             if hit:
-                score += 1 if tl in medium else len(tl)
+                w = 1 if tl in medium else len(tl)
+                if long_q and _find_pos(tl, ql) < HEAD_K:
+                    w += (HEAD_BOOST - 1) * (1 if tl in medium else len(tl))
+                score += w
                 matched.append(trig)
         if score:
             out.append({

@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "angle": "multilingual-malaysia",
+    "generator": "agent-D",
+    "notes": "~27 realistic Malaysian-user queries stressing zh/en/ms/Manglish routing: pure Malay, pure English, Manglish particles (lah/leh/lor/ah, where got, paiseh), bahasa rojak mid-sentence code-switching, typos, and no-topic chitchat."
+  },
+  "cases": [
+    {
+      "q": "Macam mana nak minta naik gaji dengan bos saya? Dia memang kedekut, tapi prestasi saya dah bertahun tak pernah diiktiraf.",
+      "expect": "sc10-negotiation-deals",
+      "cat": "ms_only",
+      "why": "Pure-Malay salary raise request with a stingy boss = negotiation scenario, tests ms lane beyond greetings."
+    },
+    {
+      "q": "My manager keeps presenting my work as his own in meetings. How do I call him out without damaging my career here?",
+      "expect": "sc1-workplace-power",
+      "cat": "en_only",
+      "why": "Fully-English credit-stealing complaint maps to workplace power dynamics, not conflict repair."
+    },
+    {
+      "q": "Apa maksud bila crush saya balas 'hmm' je selepas saya taip mesej panjang lebar?",
+      "expect": "p2-subtext-decoder",
+      "cat": "ms_only",
+      "why": "Malay speaker decoding a crush's minimal reply = subtext decoding, tests ms lane into a playbook not a scenario."
+    },
+    {
+      "q": "CNY dinner my auntie keep anyhow comment - I fat already, salary so low, when want marry. Where got people talk like that one! How to tahan without balas?",
+      "expect": "sc3-family-kinship",
+      "cat": "manglish",
+      "why": "Pure Manglish with 'where got'/'anyhow'/'tahan' about CNY relatives; family criticism, not just cultural trivia."
+    },
+    {
+      "q": "Kawan baik saya baru kehilangan ibu. Saya nak hantar mesej tapi takut tersalah kata. Apa yang patut saya tulis?",
+      "expect": "sc16-condolence-grief",
+      "cat": "ms_only",
+      "why": "Fully-Malay condolence message ask; tests whether ms lane reaches the grief scenario."
+    },
+    {
+      "q": "Setiap kali nak present depan kelas, suara saya gementar dan tangan sejuk. Macam mana nak atasi gementar ni?",
+      "expect": "c16-public-speaking",
+      "cat": "ms_only",
+      "why": "Malay presentation anxiety maps to public speaking concept, not emotional intelligence generally."
+    },
+    {
+      "q": "Saya tanya boss pasal promotion, dia reply 'we see first'. Itu maksudnya dah kena reject atau masih ada harapan?",
+      "expect": "p2-subtext-decoder",
+      "cat": "rojak",
+      "why": "EN phrase 'we see first' embedded in Malay sentence; classic Malaysian soft-rejection needing subtext decode."
+    },
+    {
+      "q": "Boss keep pushing OT to me lah, other colleagues semua can balik on time. I paiseh to say no leh, how ah?",
+      "expect": "sc1-workplace-power",
+      "cat": "manglish",
+      "why": "Manglish with lah/leh/paiseh about being dumped on at work; power asymmetry, not assertiveness concept generally."
+    },
+    {
+      "q": "She texted 'I'm fine' but her voice went flat when she said it and she looked away. Is she actually okay or is something wrong?",
+      "expect": "c11-paralanguage-prosody",
+      "cat": "en_only",
+      "why": "Question hinges on vocal tone and nonverbal leak, not the words; tests paralanguage over generic subtext."
+    },
+    {
+      "q": "i always get talked over in meetings lol, my ideas just disappear. how do i make ppl actually listen and say yes",
+      "expect": "c2-persuasion-influence",
+      "cat": "colloquial",
+      "why": "Casual lowercase internet English, no Manglish particles; core ask is influence/getting buy-in in meetings."
+    },
+    {
+      "q": "Nak propose kat girlfriend bulan depan, cincin pun dah beli, tapi nervous gila. Boleh share tips macam mana nak buat moment tu istimewa?",
+      "expect": "sc2-romance-intimacy",
+      "cat": "rojak",
+      "why": "Malay-English mix about a proposal; romance scenario despite no relationship-problem framing."
+    },
+    {
+      "q": "Dapat panggil interview next week. Bila depa tanya 'tell me about yourself' saya memang blank. Boleh tolong practice dengan saya?",
+      "expect": "sc8-job-interviews",
+      "cat": "rojak",
+      "why": "Malay sentence with quoted EN interview question; interview prep ask, tests routing to interviews not general speaking."
+    },
+    {
+      "q": "My tai kor suruh saya tutup kesilapan payment dia, tapi kalau kena audit nanti saya yang jadi kambing hitam lor. What to do?",
+      "expect": "c9-manipulation-defense",
+      "cat": "rojak",
+      "why": "Rojak with 'tai kor'/'lor' and 'kambing hitam' (scapegoat); being set up to absorb blame = manipulation defense."
+    },
+    {
+      "q": "Aunty kat pasar tu pushy habis, saya dah cakap 'tak nak, terima kasih' lima kali, dia masih dok follow. How to escape without rude?",
+      "expect": "sc9-live-service",
+      "cat": "rojak",
+      "why": "Face-to-face pushy vendor situation; live-service handling, not persuasion theory."
+    },
+    {
+      "q": "Every time we makan outside my friend 'lupa' bawa wallet. How to hint at her nicely to pay her share lah, tak boleh tahan already.",
+      "expect": "sc6-friends-social",
+      "cat": "manglish",
+      "why": "Manglish friend-money awkwardness; friendship boundary via hinting, tests friends scenario over manipulation."
+    },
+    {
+      "q": "Group assignment ada satu member asyik MIA, submission minggu depan. Macam mana nak settle without jadi drama kat group chat?",
+      "expect": "c15-group-team-communication",
+      "cat": "rojak",
+      "why": "Free-rider in a student group chat; group/team coordination, distinct from workplace power or conflict repair."
+    },
+    {
+      "q": "My aircon sudah rosak 2 weeks liao, landlord keep saying 'esok saya call orang' but never come. Next step how ah?",
+      "expect": "sc17-landlord-tenant",
+      "cat": "manglish",
+      "why": "Manglish 'liao/how ah' about a stalling landlord; landlord-tenant escalation scenario."
+    },
+    {
+      "q": "gm, plz hlp. my flatemate nvr wash the dishis 2 week alr, i dun wan fight but how to tell him",
+      "expect": "sc4-hard-conversations",
+      "cat": "typo",
+      "why": "Heavily typo'd SMS-style English; flatmate confrontation ask tests typo tolerance and hard-conversation routing."
+    },
+    {
+      "q": "hw to tell my dad im moving out wout upsetting him, he very tradisional one",
+      "expect": "sc3-family-kinship",
+      "cat": "typo",
+      "why": "Typo-laden English with 'one' sentence-final particle; parent-child announcement, family scenario."
+    },
+    {
+      "q": "Balik kampung tiap Raya my mak mesti cakap 'aiyo dah gemuk la you'. Every. Single. Year. How to not let it spoil my mood the whole trip?",
+      "expect": "c4-emotional-intelligence",
+      "cat": "manglish",
+      "why": "Recurring hurtful family comment; core ask is managing own emotional reaction, not decoding intent or fixing family."
+    },
+    {
+      "q": "Opah saya terus panggil menantu 'kau'. Itu biasa bagi orang tua, atau ada maksud tersirat dia tak berkenan?",
+      "expect": "cu1-malaysia-malay",
+      "cat": "ms_only",
+      "why": "Malay pronoun/kinship-address norms (kau vs aku among in-laws); Malaysian Malay culture question."
+    },
+    {
+      "q": "Live jualan saya lambat, penonton tinggal lapan orang. Macam mana nak bercakap supaya mereka tak keluar dan terus bertahan?",
+      "expect": "sc19-live-streaming",
+      "cat": "ms_only",
+      "why": "Fully-Malay live-selling viewer-retention ask; tests the rarely-hit live-streaming scenario from ms lane."
+    },
+    {
+      "q": "我 boss 讲 'next time lah' bila saya minta leave. 到底 he 答应了还是没有? How ah?",
+      "expect": "p2-subtext-decoder",
+      "cat": "rojak",
+      "why": "Three-way zh-en-Manglish mix in one breath; decoding vague 'next time lah' promise tests max code-switch load."
+    },
+    {
+      "q": "When chatting with my Malay colleagues, when does switching into English come across as showing off or being distant? Any rules of thumb?",
+      "expect": "cu5-codeswitching",
+      "cat": "en_only",
+      "why": "Ask is about codeswitching norms itself, not a specific conversation; tests the codeswitching page over culture pages."
+    },
+    {
+      "q": "Eh you watch that new KL crime drama on Netflix? Episode 3 twist gila babi!",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Pure chitchat/share with Manglish intensifier; no communication-skill ask, router should decline."
+    },
+    {
+      "q": "Nasi lemak or roti canai for breakfast? Quick, deciding now.",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Malaysian-culture-flavored banter poll but zero communication question; trap for over-eager cu routing."
+    },
+    {
+      "q": "What time does the Maybank branch at KLCC close today?",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Plain factual lookup in English; no communication dimension, router should not force a topic."
+    }
+  ]
+}

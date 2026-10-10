@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "angle": "workplace-power",
+    "generator": "agent-A"
+  },
+  "cases": [
+    {
+      "q": "方案被老板当众调坎 还补了句'年轻人要多想' 全场都看着我 到底怎么接",
+      "expect": "sc1-workplace-power",
+      "cat": "typo",
+      "why": "上级公开打压需职场权力现场的接话策略（调侃→调坎 为拟真错字）"
+    },
+    {
+      "q": "同事甩锅给我 领导真信了 现在我讲什么都像狡辩 怎办啦",
+      "expect": "sc1-workplace-power",
+      "cat": "colloquial",
+      "why": "被甩锅且权力偏向对方，需要职场内的自辩与信任修复（怎办=常见漏字）"
+    },
+    {
+      "q": "两个leader互相卡我资源 一个管headcount一个管预算 两头都要讨好 这要我命",
+      "expect": "sc1-workplace-power",
+      "cat": "abbrev",
+      "why": "夹在两方权力之间向上管理，是典型职场权力题"
+    },
+    {
+      "q": "领导 今天 找我 聊 说态度有问题 但也没说具体啥事 我要不要主动去问清楚",
+      "expect": "p2-subtext-decoder",
+      "cat": "voice2text",
+      "why": "空格状语音转文字腔，核心诉求是解码上级含糊话里的潜台词"
+    },
+    {
+      "q": "boss讲 lets cirle back 都第三次了 结果一次都没回 这到底是婉拒还是真在忙",
+      "expect": "p2-subtext-decoder",
+      "cat": "typo",
+      "why": "解读英文职场黑话的真实意图（cirle back 为拟真错字）"
+    },
+    {
+      "q": "组织架构调整在即 领导突然说'机会不止在内部' 这话是哪头的意思 坐不住啊",
+      "expect": "p2-subtext-decoder",
+      "cat": "ellipsis",
+      "why": "高管模糊暗示话中有话，属于潜台词解码而非直接冲突"
+    },
+    {
+      "q": "拖了三天才回客户的邮件 今天必须处理 怎么写道歉才专业 不要那种一眼模板的东西",
+      "expect": "p3-formal-writing",
+      "cat": "formal",
+      "why": "迟复道歉邮件的正式书面写法"
+    },
+    {
+      "q": "有人能给我一个拒绝周末团建的措辞吗 领导爱面子不想伤他 but 周六我是真的有安排",
+      "expect": "p3-formal-writing",
+      "cat": "colloquial",
+      "why": "礼貌拒拒的书面措辞请求，落点在文案怎么写"
+    },
+    {
+      "q": "下周术职报告不会组织 老板说不要流水账要讲impact 有点慌",
+      "expect": "p3-formal-writing",
+      "cat": "typo",
+      "why": "述职报告的结构化正式写作（术职=述职拟真错字）"
+    },
+    {
+      "q": "涨薪申请信的英文版怎么开场 才不会看起来像在要挟公司",
+      "expect": "p3-formal-writing",
+      "cat": "formal",
+      "why": "正式申请信的措辞与语气拿捏"
+    },
+    {
+      "q": "想跟老板谈调底薪 佣金结构改了以后差距太大 他脾气又爆 要怎么开这个口",
+      "expect": "sc10-negotiation-deals",
+      "cat": "colloquial",
+      "why": "面对强势方的薪酬谈判开场与条件设定"
+    },
+    {
+      "q": "刚下视频会 客户在会上当场发飙说拿他当冤大头 我是主持的 现在到底要怎么补救啊",
+      "expect": "sc15-calls-video",
+      "cat": "voice2text",
+      "why": "视频会议现场的冲突控场与事后补救，归属通话场景"
+    },
+    {
+      "q": "要跟跟了我三年的下属谈话 他绩效没达标 要进cut名单 这人还蛮拼的 怎么开这场话",
+      "expect": "sc4-hard-conversations",
+      "cat": "ellipsis",
+      "why": "传达坏消息的高难度对话（要跟=重复字拟真）"
+    },
+    {
+      "q": "下周就终面了 是视频面试 自我介绍还卡在第一居 救命",
+      "expect": "sc8-job-interviews",
+      "cat": "typo",
+      "why": "面试准备与第一印象答法（居=句拟真错字）"
+    },
+    {
+      "q": "行业酒会全是不认识的人 太考我这种i人了 握手交换名片完就站角落 给点实际能用的开场",
+      "expect": "sc5-networking-first-impressions",
+      "cat": "colloquial",
+      "why": "内向者在现场活动的破冰与聊法（i人=网络流行语）"
+    },
+    {
+      "q": "团队群里的消息个个已读不回 线下碰到又热络得很 这是嘛情况 我群规也没立错啊",
+      "expect": "c15-group-team-communication",
+      "cat": "typo",
+      "why": "团队群体互动的线上沉默与应对（嘛=什么拟真错字），中心是群体动力学"
+    },
+    {
+      "q": "她每次开口都'我都是为你好' 然后顺理成章把case丢给我 这次又来 我不是她的backup啊",
+      "expect": "c9-manipulation-defense",
+      "cat": "colloquial",
+      "why": "以好意包装的责任转移是典型软操控，需要识别与防御"
+    },
+    {
+      "q": "新来的00后开会直接讲'前辈你那套资历逻辑在会上没用' 😤 好家伙 我还怎么带他",
+      "expect": "c7-demographic-differences",
+      "cat": "emoji",
+      "why": "代际差异导致的沟通冲突，落点在世代差异而非单纯权力"
+    },
+    {
+      "q": "突然被cue上台给部门做五分钟总结 稿子都没有 腦子一片空白 怎么撑过这五分钟",
+      "expect": "c16-public-speaking",
+      "cat": "typo",
+      "why": "即兴当众发言的结构与救场（腦=简繁混打拟真）"
+    },
+    {
+      "q": "我老板开会自动跳粤语 过三句变英语 再过五句出马来话 完全跟不上 怎么应才不失礼",
+      "expect": "cu5-codeswitching",
+      "cat": "colloquial",
+      "why": "语码转换场景的理解与得体回应，精确对应code-switching主题"
+    },
+    {
+      "q": "公司annual dinner跟我一桌的是马来同事 平时没话聊 有什么安全话题 不想无意踩雷",
+      "expect": "cu1-malaysia-malay",
+      "cat": "abbrev",
+      "why": "跨族群餐桌闲聊的红线与话题选择，落在马来文化守则"
+    },
+    {
+      "q": "晚上十一点半 boss还在teams上@我提醒明早汇报 回是秒回认命 不回又怕明天穿小鞋 到底标准操作是什么",
+      "expect": "sc7-digital-messaging",
+      "cat": "colloquial",
+      "why": "下班时间工作消息的回复策略与节奏，中心在线上消息行为"
+    },
+    {
+      "q": "进度汇报发给老板他已读三天没回 再问怕显得催命 不问项目又要凉 这条跟进消息怎么措辞 😭",
+      "expect": "p1-reply-engine",
+      "cat": "emoji",
+      "why": "跟进催办消息的措辞与时机，正是回复引擎的用例"
+    },
+    {
+      "q": "在想要不要裸辞了 每天上班像上坟 领导也从来不表扬人 就想找人听我说说",
+      "expect": "(none)",
+      "cat": "colloquial",
+      "why": "职业倦怠的倾诉与去留决策，不是沟通技能问题，无主题匹配"
+    },
+    {
+      "q": "开斋节今年是哪两天啊 要出年度leave表了 boss喊我搞定",
+      "expect": "(none)",
+      "cat": "abbrev",
+      "why": "假期日期是资讯查询，不是沟通或写作问题"
+    },
+    {
+      "q": "quick q is this friday a public holiday for thaipusam in kl",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "纯事实查询，与KB任何主题无关"
+    },
+    {
+      "q": "my monthly 1-1 with skip level always turns into me reading off my status list, how do i make it less like a report",
+      "expect": "sc1-workplace-power",
+      "cat": "typo",
+      "why": "向上管理的一对一对话设计，属于职场权力沟通（skip level为英文残留）"
+    },
+    {
+      "q": "刚被领导一句话顶回来 一肚子火 明天还要碰面 现在怎么先把这口气咽下去别半夜发消息",
+      "expect": "c14-self-talk",
+      "cat": "angry",
+      "why": "冲突后的情绪自我调节与冲动管控，中心是内心对话"
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+ "meta": {
+  "note": "Round 8 bombardment adjudicated. verdict: clean=router==gen_label; router_ok_label_noise=blind judge kept router's pick; router_wrong=judge preferred other; both_wrong=third topic fits.",
+  "n": 118,
+  "counts": {
+   "clean": 40,
+   "router_ok_label_noise": 15,
+   "router_wrong": 61,
+   "both_wrong": 2
+  }
+ },
+ "cases": [
+  {
+   "q": "已读不回",
+   "src": "adversarial",
+   "gen_label": "sc7-digital-messaging",
+   "router": "sc7-digital-messaging",
+   "verdict": "clean"
+  },
+  {
+   "q": "怎么拒绝",
+   "src": "adversarial",
+   "gen_label": "sc12-asking-help",
+   "router": "sc4-hard-conversations",
+   "judge": {
+    "pick": "B",
+    "best": "sc4-hard-conversations",
+    "why": " Asking how to refuse someone is sc4's refusal/boundary scenario; sc12 is about requesting help, opposite direction."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "我老板在开会时说'这个想法很有趣' 是不是其实в否定我",
+   "src": "adversarial",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "Core ask is decoding the boss's ironic subtext, which is p2's decoding engine; workplace context is background."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "摩羯女突然不回我消息了怎么办",
+   "src": "adversarial",
+   "gen_label": "sc7-digital-messaging",
+   "router": "sc7-digital-messaging",
+   "verdict": "clean"
+  },
+  {
+   "q": "他吃醋的样子好可爱哦（笑",
+   "src": "adversarial",
+   "gen_label": "c6-nonverbal-subconscious",
+   "router": "sc2-romance-intimacy",
+   "judge": {
+    "pick": "A",
+    "best": "sc2-romance-intimacy",
+    "why": "Jealousy display is an intimacy/dating signal, belongs to romance topic; c6 is general body-language mechanics."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "哇 你're SO good at 直播带货 一定赚到很多钱吧 😊",
+   "src": "adversarial",
+   "gen_label": "sc19-live-streaming",
+   "router": "sc19-live-streaming",
+   "verdict": "clean"
+  },
+  {
+   "q": "帮我写一封给客户的道歉信 说明我们延期了 而且其实是因为我们把他的需求做错了",
+   "src": "adversarial",
+   "gen_label": "p3-formal-writing",
+   "router": "c3-nvc-conflict-repair",
+   "judge": {
+    "pick": "A",
+    "best": "p3-formal-writing",
+    "why": "They need a formal apology letter to a client, which is exactly p3's letter playbook."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我该用什么提示词让AI帮我跟我妈解释我不想回家过年",
+   "src": "adversarial",
+   "gen_label": "p4-ai-prompting",
+   "router": "p4-ai-prompting",
+   "verdict": "clean"
+  },
+  {
+   "q": "约旦人开会都不看表 我朋友说他们没礼貌 你觉得呢",
+   "src": "adversarial",
+   "gen_label": "cu4-cross-cultural-general",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "A",
+    "best": "cu4-cross-cultural-general",
+    "why": "Judging a culture's time norms is cross-cultural general; the friend-gossip framing is about cultural interpretation."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "extinction. 全人类都用英文思考 所以学手势没意义 对吧",
+   "src": "adversarial",
+   "gen_label": "c6-nonverbal-subconscious",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "c6-nonverbal-subconscious",
+    "why": "Wrong premise about gestures/nonverbal channel is c6 territory; decoder tool isn't the question."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "要我直接告诉他 我失恋了她跟我没关系 对吧 这种说法可以吗",
+   "src": "adversarial",
+   "gen_label": "sc4-hard-conversations",
+   "router": "p3-formal-writing",
+   "judge": {
+    "pick": "A",
+    "best": "sc4-hard-conversations",
+    "why": "Telling someone about a breakup / ending ties is a hard conversation; formal writing irrelevant."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我 table flip 了 老板就把我叫进房间 说是 Signalokışı olmaz",
+   "src": "adversarial",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc1-workplace-power",
+   "verdict": "clean"
+  },
+  {
+   "q": "可以教我 executive presence 吗 不要理论 只要三句话能背的",
+   "src": "adversarial",
+   "gen_label": "c16-public-speaking",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "A",
+    "best": "c16-public-speaking",
+    "why": "Executive presence maps closest to delivery/presentation gravitas in c16."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "他被裁员的 financial 当天还来帮我搬家 是不是圣母",
+   "src": "adversarial",
+   "gen_label": "c4-emotional-intelligence",
+   "router": "sc3-family-kinship",
+   "judge": {
+    "pick": "B",
+    "best": "c4-emotional-intelligence",
+    "why": "Reading and appreciating another person's generous/emotional act is EI; not a family topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "房东说押金'按规定处理' 但合同里根本没那条 我该怎么回微信",
+   "src": "adversarial",
+   "gen_label": "sc17-landlord-tenant",
+   "router": "sc17-landlord-tenant",
+   "verdict": "clean"
+  },
+  {
+   "q": "妈妈生日快乐 我在code review走不开 你先切cake吧",
+   "src": "adversarial",
+   "gen_label": "sc3-family-kinship",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "sc3-family-kinship",
+    "why": "Message to mom on her birthday is family communication context."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "lah",
+   "src": "adversarial",
+   "gen_label": "cu5-codeswitching",
+   "router": "cu5-codeswitching",
+   "verdict": "clean"
+  },
+  {
+   "q": "Must lah confirm plus chop",
+   "src": "adversarial",
+   "gen_label": "cu2-malaysia-chinese",
+   "router": "cu5-codeswitching",
+   "judge": {
+    "pick": "A",
+    "best": "cu2-malaysia-chinese",
+    "why": "'Confirm plus chop' is a local Chinese-community colloquial idiom; not about mixed-language signaling per se."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我的 kako 姐姐每次 video call 都要 show off 她的 diamond ring",
+   "src": "adversarial",
+   "gen_label": "c1-subtext-implicature",
+   "router": "sc15-calls-video",
+   "judge": {
+    "pick": "A",
+    "best": "c1-subtext-implicature",
+    "why": "The ask is decoding the showing-off subtext; video call is just the channel."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "ASAP bye 不用回",
+   "src": "adversarial",
+   "gen_label": "sc7-digital-messaging",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "打开 双 h 通道 我要和我的潜意识开会",
+   "src": "adversarial",
+   "gen_label": "c14-self-talk",
+   "router": "c3-nvc-conflict-repair",
+   "judge": {
+    "pick": "A",
+    "best": "c14-self-talk",
+    "why": "Hosting a meeting with one's subconscious is literally self-talk/intrapersonal communication."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我前任把我删了 但又给我的 LinkedIn 每条动态点赞 So what is he saying",
+   "src": "adversarial",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc16-condolence-grief",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "'So what is he saying' is a decode-the-mixed-signals request; not grief."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "救命 我明天婚礼 致辞还没写 我英文较差 我妈是印度裔大马人",
+   "src": "adversarial",
+   "gen_label": "c16-public-speaking",
+   "router": "cu3-malaysia-indian",
+   "judge": {
+    "pick": "A",
+    "best": "c16-public-speaking",
+    "why": "The deliverable is a wedding speech, a public speaking task; heritage info is peripheral."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "wx上他回我一个哦 这是什么意思😭 之前都是秒回一大段的",
+   "src": "digital",
+   "gen_label": "sc7-digital-messaging",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "B",
+    "best": "p2-subtext-decoder",
+    "why": "'What does this 哦 mean' is a subtext decode ask; digital messaging norms are secondary."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "老板在群里@我 辛苦了 早点休息[呲牙] 这是真心客套还是话里有话",
+   "src": "digital",
+   "gen_label": "c1-subtext-implicature",
+   "router": "sc1-workplace-power",
+   "verdict": "clean"
+  },
+  {
+   "q": "发了条语音让微信转文字 稍等哈变成小邓哈 客户那边已读了 怎么补救",
+   "src": "digital",
+   "gen_label": "sc7-digital-messaging",
+   "router": "sc15-calls-video",
+   "judge": {
+    "pick": "B",
+    "best": "sc7-digital-messaging",
+    "why": "Voice-to-text error in WeChat messaging and remedying a sent message is digital messaging, not calls."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "buyer之前讲好包邮 现在又说再减20马上转 不想亏也不想丢单 咋回",
+   "src": "digital",
+   "gen_label": "sc10-negotiation-deals",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "A",
+    "best": "sc10-negotiation-deals",
+    "why": "Haggling over price with a buyer is negotiation."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "zoom interview next week 面我的是hc manager 大概会问什么 要准备啥",
+   "src": "digital",
+   "gen_label": "sc8-job-interviews",
+   "router": "sc8-job-interviews",
+   "verdict": "clean"
+  },
+  {
+   "q": "client replied \"let's circle back next quarter\" — is that a polite no or a real maybe",
+   "src": "digital",
+   "gen_label": "c1-subtext-implicature",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "小红书评论区有人阴阳我 还上升到人身攻击 要怼回去还是直接拉黑",
+   "src": "digital",
+   "gen_label": "sc14-online-social",
+   "router": "sc14-online-social",
+   "verdict": "clean"
+  },
+  {
+   "q": "房东微信说下个月租金涨300 问我是不是只能接受 还有得谈吗",
+   "src": "digital",
+   "gen_label": "sc17-landlord-tenant",
+   "router": "sc17-landlord-tenant",
+   "verdict": "clean"
+  },
+  {
+   "q": "相亲对象凌晨一点发我睡了吗 这算什么意思 要怎么回",
+   "src": "digital",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "'What does it mean, how do I reply' is the decoder workflow (multi-hypothesis + 3 replies)."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "马来客户说insyaAllah saya check dulu 然后就没了 这算答应还是委婉拒绝",
+   "src": "digital",
+   "gen_label": "cu1-malaysia-malay",
+   "router": "cu1-malaysia-malay",
+   "verdict": "clean"
+  },
+  {
+   "q": "我一句话里混中英马三种 eh 那个promo有no deal meh 你看下 这种mixing有啥讲究吗",
+   "src": "digital",
+   "gen_label": "cu5-codeswitching",
+   "router": "cu5-codeswitching",
+   "verdict": "clean"
+  },
+  {
+   "q": "客服踢皮球第三天了 退款永远在系统处理中 真的想骂人 教我骂人不带脏字那种",
+   "src": "digital",
+   "gen_label": "sc9-live-service",
+   "router": "sc9-live-service",
+   "verdict": "clean"
+  },
+  {
+   "q": "我妈六十岁刚学会用[捂脸] 但全用错场合 家族群她一发我就尴尬 要不要提醒她",
+   "src": "digital",
+   "gen_label": "c7-demographic-differences",
+   "router": "c15-group-team-communication",
+   "judge": {
+    "pick": "both_wrong",
+    "best": "c13-visual-multimodal",
+    "why": "Neither group communication nor demographics fit; the real topic is emoji misuse/visual miscommunication (c13-visual-multimodal)."
+   },
+   "verdict": "both_wrong"
+  },
+  {
+   "q": "直播有人连刷礼物 一直逼问我住哪做什么 主播怎么接话不冷场也不越界",
+   "src": "digital",
+   "gen_label": "sc19-live-streaming",
+   "router": "sc19-live-streaming",
+   "verdict": "clean"
+  },
+  {
+   "q": "她发 你人真的很好 但是…… 后面就没了 帮我把这句拆开看看",
+   "src": "digital",
+   "gen_label": "p2-subtext-decoder",
+   "router": "cu2-malaysia-chinese",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "Classic soft-rejection 'you're great but...' trailing off is a decode request."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "帮我写个prompt 让AI帮我想微信回复 要显得情商在线那种",
+   "src": "digital",
+   "gen_label": "p4-ai-prompting",
+   "router": "p4-ai-prompting",
+   "verdict": "clean"
+  },
+  {
+   "q": "shipment晚了三天 给客户的道歉邮件求个英文模板 语气别太卑微也别太冷",
+   "src": "digital",
+   "gen_label": "p3-formal-writing",
+   "router": "c3-nvc-conflict-repair",
+   "judge": {
+    "pick": "A",
+    "best": "p3-formal-writing",
+    "why": "Explicit request for an English apology email template = formal writing."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "同事又在群里阴阳我 15分钟后开会 必须回一句 但不能失态 帮我",
+   "src": "digital",
+   "gen_label": "p1-reply-engine",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "p1-reply-engine",
+    "why": "They need one calibrated reply fast — that's the reply engine; workplace setting is context."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "跟她语音聊了两个小时 她的语气突然就冷下去了 是我哪句话说错了吗 听不出来",
+   "src": "digital",
+   "gen_label": "c11-paralanguage-prosody",
+   "router": "sc15-calls-video",
+   "judge": {
+    "pick": "B",
+    "best": "c11-paralanguage-prosody",
+    "why": "Her voice going cold is a paralanguage/prosody signal question."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "老板晚上十一点发在吗 然后就没了 我现在很慌 要不要马上回",
+   "src": "digital",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc1-workplace-power",
+   "verdict": "clean"
+  },
+  {
+   "q": "采购说budget frozen 明年年初再谈 一听就是托词吧 有什么破局办法",
+   "src": "digital",
+   "gen_label": "sc10-negotiation-deals",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "B",
+    "best": "sc10-negotiation-deals",
+    "why": "Discount cycle with a procurement counterpart is negotiation, not general persuasion."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "二面完hr说这周给feedback 现在第五天了 要follow up吗 怎么发才不显得pushy",
+   "src": "digital",
+   "gen_label": "sc8-job-interviews",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "A",
+    "best": "sc8-job-interviews",
+    "why": "Interview feedback follow-up is interview-process communication."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "bf三天没回我dm 但每条story都看了 他什么意思",
+   "src": "digital",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "sc2-romance-intimacy",
+    "why": "Boyfriend's texting behavior (views stories, no reply) is dating/attachment dynamics; romance lens fits best."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "cs全是机器人循环 听不懂我要什么 转人工都转不了 有没有能用的转人工话术",
+   "src": "digital",
+   "gen_label": "sc9-live-service",
+   "router": "cu2-malaysia-chinese",
+   "judge": {
+    "pick": "B",
+    "best": "sc9-live-service",
+    "why": "Stuck with customer-service bots, wanting to reach a live agent — live customer service topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "开会录音转文字发大群了 回款变汇款 张总变脏总 当场社死 有没有补救话术",
+   "src": "digital",
+   "gen_label": "sc7-digital-messaging",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "A",
+    "best": "sc7-digital-messaging",
+    "why": "Group-chat mishap with voice-to-text error and saving face is digital messaging."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Macam mana nak minta naik gaji dengan bos saya? Dia memang kedekut, tapi prestasi saya dah bertahun tak pernah diiktiraf.",
+   "src": "multilingual",
+   "gen_label": "sc10-negotiation-deals",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "My manager keeps presenting my work as his own in meetings. How do I call him out without damaging my career here?",
+   "src": "multilingual",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc15-calls-video",
+   "judge": {
+    "pick": "A",
+    "best": "sc1-workplace-power",
+    "why": "Credit-taking manager and safe pushback is workplace power."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Apa maksud bila crush saya balas 'hmm' je selepas saya taip mesej panjang lebar?",
+   "src": "multilingual",
+   "gen_label": "p2-subtext-decoder",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "B",
+    "best": "p2-subtext-decoder",
+    "why": "Asks the meaning of a short 'hmm' reply — a subtext decode, regardless of language."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "CNY dinner my auntie keep anyhow comment - I fat already, salary so low, when want marry. Where got people talk like that one! How to tahan without balas?",
+   "src": "multilingual",
+   "gen_label": "sc3-family-kinship",
+   "router": "cu5-codeswitching",
+   "judge": {
+    "pick": "A",
+    "best": "sc3-family-kinship",
+    "why": "Handling auntie's intrusive comments at CNY dinner is family/kinship dynamics; language mixing is scenery."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Kawan baik saya baru kehilangan ibu. Saya nak hantar mesej tapi takut tersalah kata. Apa yang patut saya tulis?",
+   "src": "multilingual",
+   "gen_label": "sc16-condolence-grief",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "B",
+    "best": "sc16-condolence-grief",
+    "why": "Writing a condolence message for a friend's loss is squarely the grief topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Setiap kali nak present depan kelas, suara saya gementar dan tangan sejuk. Macam mana nak atasi gementar ni?",
+   "src": "multilingual",
+   "gen_label": "c16-public-speaking",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "Saya tanya boss pasal promotion, dia reply 'we see first'. Itu maksudnya dah kena reject atau masih ada harapan?",
+   "src": "multilingual",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "p2-subtext-decoder",
+    "why": "The question is 'what does it mean' — decoding boss's vague reply; decoding tool is the ask."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Boss keep pushing OT to me lah, other colleagues semua can balik on time. I paiseh to say no leh, how ah?",
+   "src": "multilingual",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "sc1-workplace-power",
+    "why": "How to refuse the boss's OT pressure is a workplace-power scenario; Manglish is scenery."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "She texted 'I'm fine' but her voice went flat when she said it and she looked away. Is she actually okay or is something wrong?",
+   "src": "multilingual",
+   "gen_label": "c11-paralanguage-prosody",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "B",
+    "best": "p2-subtext-decoder",
+    "why": "'Is she actually okay' is a mixed-signal decode (words vs voice vs gaze); decoder fits best."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "i always get talked over in meetings lol, my ideas just disappear. how do i make ppl actually listen and say yes",
+   "src": "multilingual",
+   "gen_label": "c2-persuasion-influence",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "Nak propose kat girlfriend bulan depan, cincin pun dah beli, tapi nervous gila. Boleh share tips macam mana nak buat moment tu istimewa?",
+   "src": "multilingual",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "cu1-malaysia-malay",
+   "judge": {
+    "pick": "B",
+    "best": "sc2-romance-intimacy",
+    "why": "Proposal nerves and making the moment special is romance; Malay culture isn't the question."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Dapat panggil interview next week. Bila depa tanya 'tell me about yourself' saya memang blank. Boleh tolong practice dengan saya?",
+   "src": "multilingual",
+   "gen_label": "sc8-job-interviews",
+   "router": "sc8-job-interviews",
+   "verdict": "clean"
+  },
+  {
+   "q": "My tai kor suruh saya tutup kesilapan payment dia, tapi kalau kena audit nanti saya yang jadi kambing hitam lor. What to do?",
+   "src": "multilingual",
+   "gen_label": "c9-manipulation-defense",
+   "router": "cu1-malaysia-malay",
+   "judge": {
+    "pick": "A",
+    "best": "c9-manipulation-defense",
+    "why": "Being pushed to cover a payment error and fearing scapegoating is manipulation/defense."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Aunty kat pasar tu pushy habis, saya dah cakap 'tak nak, terima kasih' lima kali, dia masih dok follow. How to escape without rude?",
+   "src": "multilingual",
+   "gen_label": "sc9-live-service",
+   "router": "sc4-hard-conversations",
+   "judge": {
+    "pick": "A",
+    "best": "sc4-hard-conversations",
+    "why": "Persistently declining a pushy vendor politely is a refusal/boundary scenario; not customer service."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "Every time we makan outside my friend 'lupa' bawa wallet. How to hint at her nicely to pay her share lah, tak boleh tahan already.",
+   "src": "multilingual",
+   "gen_label": "sc6-friends-social",
+   "router": "sc6-friends-social",
+   "verdict": "clean"
+  },
+  {
+   "q": "Group assignment ada satu member asyik MIA, submission minggu depan. Macam mana nak settle without jadi drama kat group chat?",
+   "src": "multilingual",
+   "gen_label": "c15-group-team-communication",
+   "router": "c15-group-team-communication",
+   "verdict": "clean"
+  },
+  {
+   "q": "My aircon sudah rosak 2 weeks liao, landlord keep saying 'esok saya call orang' but never come. Next step how ah?",
+   "src": "multilingual",
+   "gen_label": "sc17-landlord-tenant",
+   "router": "sc17-landlord-tenant",
+   "verdict": "clean"
+  },
+  {
+   "q": "gm, plz hlp. my flatemate nvr wash the dishis 2 week alr, i dun wan fight but how to tell him",
+   "src": "multilingual",
+   "gen_label": "sc4-hard-conversations",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "hw to tell my dad im moving out wout upsetting him, he very tradisional one",
+   "src": "multilingual",
+   "gen_label": "sc3-family-kinship",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "Balik kampung tiap Raya my mak mesti cakap 'aiyo dah gemuk la you'. Every. Single. Year. How to not let it spoil my mood the whole trip?",
+   "src": "multilingual",
+   "gen_label": "c4-emotional-intelligence",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "Opah saya terus panggil menantu 'kau'. Itu biasa bagi orang tua, atau ada maksud tersirat dia tak berkenan?",
+   "src": "multilingual",
+   "gen_label": "cu1-malaysia-malay",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "cu1-malaysia-malay",
+    "why": "Whether terse 'kau' from an elder signals disapproval is a Malay-culture norm question."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "Live jualan saya lambat, penonton tinggal lapan orang. Macam mana nak bercakap supaya mereka tak keluar dan terus bertahan?",
+   "src": "multilingual",
+   "gen_label": "sc19-live-streaming",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "我 boss 讲 'next time lah' bila saya minta leave. 到底 he 答应了还是没有? How ah?",
+   "src": "multilingual",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "A",
+    "best": "sc1-workplace-power",
+    "why": "Reading a boss's vague 'next time lah' on a leave request and proceeding is managing-up territory."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "When chatting with my Malay colleagues, when does switching into English come across as showing off or being distant? Any rules of thumb?",
+   "src": "multilingual",
+   "gen_label": "cu5-codeswitching",
+   "router": "cu1-malaysia-malay",
+   "judge": {
+    "pick": "B",
+    "best": "cu5-codeswitching",
+    "why": "Codeswitching into English signaling distance/showing off is exactly codeswitching topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "他三天没回我消息了 是不是不喜欢我了😭",
+   "src": "relationships",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "sc7-digital-messaging",
+   "judge": {
+    "pick": "A",
+    "best": "sc2-romance-intimacy",
+    "why": "Crush not replying for 3 days is dating-anxiety territory."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我妈又在饭桌上催婚 我说一句她顶十句 怎么办",
+   "src": "relationships",
+   "gen_label": "sc3-family-kinship",
+   "router": "sc3-family-kinship",
+   "verdict": "clean"
+  },
+  {
+   "q": "how to tell my best friend she has been ignoring me and it hurts",
+   "src": "relationships",
+   "gen_label": "sc6-friends-social",
+   "router": "sc6-friends-social",
+   "verdict": "clean"
+  },
+  {
+   "q": "男生回哦哦是什么意思 在线等",
+   "src": "relationships",
+   "gen_label": "p2-subtext-decoder",
+   "router": "p2-subtext-decoder",
+   "verdict": "clean"
+  },
+  {
+   "q": "wtf 我闺蜜居然跟我ex出去吃饭 她到底什么意思",
+   "src": "relationships",
+   "gen_label": "sc6-friends-social",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "sc6-friends-social",
+    "why": "Bestie dining with the ex is a friendship boundary/betrayal issue."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "女朋友说没事 她真的没事吗",
+   "src": "relationships",
+   "gen_label": "c1-subtext-implicature",
+   "router": "sc2-romance-intimacy",
+   "judge": {
+    "pick": "A",
+    "best": "c1-subtext-implicature",
+    "why": "'Says fine, is she fine' is the literal-vs-actual subtext question."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "想跟他谈结婚 但他每次都转移话题 这话到底怎么开得了口啊。。",
+   "src": "relationships",
+   "gen_label": "sc4-hard-conversations",
+   "router": "sc10-negotiation-deals",
+   "judge": {
+    "pick": "A",
+    "best": "sc4-hard-conversations",
+    "why": "Can't broach a marriage talk because he deflects — a hard conversation opener problem."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我朋友借了我三千块在也不提了怎么开口要回来啊",
+   "src": "relationships",
+   "gen_label": "sc12-asking-help",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "A",
+    "best": "sc6-friends-social",
+    "why": "Collecting money owed within a friendship is friendship boundaries/lending dynamics."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "刚match到的girl怎么开场 不想只会说hi",
+   "src": "relationships",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "A",
+    "best": "sc2-romance-intimacy",
+    "why": "Openers for a new match are early-dating texting, romance topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我弟又偷玩我手机 说了八百遍了 我真的要炸了",
+   "src": "relationships",
+   "gen_label": "sc3-family-kinship",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "A",
+    "best": "sc3-family-kinship",
+    "why": "Sibling boundary conflicts at home are family dynamics; persuasion frameworks are secondary."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "室友的碗永远不洗 呵呵 我是不是太好欺负了",
+   "src": "relationships",
+   "gen_label": "sc6-friends-social",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "sc6-friends-social",
+    "why": "Roommate chore boundaries are the friends/flatmates social domain."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "老婆突然发了个🌹😊然后就没下文了 我是不是做错啥了",
+   "src": "relationships",
+   "gen_label": "sc7-digital-messaging",
+   "router": "c3-nvc-conflict-repair",
+   "judge": {
+    "pick": "B",
+    "best": "sc7-digital-messaging",
+    "why": "Between the two, the emoji message with no follow-up fits digital messaging norms; conflict repair misses entirely."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "跟天蝎男谈恋爱好累 他们是不是都这么记仇",
+   "src": "relationships",
+   "gen_label": "c8-astrology-heuristics",
+   "router": "sc2-romance-intimacy",
+   "judge": {
+    "pick": "B",
+    "best": "c8-astrology-heuristics",
+    "why": "Judging Scorpio grudge-bearing as a social heuristic is astrology-heuristics territory."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我infj他estp 为什么我们聊天永远不同频 求解",
+   "src": "relationships",
+   "gen_label": "c5-personality-typology",
+   "router": "sc12-asking-help",
+   "judge": {
+    "pick": "B",
+    "best": "c5-personality-typology",
+    "why": "INFJ/ESTP mismatch question is directly personality typology."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我妈句句『我都是为你好』听得我好内疚 这算不算pua",
+   "src": "relationships",
+   "gen_label": "c9-manipulation-defense",
+   "router": "c9-manipulation-defense",
+   "verdict": "clean"
+  },
+  {
+   "q": "朋友的爸爸过世了 我只会说节哀 到底还能讲什么",
+   "src": "relationships",
+   "gen_label": "sc16-condolence-grief",
+   "router": "sc16-condolence-grief",
+   "verdict": "clean"
+  },
+  {
+   "q": "爸妈天天吵 我夹在中间快疯了 到底要怎么劝",
+   "src": "relationships",
+   "gen_label": "sc13-mediation",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "B",
+    "best": "sc13-mediation",
+    "why": "Mediating between two fighting parents is third-party mediation."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "『行 那你以后都别来找我了』这句发出去会不会太冲 帮我改改",
+   "src": "relationships",
+   "gen_label": "p1-reply-engine",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "p1-reply-engine",
+    "why": "'Help me rewrite this too harsh message' is reply generation, the reply engine's job; p2 is decode-only."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "马来同事请我去他家open house 我要带什么 注意什么 才不会失礼",
+   "src": "relationships",
+   "gen_label": "cu1-malaysia-malay",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "cu1-malaysia-malay",
+    "why": "What to bring/observe at a Malay open house is Malay cultural etiquette."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "咋哄女朋有啊 在线等挺急的",
+   "src": "relationships",
+   "gen_label": "sc2-romance-intimacy",
+   "router": "sc2-romance-intimacy",
+   "verdict": "clean"
+  },
+  {
+   "q": "我总控制不住跟家人讲话很大声 讲完又后悔 怎么改",
+   "src": "relationships",
+   "gen_label": "c4-emotional-intelligence",
+   "router": "c5-personality-typology",
+   "judge": {
+    "pick": "B",
+    "best": "c4-emotional-intelligence",
+    "why": "Losing temper then regretting is self-regulation, core EQ."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "方案被老板当众调坎 还补了句'年轻人要多想' 全场都看着我 到底怎么接",
+   "src": "workplace",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc1-workplace-power",
+   "verdict": "clean"
+  },
+  {
+   "q": "同事甩锅给我 领导真信了 现在我讲什么都像狡辩 怎办啦",
+   "src": "workplace",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc1-workplace-power",
+   "verdict": "clean"
+  },
+  {
+   "q": "两个leader互相卡我资源 一个管headcount一个管预算 两头都要讨好 这要我命",
+   "src": "workplace",
+   "gen_label": "sc1-workplace-power",
+   "router": "sc19-live-streaming",
+   "judge": {
+    "pick": "A",
+    "best": "sc1-workplace-power",
+    "why": "Juggling two leaders' competing claims is workplace power politics."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "领导 今天 找我 聊 说态度有问题 但也没说具体啥事 我要不要主动去问清楚",
+   "src": "workplace",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc16-condolence-grief",
+   "judge": {
+    "pick": "B",
+    "best": "p2-subtext-decoder",
+    "why": "'What does he mean, should I ask' is subtext decoding of a vague boss remark."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "boss讲 lets cirle back 都第三次了 结果一次都没回 这到底是婉拒还是真在忙",
+   "src": "workplace",
+   "gen_label": "p2-subtext-decoder",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "'Polite refusal or actually busy' is a decode-the-vague-response ask."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "组织架构调整在即 领导突然说'机会不止在内部' 这话是哪头的意思 坐不住啊",
+   "src": "workplace",
+   "gen_label": "p2-subtext-decoder",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "A",
+    "best": "p2-subtext-decoder",
+    "why": "Ambiguous 'opportunities aren't only internal' during reorg is classic subtext decoding."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "拖了三天才回客户的邮件 今天必须处理 怎么写道歉才专业 不要那种一眼模板的东西",
+   "src": "workplace",
+   "gen_label": "p3-formal-writing",
+   "router": "p3-formal-writing",
+   "judge": {
+    "pick": "A",
+    "best": "p3-formal-writing",
+    "why": "Late reply to a client needing a professional non-template email = formal writing."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "有人能给我一个拒绝周末团建的措辞吗 领导爱面子不想伤他 but 周六我是真的有安排",
+   "src": "workplace",
+   "gen_label": "p3-formal-writing",
+   "router": "sc4-hard-conversations",
+   "judge": {
+    "pick": "B",
+    "best": "sc4-hard-conversations",
+    "why": "Declining the boss's weekend event without hurting face is a hard-conversation refusal; p3 is for letters."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "下周术职报告不会组织 老板说不要流水账要讲impact 有点慌",
+   "src": "workplace",
+   "gen_label": "p3-formal-writing",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "both_wrong",
+    "best": "c16-public-speaking",
+    "why": "Neither workplace power nor letter writing fits; structuring an oral work report per the boss's 'impact' note is presentation (c16-public-speaking)."
+   },
+   "verdict": "both_wrong"
+  },
+  {
+   "q": "涨薪申请信的英文版怎么开场 才不会看起来像在要挟公司",
+   "src": "workplace",
+   "gen_label": "p3-formal-writing",
+   "router": "p3-formal-writing",
+   "verdict": "clean"
+  },
+  {
+   "q": "想跟老板谈调底薪 佣金结构改了以后差距太大 他脾气又爆 要怎么开这个口",
+   "src": "workplace",
+   "gen_label": "sc10-negotiation-deals",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "A",
+    "best": "sc1-workplace-power",
+    "why": "Asking the boss for a raise is explicitly managing-up in sc1."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "刚下视频会 客户在会上当场发飙说拿他当冤大头 我是主持的 现在到底要怎么补救啊",
+   "src": "workplace",
+   "gen_label": "sc15-calls-video",
+   "router": "c2-persuasion-influence",
+   "judge": {
+    "pick": "B",
+    "best": "sc15-calls-video",
+    "why": "Remedying a client blowup within a video call setting; of the two, the video-call topic is the operative context."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "要跟跟了我三年的下属谈话 他绩效没达标 要进cut名单 这人还蛮拼的 怎么开这场话",
+   "src": "workplace",
+   "gen_label": "sc4-hard-conversations",
+   "router": "sc10-negotiation-deals",
+   "judge": {
+    "pick": "A",
+    "best": "sc4-hard-conversations",
+    "why": "Termination/PIP conversation with a struggling report is a hard conversation (辞退)."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "下周就终面了 是视频面试 自我介绍还卡在第一居 救命",
+   "src": "workplace",
+   "gen_label": "sc8-job-interviews",
+   "router": "sc8-job-interviews",
+   "judge": {
+    "pick": "B",
+    "best": "sc8-job-interviews",
+    "why": "Final-round video interview and self-intro is interview prep; networking isn't."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "行业酒会全是不认识的人 太考我这种i人了 握手交换名片完就站角落 给点实际能用的开场",
+   "src": "workplace",
+   "gen_label": "sc5-networking-first-impressions",
+   "router": "sc6-friends-social",
+   "judge": {
+    "pick": "A",
+    "best": "sc5-networking-first-impressions",
+    "why": "Industry mixer openers for a stranger-dense room is networking/icebreakers."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "团队群里的消息个个已读不回 线下碰到又热络得很 这是嘛情况 我群规也没立错啊",
+   "src": "workplace",
+   "gen_label": "c15-group-team-communication",
+   "router": "sc7-digital-messaging",
+   "judge": {
+    "pick": "A",
+    "best": "c15-group-team-communication",
+    "why": "Team group dynamics (silence in group, warmth offline) is group/team communication."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "她每次开口都'我都是为你好' 然后顺理成章把case丢给我 这次又来 我不是她的backup啊",
+   "src": "workplace",
+   "gen_label": "c9-manipulation-defense",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "A",
+    "best": "c9-manipulation-defense",
+    "why": "'For your own good' guilt-lever to offload work is classic manipulation to identify and resist."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "新来的00后开会直接讲'前辈你那套资历逻辑在会上没用' 😤 好家伙 我还怎么带他",
+   "src": "workplace",
+   "gen_label": "c7-demographic-differences",
+   "router": "p2-subtext-decoder",
+   "judge": {
+    "pick": "B",
+    "best": "c7-demographic-differences",
+    "why": "Generational (00后 vs senior) workplace clash is the demographic-differences topic."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "突然被cue上台给部门做五分钟总结 稿子都没有 腦子一片空白 怎么撑过这五分钟",
+   "src": "workplace",
+   "gen_label": "c16-public-speaking",
+   "router": "sc16-condolence-grief",
+   "judge": {
+    "pick": "B",
+    "best": "c16-public-speaking",
+    "why": "Impromptu 5-minute summary on stage is public speaking/improv (PREP)."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "我老板开会自动跳粤语 过三句变英语 再过五句出马来话 完全跟不上 怎么应才不失礼",
+   "src": "workplace",
+   "gen_label": "cu5-codeswitching",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "cu5-codeswitching",
+    "why": "Boss switching Cantonese/English/Malay mid-conversation is exactly codeswitching."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "公司annual dinner跟我一桌的是马来同事 平时没话聊 有什么安全话题 不想无意踩雷",
+   "src": "workplace",
+   "gen_label": "cu1-malaysia-malay",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "A",
+    "best": "cu1-malaysia-malay",
+    "why": "Safe topics and taboos with Malay colleagues is Malay cultural norms."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "晚上十一点半 boss还在teams上@我提醒明早汇报 回是秒回认命 不回又怕明天穿小鞋 到底标准操作是什么",
+   "src": "workplace",
+   "gen_label": "sc7-digital-messaging",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "sc1-workplace-power",
+    "why": "After-hours boss ping and fear of reprisal is a power-dynamics dilemma, not chat etiquette."
+   },
+   "verdict": "router_ok_label_noise"
+  },
+  {
+   "q": "进度汇报发给老板他已读三天没回 再问怕显得催命 不问项目又要凉 这条跟进消息怎么措辞 😭",
+   "src": "workplace",
+   "gen_label": "p1-reply-engine",
+   "router": "sc1-workplace-power",
+   "judge": {
+    "pick": "B",
+    "best": "p1-reply-engine",
+    "why": "They explicitly want a follow-up message drafted — reply generation; workplace context feeds it."
+   },
+   "verdict": "router_wrong"
+  },
+  {
+   "q": "my monthly 1-1 with skip level always turns into me reading off my status list, how do i make it less like a report",
+   "src": "workplace",
+   "gen_label": "sc1-workplace-power",
+   "router": null,
+   "verdict": "clean"
+  },
+  {
+   "q": "刚被领导一句话顶回来 一肚子火 明天还要碰面 现在怎么先把这口气咽下去别半夜发消息",
+   "src": "workplace",
+   "gen_label": "c14-self-talk",
+   "router": "sc7-digital-messaging",
+   "judge": {
+    "pick": "A",
+    "best": "c14-self-talk",
+    "why": "Swallowing anger and talking oneself down before tomorrow's encounter is self-talk."
+   },
+   "verdict": "router_wrong"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "angle": "relationships-family-friends",
+    "generator": "agent-B",
+    "notes": "~25 messy real-person queries, ROMANCE+FAMILY+FRIENDS register, zh-first with some English/Manglish. Stress-test router: typos, voice2text homophones, emoji, ellipsis, passive-aggressive tone, plus 4 (none) traps."
+  },
+  "cases": [
+    {
+      "q": "他三天没回我消息了 是不是不喜欢我了😭",
+      "expect": "sc2-romance-intimacy",
+      "cat": "sad",
+      "why": "Dating anxiety over reply silence, romance register with emoji, no punctuation."
+    },
+    {
+      "q": "我妈又在饭桌上催婚 我说一句她顶十句 怎么办",
+      "expect": "sc3-family-kinship",
+      "cat": "colloquial",
+      "why": "Classic parental nagging standoff, family scenario, casual vent phrasing."
+    },
+    {
+      "q": "how to tell my best friend she has been ignoring me and it hurts",
+      "expect": "sc6-friends-social",
+      "cat": "sad",
+      "why": "English-lane friendship hurt/confrontation, half-sentence lowercase style."
+    },
+    {
+      "q": "男生回哦哦是什么意思 在线等",
+      "expect": "p2-subtext-decoder",
+      "cat": "colloquial",
+      "why": "Pure decode request of a terse incoming message, S1 shape."
+    },
+    {
+      "q": "wtf 我闺蜜居然跟我ex出去吃饭 她到底什么意思",
+      "expect": "sc6-friends-social",
+      "cat": "angry",
+      "why": "Betrayal-tinged friend drama, angry register, no question mark."
+    },
+    {
+      "q": "女朋友说没事 她真的没事吗",
+      "expect": "c1-subtext-implicature",
+      "cat": "colloquial",
+      "why": "Textbook 没事 implicature: stated meaning contradicts intended meaning."
+    },
+    {
+      "q": "想跟他谈结婚 但他每次都转移话题 这话到底怎么开得了口啊。。",
+      "expect": "sc4-hard-conversations",
+      "cat": "ellipsis",
+      "why": "Dreaded-conversation opener request, trailing 。。 ellipsis, partner framing."
+    },
+    {
+      "q": "我朋友借了我三千块在也不提了怎么开口要回来啊",
+      "expect": "sc12-asking-help",
+      "cat": "voice2text",
+      "why": "Run-on unpunctuated speech-to-text, homophone 在/再, awkward money ask."
+    },
+    {
+      "q": "刚match到的girl怎么开场 不想只会说hi",
+      "expect": "sc2-romance-intimacy",
+      "cat": "flirty",
+      "why": "Dating-app icebreaker for romantic match, mixed zh+en flirty register."
+    },
+    {
+      "q": "我弟又偷玩我手机 说了八百遍了 我真的要炸了",
+      "expect": "sc3-family-kinship",
+      "cat": "angry",
+      "why": "Sibling boundary violation, hyperbole 我要炸了, angry family register."
+    },
+    {
+      "q": "室友的碗永远不洗 呵呵 我是不是太好欺负了",
+      "expect": "sc6-friends-social",
+      "cat": "passive_aggressive",
+      "why": "Sarcasm marker 呵呵 + self-pity, passive-aggressive roommate grievance."
+    },
+    {
+      "q": "老婆突然发了个🌹😊然后就没下文了 我是不是做错啥了",
+      "expect": "sc7-digital-messaging",
+      "cat": "emoji",
+      "why": "Decoding emoji-only message behaviour on chat app, messaging-channel question."
+    },
+    {
+      "q": "跟天蝎男谈恋爱好累 他们是不是都这么记仇",
+      "expect": "c8-astrology-heuristics",
+      "cat": "colloquial",
+      "why": "Zodiac-sign heuristic used to read a partner, exactly the c8 folk-heuristic lane."
+    },
+    {
+      "q": "我infj他estp 为什么我们聊天永远不同频 求解",
+      "expect": "c5-personality-typology",
+      "cat": "abbrev",
+      "why": "MBTI abbreviations as the framing for partner mismatch, typology entry point."
+    },
+    {
+      "q": "我妈句句『我都是为你好』听得我好内疚 这算不算pua",
+      "expect": "c9-manipulation-defense",
+      "cat": "colloquial",
+      "why": "Guilt-trip recognition request, manipulation-vocabulary (pua) from a layperson."
+    },
+    {
+      "q": "朋友的爸爸过世了 我只会说节哀 到底还能讲什么",
+      "expect": "sc16-condolence-grief",
+      "cat": "sad",
+      "why": "Condolence wording beyond 节哀, grief-support scenario, sombre tone."
+    },
+    {
+      "q": "爸妈天天吵 我夹在中间快疯了 到底要怎么劝",
+      "expect": "sc13-mediation",
+      "cat": "sad",
+      "why": "Third-party stuck-in-the-middle mediation within family, distressed register."
+    },
+    {
+      "q": "『行 那你以后都别来找我了』这句发出去会不会太冲 帮我改改",
+      "expect": "p1-reply-engine",
+      "cat": "passive_aggressive",
+      "why": "User drafting a pointed reply and asking for a rewrite, S2 reply-engine shape."
+    },
+    {
+      "q": "马来同事请我去他家open house 我要带什么 注意什么 才不会失礼",
+      "expect": "cu1-malaysia-malay",
+      "cat": "colloquial",
+      "why": "Malay cultural etiquette for visiting a friend's open house, Malaysia-specific lane."
+    },
+    {
+      "q": "咋哄女朋有啊 在线等挺急的",
+      "expect": "sc2-romance-intimacy",
+      "cat": "typo",
+      "why": "Keyboard typo 女朋有 for 女朋友, meme-phrase 在线等挺急的, urgency framing."
+    },
+    {
+      "q": "我总控制不住跟家人讲话很大声 讲完又后悔 怎么改",
+      "expect": "c4-emotional-intelligence",
+      "cat": "sad",
+      "why": "Emotion regulation failure with family, self-improvement ask, EI territory."
+    },
+    {
+      "q": "2026年马来西亚长假怎么拼 怎么请年假最划算",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Leave-planning logistics, zero communication content; router must not grab sc3 via 家."
+    },
+    {
+      "q": "帮我算下 房贷利率4.2%借35万 月供多少",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Mortgage arithmetic request, no interpersonal dimension at all."
+    },
+    {
+      "q": "最近狂掉头发 吃什么维生素比较好 有推荐的吗",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "Health/vitamin question; must not be lured into sc18-medical-communication which is doctor talk."
+    },
+    {
+      "q": "唉 好累 就想找人说说话 没啥事",
+      "expect": "(none)",
+      "cat": "sad",
+      "why": "Pure vent with no ask; nothing to decode or reply to, router should not force a topic."
+    }
+  ]
+}

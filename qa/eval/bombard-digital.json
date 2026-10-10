@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "angle": "digital-online-service",
+    "generator": "agent-C",
+    "note": "~28 router stress queries: digital messaging + online/social + service + negotiation + interviews; zh-first with English mix, heavy abbreviations, emoji, voice-to-text artifacts. expect = ONE best-matching topic id or (none)."
+  },
+  "cases": [
+    {
+      "q": "wx上他回我一个哦 这是什么意思😭 之前都是秒回一大段的",
+      "expect": "sc7-digital-messaging",
+      "cat": "emoji",
+      "why": "单字'哦'+表情的数字冷读信号，典型消息解读场景"
+    },
+    {
+      "q": "老板在群里@我 辛苦了 早点休息[呲牙] 这是真心客套还是话里有话",
+      "expect": "c1-subtext-implicature",
+      "cat": "emoji",
+      "why": "上级群内客套语的言外之意解读，容易错路由到sc1"
+    },
+    {
+      "q": "发了条语音让微信转文字 稍等哈变成小邓哈 客户那边已读了 怎么补救",
+      "expect": "sc7-digital-messaging",
+      "cat": "voice2text",
+      "why": "v2t同音错字已发出后的线上补救话术"
+    },
+    {
+      "q": "buyer之前讲好包邮 现在又说再减20马上转 不想亏也不想丢单 咋回",
+      "expect": "sc10-negotiation-deals",
+      "cat": "colloquial",
+      "why": "电商砍价的让步与回旋策略，无标点口语"
+    },
+    {
+      "q": "zoom interview next week 面我的是hc manager 大概会问什么 要准备啥",
+      "expect": "sc8-job-interviews",
+      "cat": "abbrev",
+      "why": "缩写堆叠(hc/zoom)的线上面试准备问题"
+    },
+    {
+      "q": "client replied \"let's circle back next quarter\" — is that a polite no or a real maybe",
+      "expect": "c1-subtext-implicature",
+      "cat": "formal",
+      "why": "英文商务委婉拖延的潜台词解码"
+    },
+    {
+      "q": "小红书评论区有人阴阳我 还上升到人身攻击 要怼回去还是直接拉黑",
+      "expect": "sc14-online-social",
+      "cat": "colloquial",
+      "why": "社交平台评论区冲突的应对选择"
+    },
+    {
+      "q": "房东微信说下个月租金涨300 问我是不是只能接受 还有得谈吗",
+      "expect": "sc17-landlord-tenant",
+      "cat": "colloquial",
+      "why": "涨租谈判，场景(房东)优先于泛谈判话题"
+    },
+    {
+      "q": "相亲对象凌晨一点发我睡了吗 这算什么意思 要怎么回",
+      "expect": "sc2-romance-intimacy",
+      "cat": "colloquial",
+      "why": "暧昧期深夜消息的意图解读+回复，双意图难拆"
+    },
+    {
+      "q": "马来客户说insyaAllah saya check dulu 然后就没了 这算答应还是委婉拒绝",
+      "expect": "cu1-malaysia-malay",
+      "cat": "colloquial",
+      "why": "马来语高频客套话的真实含义，Malaysia-first必测"
+    },
+    {
+      "q": "我一句话里混中英马三种 eh 那个promo有no deal meh 你看下 这种mixing有啥讲究吗",
+      "expect": "cu5-codeswitching",
+      "cat": "colloquial",
+      "why": "多语码混用现象，信号词switching/mixing少见"
+    },
+    {
+      "q": "客服踢皮球第三天了 退款永远在系统处理中 真的想骂人 教我骂人不带脏字那种",
+      "expect": "sc9-live-service",
+      "cat": "angry",
+      "why": "愤怒情绪下的客诉升级话术，'骂人不带脏字'是干扰项"
+    },
+    {
+      "q": "我妈六十岁刚学会用[捂脸] 但全用错场合 家族群她一发我就尴尬 要不要提醒她",
+      "expect": "c7-demographic-differences",
+      "cat": "emoji",
+      "why": "代际表情使用差异，易被误路由到sc3家庭"
+    },
+    {
+      "q": "直播有人连刷礼物 一直逼问我住哪做什么 主播怎么接话不冷场也不越界",
+      "expect": "sc19-live-streaming",
+      "cat": "colloquial",
+      "why": "直播边界话术，小众topic召回测试"
+    },
+    {
+      "q": "她发 你人真的很好 但是…… 后面就没了 帮我把这句拆开看看",
+      "expect": "p2-subtext-decoder",
+      "cat": "ellipsis",
+      "why": "省略号拒绝语逐层解码，playbook(解码器)优先于概念c1"
+    },
+    {
+      "q": "python一直报indexerror list index out of range 快帮我看看哪错了",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "纯编程问题超出沟通KB范围，防误召回"
+    },
+    {
+      "q": "wifi路由器红灯一直闪 网完全断了 有懂的吗",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "网络故障求助与KB无关，口语无标点干扰"
+    },
+    {
+      "q": "帮我写个prompt 让AI帮我想微信回复 要显得情商在线那种",
+      "expect": "p4-ai-prompting",
+      "cat": "colloquial",
+      "why": "AI代笔回复需求，渠道是微信但核心是prompt工程"
+    },
+    {
+      "q": "shipment晚了三天 给客户的道歉邮件求个英文模板 语气别太卑微也别太冷",
+      "expect": "p3-formal-writing",
+      "cat": "formal",
+      "why": "商务英文道歉信写作，S3正式写作意图"
+    },
+    {
+      "q": "同事又在群里阴阳我 15分钟后开会 必须回一句 但不能失态 帮我",
+      "expect": "p1-reply-engine",
+      "cat": "angry",
+      "why": "高压限时回复请求，S2回复引擎直派，不是解读题"
+    },
+    {
+      "q": "跟她语音聊了两个小时 她的语气突然就冷下去了 是我哪句话说错了吗 听不出来",
+      "expect": "c11-paralanguage-prosody",
+      "cat": "colloquial",
+      "why": "语音通道里的语气骤变=副语言信号，易误路由到sc15通话"
+    },
+    {
+      "q": "老板晚上十一点发在吗 然后就没了 我现在很慌 要不要马上回",
+      "expect": "sc1-workplace-power",
+      "cat": "ellipsis",
+      "why": "上级半截消息引发的权力焦虑，场景(职场权力)主导"
+    },
+    {
+      "q": "采购说budget frozen 明年年初再谈 一听就是托词吧 有什么破局办法",
+      "expect": "sc10-negotiation-deals",
+      "cat": "colloquial",
+      "why": "B2B谈判拖延话术的识别与破局，解码+谈判混合"
+    },
+    {
+      "q": "我狗今天三岁生日 帮它写首生日歌",
+      "expect": "(none)",
+      "cat": "no_topic",
+      "why": "宠物歌曲创作完全出圈，句式像正常请求有迷惑性"
+    },
+    {
+      "q": "二面完hr说这周给feedback 现在第五天了 要follow up吗 怎么发才不显得pushy",
+      "expect": "sc8-job-interviews",
+      "cat": "abbrev",
+      "why": "面试后跟进的时机与措辞，中英混杂缩写"
+    },
+    {
+      "q": "bf三天没回我dm 但每条story都看了 他什么意思",
+      "expect": "sc2-romance-intimacy",
+      "cat": "abbrev",
+      "why": "bf/dm/story全缩写的已读不回信号，恋爱数字行为"
+    },
+    {
+      "q": "cs全是机器人循环 听不懂我要什么 转人工都转不了 有没有能用的转人工话术",
+      "expect": "sc9-live-service",
+      "cat": "abbrev",
+      "why": "突破客服机器人转人工的话术，cs缩写开头"
+    },
+    {
+      "q": "开会录音转文字发大群了 回款变汇款 张总变脏总 当场社死 有没有补救话术",
+      "expect": "sc7-digital-messaging",
+      "cat": "voice2text",
+      "why": "v2t错字群发事故的危机处理，'张总→脏总'真实同音错误"
+    }
+  ]
+}
