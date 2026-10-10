@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "purpose": "Round 5 — two NEW hard dimensions: (1) LONG-TIMELINE turning points, including ABSENCE-as-signal (a long stable baseline breaks by a change or by silence); (2) CROSS-LANGUAGE same-content divergence (the culture lane must actually fire, not treat language as cosmetic).",
+    "labels": [
+      "turning_point_or_request",
+      "absence_is_signal",
+      "first_deviation_attention",
+      "relay_self_interest_verify",
+      "ask_needed_no_referent",
+      "mild_no_overread",
+      "zh_suspended_defer",
+      "en_neutral_defer",
+      "ms_polite_distant_defer",
+      "en_genuine_yes",
+      "zh_possibly_reluctant_yes"
+    ],
+    "grade": "Pass per case if the DOMINANT reading matches expected. T2 (absence) passes ONLY if the SILENCE itself is read as a signal (must NOT just assume 'probably busy'). T3 passes ONLY if the FIRST deviation from a 5-year pattern is flagged. R2 passes ONLY if it neither fully buys the relay nor attacks 'everyone', and goes to the source. G2 passes ONLY if it resists over-reading (topic moved on). L1 (cross-lang triple) passes only if the three members are NOT read as identical AND the culture ordering is coherent (zh most suspended / en most neutral / ms most politely-distant). L2 (cross-lang pair) passes only if the two RESPONSES differ (en genuine vs zh possibly reluctant).",
+    "date": "2026-10-10"
+  },
+  "isolation": [
+    {
+      "id": "T1",
+      "lang": "zh",
+      "sentence": "突然想起咱们刚认识那会儿一起赶那个项目，真的很怀念。最近怎么样？",
+      "scene": "一个共事 3 年、三年来只跟你谈工作事务、从没私聊过的同事，今天突然发来这条私人怀旧消息。",
+      "expected": "turning_point_or_request",
+      "trap": "long_timeline_turning_point",
+      "note": "3 年零私人交流 = 极强基线；突然温情私聊 = 明显拐点（可能要离职/求事/有大事/情感转折）。正确=警觉『非比寻常』，主动问+探；若当普通寒暄照常回=失败"
+    },
+    {
+      "id": "T2",
+      "lang": "zh",
+      "sentence": "（今天一条消息都没有）",
+      "scene": "伴侣两年来每天早上必发一条『早安』，从无例外；今天到下午了，一条都没有，也没有任何别的消息。",
+      "expected": "absence_is_signal",
+      "trap": "absence_as_signal",
+      "note": "基线=每天必发 → 缺席本身就是信号。正确=主动问，别假设『可能忙』就翻篇。若当无事发生=失败"
+    },
+    {
+      "id": "T3",
+      "lang": "zh",
+      "sentence": "看情况吧，再说",
+      "scene": "一个五年来你每次约他聚会都秒答应、特别主动的朋友，这次你约他，他第一次回这句。",
+      "expected": "first_deviation_attention",
+      "trap": "first_deviation",
+      "note": "五年『秒答应』是基线；首次含糊=偏离信号（忙/有事/关系降温/自己遇到事）。正确=识为偏离、留意+问；若当普通推辞或『他就这样』=失败"
+    },
+    {
+      "id": "R2",
+      "lang": "zh",
+      "sentence": "大家都在说你上次那个事办砸了",
+      "scene": "一个同事私下跟你说这句。你没有从任何人那里直接听到过这个评价。",
+      "expected": "relay_self_interest_verify",
+      "trap": "relay_self_interest",
+      "note": "转述 + 不可核的『大家』 + 负面评价 = 可能夹带说话人自己立场。正确=不全信、不当第一手、别跟『大家』对线；问『具体是谁、原话是什么』或找关键人直接确认。若直接向『大家』发难或全盘接受=失败"
+    },
+    {
+      "id": "N2",
+      "lang": "zh",
+      "sentence": "你怎么没告诉我他来了？",
+      "scene": "一个你不太熟的同事微信你这句话。你俩之前没有任何上下文提到过任何人。",
+      "expected": "ask_needed_no_referent",
+      "trap": "pronoun_unclear",
+      "note": "『他』是谁没上下文 → 指代缺失，须问。若自信脑补一个『他』并解读=失败"
+    },
+    {
+      "id": "G2",
+      "lang": "zh",
+      "sentence": "（你的消息 → 老板只回了一个👍 → 另一个同事立刻转开新话题，大家开始聊别的）",
+      "scene": "工作群里；你发了一条认真写的工作消息。老板只回了一个『👍』，紧接着另一个同事把话题岔到了别的工作事项上，大家在聊新话题。",
+      "expected": "mild_no_overread",
+      "trap": "group_cooling",
+      "note": "这是『话题过去了』的常态，不是冷落信号。正确=轻读、别脑补被忽视/被否；若读成『老板对我不满/我被无视』=失败"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "L1",
+      "kind": "cross_language_deferral",
+      "members": [
+        {"sentence": "这事回头再说吧", "lang": "zh", "scene": "同事对你提的方案说这句", "expected": "zh_suspended_defer"},
+        {"sentence": "Let's revisit this later.", "lang": "en", "scene": "A colleague says this about your proposal", "expected": "en_neutral_defer"},
+        {"sentence": "Nanti kita fikirkan dulu.", "lang": "ms", "scene": "Seorang rakan sekerja berkata ini tentang cadangan anda", "expected": "ms_polite_distant_defer"}
+      ],
+      "note": "同一『延后』内容，三种语言/文化 → 文化 lane 必须让三者分量不同：高语境中文=最像软性搁置/多半没戏；直接英语=较中性、真的延后；马来语=礼貌性、更疏远。若三者读成完全一样=失败"
+    },
+    {
+      "id": "L2",
+      "kind": "cross_language_agreement",
+      "members": [
+        {"sentence": "Yeah sure, no problem.", "lang": "en", "scene": "A colleague agrees to help you; direct-culture context", "expected": "en_genuine_yes"},
+        {"sentence": "行，没问题啊", "lang": "zh", "scene": "高语境中文；一个你明知最近很忙的同事这样答应帮你", "expected": "zh_possibly_reluctant_yes"}
+      ],
+      "note": "同等『答应』，直接文化多为真心；高语境 + 对方其实很忙 → 『没问题啊』可能是勉强/客套。必须区分"
+    }
+  ]
+}
