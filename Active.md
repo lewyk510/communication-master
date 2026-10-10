@@ -27,6 +27,7 @@ Current focus items and priorities.
 | 19 | Understanding test — Round 4 (group+relay+history+baseline-deviation) | ✅ **5/8 → 8/8 after fix** | `qa/eval/understanding-hard3.json` + `UNDERSTANDING-HARD3-REPORT.md`; fix = **判别点护栏**（不许滥用【未定】）+ relay/referent/audience rules + baseline-both-ways; re-runs D1/X1/GP1 all pass |
 | 20 | Understanding test — Round 5 (long-timeline turning points + absence-as-signal + cross-language) | ✅ **8/8 first try** | `qa/eval/understanding-hard4.json` + `UNDERSTANDING-HARD4-REPORT.md`; new dimension: culture lane must fire (zh/en/ms same content → different weights); fix = **信号「存在」与「方向」拆开表态**（【有信号·方向待定】） |
 | 21 | Understanding test — Round 6 (Malaysian mixed-language / Manglish·rojak + info-integrity edges) | ✅ **8/8 first try + 路由链修好** | `qa/eval/understanding-hard5.json` + `UNDERSTANDING-HARD5-REPORT.md`; Layer-2 all reached `cu5`; fix = **Layer-1 路由链**：cu5 补 Manglish 实词触发词（where got/paiseh/jialat/lah…）、`can lah`/`okay lah` 从 cu1 归还 cu5、`p2 core.md` Step 2 新增槽位 6「混合语言」显式指向 cu5; smoke 32/32 |
+| 22 | Routing reachability stress test — Round 7 (54 messy phrasings: typo / abbrev / voice2text / ellipsis / colloquial / Manglish / cross-lang) | ✅ **72% → 92%** | `qa/eval/routing-reach.json` + `run_routing_reach.py` + `ROUTING-REACH-REPORT.md`; fix = CJK **错别字兜底**（死路时编辑距离≤1 + 泛化词黑名单）+ **引擎平局优先**（限非泛化触发词）+ c1 触发词瘦身（消除与 p2 双挂）+ 同义词扩充; smoke 32/32 |
 
 ---
 

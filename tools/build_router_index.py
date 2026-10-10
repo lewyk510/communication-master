@@ -36,7 +36,8 @@ def build(src: dict) -> dict:
             "latin": m.get("latin", "case-insensitive word-boundary match"),
             "cjk": m.get("cjk", "substring match"),
             "scoring": ("sum of matched trigger lengths; medium_tokens count +1; "
-                        "case-insensitive; highest wins; ties -> earlier entry"),
+                        "case-insensitive; highest wins; ties -> engine (playbook) "
+                        "first, then earlier entry"),
             "medium_tokens": m.get("medium_tokens", []),
         },
         "fallback": "zero trigger hits -> load index.md + 00-how-to-use.md, ask ONE clarifying question",
@@ -46,6 +47,7 @@ def build(src: dict) -> dict:
                 "dir": str(Path(e["paths"]["core"]).parent) if e.get("paths", {}).get("core") else "",
                 "scenarios": e.get("scenarios", []),
                 "triggers": e.get("triggers", []),
+                **({"eng": 1} if e.get("type") == "playbook" else {}),
             }
             for e in src.get("entries", [])
         ],

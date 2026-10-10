@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "purpose": "Round 7 — router REACHABILITY stress test. Round 6 found the KB's bottleneck moved from Layer-2 (comprehension) to Layer-1 (routing/pointers). This set replays MESSY real-world phrasings (typos, abbreviations, voice-to-text homophones, half-sentences, colloquial slang, Manglish, cross-language) through the documented router scoring and measures hit-rate. Expected topic id per case; '(none)' = a genuine coverage gap where no topic should match.",
+    "date": "2026-10-10",
+    "grade": "hit = resolved topic == expect. '(none)' cases are counted separately (a match there is a false-positive, not a hit)."
+  },
+  "cases": [
+    {"q": "老板让我周末加班怎么办", "expect": "sc1-workplace-power", "cat": "normal"},
+    {"q": "女朋友生气了怎么哄", "expect": "sc2-romance-intimacy", "cat": "normal"},
+    {"q": "怎么跟房东要回押金", "expect": "sc17-landlord-tenant", "cat": "normal"},
+    {"q": "朋友借钱不还怎么开口", "expect": "sc6-friends-social", "cat": "normal"},
+    {"q": "怎么拒绝同事的请求", "expect": "sc4-hard-conversations", "cat": "normal"},
+    {"q": "家人催婚怎么应对", "expect": "sc3-family-kinship", "cat": "normal"},
+
+    {"q": "潜台词是什么意事", "expect": "p2-subtext-decoder", "cat": "typo"},
+    {"q": "怎么给老板提加心", "expect": "sc1-workplace-power", "cat": "typo"},
+    {"q": "面视好紧张怎么办", "expect": "sc8-job-interviews", "cat": "typo"},
+    {"q": "房东不退压金怎么办", "expect": "sc17-landlord-tenant", "cat": "typo"},
+    {"q": "同事抢功劳怎么半", "expect": "sc1-workplace-power", "cat": "typo"},
+    {"q": "微性已读不回复", "expect": "sc7-digital-messaging", "cat": "typo"},
+    {"q": "和邻剧噪音纠纷找谁", "expect": "sc13-mediation", "cat": "typo"},
+    {"q": "怎么拒决推销电话", "expect": "sc4-hard-conversations", "cat": "typo"},
+
+    {"q": "MBTI 怎么看人", "expect": "c5-personality-typology", "cat": "abbrev"},
+    {"q": "PUA 是什么", "expect": "c9-manipulation-defense", "cat": "abbrev"},
+    {"q": "NVC 怎么用", "expect": "c3-nvc-conflict-repair", "cat": "abbrev"},
+    {"q": "EQ 低怎么办", "expect": "c4-emotional-intelligence", "cat": "abbrev"},
+    {"q": "HR 面试怎么答", "expect": "sc8-job-interviews", "cat": "abbrev"},
+    {"q": "怎么跟甲方谈价", "expect": "sc10-negotiation-deals", "cat": "abbrev"},
+    {"q": "客服死活不退款", "expect": "sc9-live-service", "cat": "abbrev"},
+    {"q": "怎么回老板的wx", "expect": "p1-reply-engine", "cat": "abbrev"},
+
+    {"q": "他说明天再说吧是什么意思", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+    {"q": "我没事他到底啥意思", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+    {"q": "你开心就好翻译一下", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+    {"q": "随便都行是什么意思", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+    {"q": "老板说辛苦了是什么暗示", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+    {"q": "已读不回是什么意思", "expect": "sc7-digital-messaging", "cat": "voice2text"},
+    {"q": "她说你想多了代表什么", "expect": "p2-subtext-decoder", "cat": "voice2text"},
+
+    {"q": "已读不回", "expect": "sc7-digital-messaging", "cat": "ellipsis"},
+    {"q": "他什么意思", "expect": "p2-subtext-decoder", "cat": "ellipsis"},
+    {"q": "被PUA了", "expect": "c9-manipulation-defense", "cat": "ellipsis"},
+    {"q": "社恐怎么破冰", "expect": "sc5-networking-first-impressions", "cat": "ellipsis"},
+    {"q": "怎么拒绝", "expect": "sc4-hard-conversations", "cat": "ellipsis"},
+    {"q": "安慰一下", "expect": "sc16-condolence-grief", "cat": "ellipsis"},
+
+    {"q": "老板又画大饼了", "expect": "sc1-workplace-power", "cat": "colloquial"},
+    {"q": "被同事背后捅刀", "expect": "sc1-workplace-power", "cat": "colloquial"},
+    {"q": "我妈天天催婚烦死了", "expect": "sc3-family-kinship", "cat": "colloquial"},
+    {"q": "相亲对象一直已读不回", "expect": "sc7-digital-messaging", "cat": "colloquial"},
+    {"q": "室友半夜开party", "expect": "sc6-friends-social", "cat": "colloquial"},
+    {"q": "塑料姐妹花背后说我坏话", "expect": "sc6-friends-social", "cat": "colloquial"},
+    {"q": "客户已读不回我的方案", "expect": "sc7-digital-messaging", "cat": "colloquial"},
+
+    {"q": "他说 can lah 是什么意思", "expect": "cu5-codeswitching", "cat": "mixed"},
+    {"q": "where got 是不是在骗我", "expect": "cu5-codeswitching", "cat": "mixed"},
+    {"q": "paiseh 怎么回", "expect": "cu5-codeswitching", "cat": "mixed"},
+    {"q": "walao 是什么意思", "expect": "cu5-codeswitching", "cat": "mixed"},
+    {"q": "他说 jialat 什么意思", "expect": "cu5-codeswitching", "cat": "mixed"},
+    {"q": "boleh boleh 是什么意思", "expect": "cu1-malaysia-malay", "cat": "mixed"},
+
+    {"q": "how to say no to my boss", "expect": "sc4-hard-conversations", "cat": "crosslang"},
+    {"q": "my friend keeps borrowing money what do I say", "expect": "sc6-friends-social", "cat": "crosslang"},
+    {"q": "how do I reply to her read receipt", "expect": "sc7-digital-messaging", "cat": "crosslang"},
+    {"q": "how to comfort a grieving colleague", "expect": "sc16-condolence-grief", "cat": "crosslang"},
+    {"q": "cara nak cakap tak nak", "expect": "sc4-hard-conversations", "cat": "crosslang"},
+    {"q": "macam mana nak handle colleague yang selalu criticize", "expect": "sc1-workplace-power", "cat": "crosslang"}
+  ]
+}
