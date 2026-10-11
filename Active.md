@@ -100,3 +100,4 @@ Each `wiki/<cluster>/<id>/`: `core.md` + `zh.md` + `en.md` + `ms.md`, ≥3 `raw/
 | 2026-10-10 | Answer-quality + coverage test (Round 9) + 5 gap fixes | `qa/eval/answer-quality.json`, `qa/eval/ANSWER-QUALITY-REPORT.md`; cu4/c4/cu1/sc1/c16 content adds + `router.json` triggers |
 | 2026-10-10 | Full coverage scan (Round 10) + 6 gap fixes | `qa/eval/coverage-scan.json`, `qa/eval/COVERAGE-SCAN-REPORT.md`; sc19/c16/c1/sc1/sc2/sc7 content adds + `router.json` triggers |
 | 2026-10-10 | Answer-quality + parity audit (Round 11) + reply-hygiene rule | `qa/eval/answer-quality-audit.json`, `qa/eval/ANSWER-QUALITY-AUDIT-REPORT.md`; `00-how-to-use.md` §(f), `SKILL.md` |
+| 2026-10-10 | Robustness/safety test (Round 12, final) + injection/forgery rules | `qa/eval/robustness.json`, `qa/eval/ROBUSTNESS-REPORT.md`; `00-how-to-use.md` §(e)/§(f) |

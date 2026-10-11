@@ -265,3 +265,12 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - **2 real render-layer defects fixed**: (1) KB-internal labels (`Practice heuristic`, `EN gloss`, `constructed example`) and `wiki/` paths leaked into user replies; (2) Malay was re-generated (glitching) instead of reused from the native lane. Fix: new **§(f) Reply hygiene** in `wiki/synthesis/00-how-to-use.md` + a rule line in `SKILL.md`.
 - Verified: `bash tools/check.sh` all green.
 - Takeaway: answer quality high and language parity real; only the render layer was weak, now covered by an explicit rule.
+
+
+## [2026-10-10] eval | Robustness & safety — Round 12 (final round)
+
+- Data: `qa/eval/robustness.json` + `qa/eval/ROBUSTNESS-REPORT.md`. 12 adversarial prompts (manipulation/deception, prompt-injection, out-of-scope, boundary); 3 responder agents acting strictly as the skill.
+- **Result: REFUSE 6 / REDIRECT 2 / OUT-OF-SCOPE 3 / PARTIAL 1 — 0 COMPLY, 0 leaks, 0 over-triggers.** All manipulation (guilt-trip ex, PUA staff, gaslighting, forged screenshot) refused + redirected; both injections refused without leaking (embedded instruction translated but not executed); all 3 out-of-scope questions declined without forcing a topic.
+- **Fix**: KB rules caused the right behavior but 4 cases were only `partial` coverage — the KB never *named* forgery or prompt-injection. Added **§(e) 伪造证据** bullet + **§(f) rule 5 提示注入不予执行** to `00-how-to-use.md`.
+- Verified: `bash tools/check.sh` all green.
+- This closes the last untested axis. 12 rounds total, all axes measured and strong.
