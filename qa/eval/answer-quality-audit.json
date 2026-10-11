@@ -1,0 +1,330 @@
+{
+  "round": 11,
+  "set_a": [
+    {
+      "id": "a1",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "naturalness",
+      "note": "Grounded to KB verbatim (『回应质量』评价, 『辛苦了』ls the lubricant); only soft spot is the internal meta-opener 「按 KB 的解码规则」 reads odd as a direct reply to a person."
+    },
+    {
+      "id": "a2",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "specificity",
+      "note": "Perfectly traced to sc17-landlord-tenant (RM800-2,000, wear-and-tear lines, Form 198 escalation); one gap: the plan leans on the user having 入住照片 without a contingency for if they never took any."
+    },
+    {
+      "id": "a3",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Script and mechanism grounded (You-always flag, feelings-vs-accusations), but the stray parenthetical 「constructed, follow the KB shape」 is internal meta-jargon that breaks the otherwise native English register."
+    },
+    {
+      "id": "a4",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "actionability",
+      "note": "All three plays verified in sc1 en (timestamped channels, Adding-to-that line, SBI script, indelible-ink quote); smallest gap: the main evidence play is a habit chain, so tonight's move shrinks to the in-meeting sentence."
+    },
+    {
+      "id": "a5",
+      "s1": 1,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 8,
+      "weakest": "naturalness",
+      "note": "The quoted script contains a garbled clause 「这事你提前知道是 Duplex 吗」 — meaningless word jammed into the one line the user would copy-paste; also awkward 「定不定位由她的行为定」."
+    },
+    {
+      "id": "a6",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Deep-night message entry traced with correct readings and reply options, but the 雷区 line contains Cyrillic 「анализ对方心思」 — a garbled foreign word in delivered Chinese text."
+    },
+    {
+      "id": "a7",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "Nearly line-by-line grounded in sc16 ms (three-line formula, week-3 follow-up, 40-day tahlil, Al-Fatihah only-if-read, no-RIP no-questions), with natural Manglish register; nothing fabricated found — no real weakness, 40-day framing is a light compress of the KB tahlil timeline."
+    },
+    {
+      "id": "a8",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Script matches the KB 黑话兑换 entry exactly, but the closer 「该约一对一的两周一次了」 invents a two-week cadence the KB only gestures at (「主动约一次一对一」) without any schedule."
+    },
+    {
+      "id": "a9",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "naturalness",
+      "note": "Grounded (事前书面化, timestamped channels, 口头授权落回文字 all in sc1 zh); 「狡辩档位」 framing is embellishment but not fabrication; only cosmetic defect is a stray empty paren 「你（）的功劳」."
+    },
+    {
+      "id": "a10",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "面子账 reading, 幽默卸力 line, and 年度晚间家庭会 all verified in sc3 zh; the 全绿的体检 and 涨了30% figures are constructed placeholders the user must swap — grounded but worth stating as templates."
+    }
+  ],
+  "set_b": [
+    {
+      "id": "b1-zh",
+      "lang": "zh",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Concrete no-reply-needed scripts + 3 taboos, fully native zh; but '失恋第二三个月才是孤独峰值' asserted as empirical fact without support."
+    },
+    {
+      "id": "b2-zh",
+      "lang": "zh",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "Three readings + deadline-explicit reply script + two taboos (esp. don't delete work records); everything is KB-framed heuristics, nothing unsupported — weakest label is nominal (all 2s)."
+    },
+    {
+      "id": "b3-zh",
+      "lang": "zh",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Usable one-shot scripts; invented predictions ('围观的人会替你难受、会有人私聊你', '十条回复换二十条更急了') are aphorisms dressed as mechanisms."
+    },
+    {
+      "id": "b4-zh",
+      "lang": "zh",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Strong 3-step demand ladder with date+number rule, but the RM/¥ dual-currency hedge and generic '小额索赔/仲裁' show the writer didn't settle the jurisdiction (peers name Malaysian specifics)."
+    },
+    {
+      "id": "b5-zh",
+      "lang": "zh",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "Safe formula (real+non-fatal+in-repair+evidence), example answer, three landmines; native zh throughout — weakest label is nominal (all 2s)."
+    },
+    {
+      "id": "b1-en",
+      "lang": "en",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Excellent concrete wording + the nobody-sends follow-up; but 'weeks 3–6 are when the house goes quiet' asserted as fact without support."
+    },
+    {
+      "id": "b2-en",
+      "lang": "en",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "Best-in-set: discriminator reply that converts soft burial into a documented decision + 72h silence-check + nagging pitfall; idiomatic corporate English (weakest label nominal, all 2s)."
+    },
+    {
+      "id": "b3-en",
+      "lang": "en",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Usable template + private-boundary move, but 'estate-management logic' is opaque jargon and 'for a pubic dig' is a glaring typo; rhetorically native otherwise."
+    },
+    {
+      "id": "b4-en",
+      "lang": "en",
+      "s1": 2,
+      "s2": 2,
+      "s3": 1,
+      "s4": 2,
+      "s5": 2,
+      "total": 9,
+      "weakest": "grounding",
+      "note": "Concrete Malaysian ladder (Form 198, RM5,000), but the parenthetical 'TTPM generally does not take tenancy disputes' is contested/likely wrong, and the 48h-refund case detail is unverifiable."
+    },
+    {
+      "id": "b5-en",
+      "lang": "en",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "Three-axis scoring frame, evidenced-repair template, three fatal errors; native register throughout (weakest label nominal, all 2s)."
+    },
+    {
+      "id": "b1-ms",
+      "lang": "ms",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Strong concrete beats-vs-adorned content, but register slips: 'Msg tiga baris nakal' (nakal=naughty, wrong word), stiff 'janji hadir terbuka', untranslated label 'Practice heuristic:'."
+    },
+    {
+      "id": "b2-ms",
+      "lang": "ms",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Clear ask-once-with-date script, but repeated MT artifacts: 'Cam jawap betul' (garbled), 'ia priorities' (EN insertion), 'Soalan satu ini' (broken word order), coinage 'berlapik'."
+    },
+    {
+      "id": "b3-ms",
+      "lang": "ms",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 2,
+      "s5": 2,
+      "total": 10,
+      "weakest": "grounding",
+      "note": "The most idiomatic Manglish of all 15 ('Ko ni takleh terima lawak ke?', 'tak payah berkuliah', 'perhatian ialah gajinya'); mechanisms are heuristic but plausible (weakest label nominal, all 2s)."
+    },
+    {
+      "id": "b4-ms",
+      "lang": "ms",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Correct Form 198 escalation ladder, but two outright broken machine phrases — 'Terjemah bara surat' (nonsense) and 'simpan SEMUA chat test deposit keluar' — nearly derail steps; translationese 'namakan forum', 'sorotan'."
+    },
+    {
+      "id": "b5-ms",
+      "lang": "ms",
+      "s1": 2,
+      "s2": 2,
+      "s3": 2,
+      "s4": 1,
+      "s5": 2,
+      "total": 9,
+      "weakest": "naturalness",
+      "note": "Good three-test framework + localised examples, but nonsense words 'Menaiganya'/'Jenangan', 'memohon kerja akuan' (typo flips meaning: should be 'akaun'), English verb 'frame' left untranslated."
+    }
+  ],
+  "set_a_mean": 9.5,
+  "by_lang": {
+    "zh": 9.4,
+    "en": 9.4,
+    "ms": 9.2
+  },
+  "by_question": {
+    "b1": {
+      "zh": 9,
+      "en": 9,
+      "ms": 9
+    },
+    "b2": {
+      "zh": 10,
+      "en": 10,
+      "ms": 9
+    },
+    "b3": {
+      "zh": 9,
+      "en": 9,
+      "ms": 10
+    },
+    "b4": {
+      "zh": 9,
+      "en": 9,
+      "ms": 9
+    },
+    "b5": {
+      "zh": 10,
+      "en": 10,
+      "ms": 9
+    }
+  }
+}

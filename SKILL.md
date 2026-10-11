@@ -52,4 +52,6 @@ lanes (**zh** / **en** / **ms**) are authored natively — they are *lanes, not 
 
 ## Rules
 See `AGENTS.md`. Every specific claim is sourced; constructed examples are labelled; astrology is
-framed as a cultural heuristic with skeptical evidence; practice advice is labelled as heuristic.
+framed as a cultural heuristic with skeptical evidence; practice advice is labelled as heuristic. **Reply hygiene**: never surface these internal labels
+(or `wiki/` paths) in the user-facing reply, and reuse the language lane's own phrasings — especially
+for `ms`, where re-translating introduces artefacts; see `wiki/synthesis/00-how-to-use.md` §(f).

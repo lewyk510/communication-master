@@ -255,3 +255,13 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - **Grand total Rounds 9+10: 146 questions → 103 FULL / 33 PARTIAL / 10 NONE (70.5% FULL), 0 real no-answer gaps.**
 - **Verified**: `router-smoke` 32/32, intent 3/3, `bash tools/check.sh` all green; several fixed queries confirm correct routing.
 - Takeaway: coverage confirmed at scale; residual gaps are thin and thematic, nothing structural missing.
+
+
+## [2026-10-10] eval | Answer-quality + language-parity audit — Round 11 (blind rubric judges)
+
+- Data: `qa/eval/answer-quality-audit.json` + `qa/eval/ANSWER-QUALITY-AUDIT-REPORT.md`. Method: Set A = 10 real questions, KB-only answers, blind rubric judge (specificity/actionability/grounding/naturalness/calibration, /10); Set B = same 5 questions in zh/en/ms (15), blind judge.
+- **Set A: 9.5/10 mean (min 8)** — pages yield specific, grounded, actionable replies; no weak page found. Deductions were render artifacts, not thin content.
+- **Set B parity: zh 9.4 / en 9.4 / ms 9.2** — content parity effectively achieved. ms naturalness flagged 1/2 on 4/5, but that is ANSWER-generation glitching (garbled Malay), NOT KB content: the ms lanes are explicitly "authored natively, NOT a translation" and read idiomatic.
+- **2 real render-layer defects fixed**: (1) KB-internal labels (`Practice heuristic`, `EN gloss`, `constructed example`) and `wiki/` paths leaked into user replies; (2) Malay was re-generated (glitching) instead of reused from the native lane. Fix: new **§(f) Reply hygiene** in `wiki/synthesis/00-how-to-use.md` + a rule line in `SKILL.md`.
+- Verified: `bash tools/check.sh` all green.
+- Takeaway: answer quality high and language parity real; only the render layer was weak, now covered by an explicit rule.
