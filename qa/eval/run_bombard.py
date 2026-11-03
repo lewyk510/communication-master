@@ -38,6 +38,8 @@ def lang_of(q: str) -> str:
 def load_cases() -> list[dict]:
     cases, seen = [], set()
     for f in sorted(glob.glob(str(ROOT / "qa/eval/bombard-*.json"))):
+        if "adjudicated" in Path(f).name:
+            continue
         try:
             data = json.loads(Path(f).read_text(encoding="utf-8"))
         except Exception as e:

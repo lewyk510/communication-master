@@ -22,7 +22,11 @@ lanes (**zh** / **en** / **ms**) are authored natively — they are *lanes, not 
 1. Read `wiki/synthesis/00-how-to-use.md` (always load — resolution procedure, confidence rules, ethics).
 2. Match the user's message against `router-index.json` (compact matching index:
    `id` / `dir` / `scenarios` / `triggers`). `router.json` is the full source of
-   truth for patches; answer from the winner's `dir`. If nothing matches, run the
+   truth for patches; answer from the winner's `dir`. Check the **confidence tier**
+   (`conf` field of `tools/ask.py`, or `tools/router_match.assess`): **LOW** (weak keyword
+   score, typo-fuzzy match, or the semantic check prefers another topic) means do NOT trust
+   the fast path — read `index.md` and pick the topic by understanding (Layer 2). If nothing
+   matches, run the
    **Layer-1.5 intent fallback** (`router.json.intents`: `decode`→S1, `reply`→S2)
    before falling back to a clarifying question.
 3. **Cheapest first.** Resolve the topic, then escalate only as far as needed:

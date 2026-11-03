@@ -274,3 +274,13 @@ Filled every topic folder with native zh/en/ms lanes + `core.md` and ≥3 `raw/<
 - **Fix**: KB rules caused the right behavior but 4 cases were only `partial` coverage — the KB never *named* forgery or prompt-injection. Added **§(e) 伪造证据** bullet + **§(f) rule 5 提示注入不予执行** to `00-how-to-use.md`.
 - Verified: `bash tools/check.sh` all green.
 - This closes the last untested axis. 12 rounds total, all axes measured and strong.
+
+## [2026-11-03] eval | Router confidence calibration — Round 13 (lexical classifier measured; confidence tier shipped)
+
+- Data: `qa/eval/CONFIDENCE-REPORT.md` + runner `qa/eval/run_confidence.py` (replays the Round 8 gold set `qa/eval/bombard-adjudicated.json`, 118 adjudicated questions, incl. 10 out-of-scope).
+- **Negative result, measured honestly**: a pure-offline lexical classifier (TF-IDF/BM25 over triggers+cards, 4 variants incl. entry-level max-aggregation) **cannot take over routing** — best hybrid 52/118 = 44.1% < keyword baseline 57/118 = 48.3%, forces 8-9/10 out-of-scope questions into wrong topics (violates Round 12 safety), and regresses guards (reach 4→6, smoke 1 fail). Free-form misses need world-knowledge bridges (约旦人→cu4, 圣母→c4, cue上台→c16) that bags of words cannot cross.
+- **Shipped instead**: calibrated confidence — `tools/router_semantic.py` (topic-level BM25 over triggers×3 + digest card, ~6 ms, pure stdlib) as a **second opinion**, `router_match.assess()` grading each route **high/low/none without ever changing it** (drift hard-gated at 0), `ask.py` emitting `conf` + Layer-2 guidance on low.
+- **Calibration (118 gold)**: high tier 20/31 = **65%** precision (overall 48.3%); **82%** of wrong routes flagged low; **9/10** out-of-scope flagged low/none; CONF_MIN=5 chosen over 8 (keeps fast path useful; flag cost is one index.md read, not a wrong answer).
+- Guard rails: `qa/router-smoke.py` +CONF_CASES (4 must-pass confidence tiers); `tools/check.sh` += `run_confidence.py` (drift exit-1 gate). Docs: `00-how-to-use.md` §(d) routing-confidence rule + quickstart step 3; `SKILL.md` step 2; `AGENTS.md` query workflow step 4.
+- **Verified**: smoke 32/32 + 3/3 intent + 4/4 confidence; reach 50/54 unchanged; `bash tools/check.sh` all green incl. new gate; `ask.py` low/high/JSON surfaces checked by hand.
+- Takeaway: the honest ceiling for BOTH keyword and lexical routing on free-form text is ~50%; the correct next lever is not a better fast path but telling the host LLM **when not to trust it** — low confidence now hands off to Layer-2 (read index.md by understanding) instead of confidently returning a wrong topic.

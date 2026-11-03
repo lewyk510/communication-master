@@ -67,6 +67,7 @@ updated: 2026-10-07
 - 构造的对话一律标注 constructed example。
 - **歧义规则**：一条消息存在 >= 2 个合理解读时，输出全部候选并给置信度，不强行收敛为一种。
 - **跨文化规则**：涉及 cu1-cu5 而背景信息不足时，**先提问再作答**。提问用 `wiki/cultures/cu4-cross-cultural-general/` 的针对性问题清单（文化背景、过往互动模式、前因、对方惯常风格）。宁可多问一句，不可编一个文化解释。
+- **路由置信度（Round 13）**：`tools/ask.py` 的快速通道带 `confidence` 分档：**high**（关键词得分≥5 且语义校验同意）/ **low**（关键词信号弱、语义校验 prefers 别的主题、或仅靠错别字容错命中）/ **none**（零命中，走 Layer-1.5 意图兜底或澄清问题）。**low 时不直接信快速通道**：改走 Layer 2，读 `index.md` 按理解选题，卡片只当线索。实测（Round 8 题库 118 题）：high 档精度 65%（整体 48.3%），82% 的错误路由与 9/10 的 out-of-scope 题会被 low 拦下。详见 `qa/eval/CONFIDENCE-REPORT.md`。
 
 ## (e) Ethics · 伦理边界
 
@@ -108,6 +109,10 @@ updated: 2026-10-07
    (router-index.json.matcher.medium_tokens: whatsapp/微信/消息/email/群/电话/评论 …)
    count as +1 only, so a channel word never outranks a subject word;
    matching (trigger match and medium-membership lookup) is case-insensitive;
+   check the confidence tier (tools/ask.py conf field / router_match.assess):
+   LOW (weak keyword score, typo-fuzzy match, or semantic check prefers another
+   topic) means do NOT trust the fast path — read index.md and pick the topic
+   by understanding;
    dispatch S1/S3/S4 to engines wiki/playbooks/p2-subtext-decoder/ ,
    wiki/playbooks/p3-formal-writing/ , wiki/playbooks/p4-ai-prompting/ ;
    S2 goes through wiki/playbooks/p1-reply-engine/ + commands/reply.md.

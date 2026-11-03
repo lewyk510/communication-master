@@ -16,6 +16,8 @@ import json
 import re
 from pathlib import Path
 
+import router_semantic
+
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -167,6 +169,39 @@ def rank(index: dict, query: str) -> list[dict]:
 def resolve(index: dict, query: str) -> dict | None:
     ranked = rank(index, query)
     return ranked[0] if ranked else None
+
+
+CONF_MIN = 5
+
+
+def assess(index: dict, query: str) -> dict:
+    """rank() plus a calibrated confidence tier (Round 13).
+
+    Routing itself is NEVER changed — the ranked list is exactly rank()'s. The
+    tier only tells the caller how much to trust the fast path:
+      high  keyword score >= CONF_MIN and the semantic check picks the same topic
+      low   weak keyword signal, or the semantic check prefers another topic
+      none  zero keyword hits (the existing intent/clarify fallback path)
+    Calibrated on the Round 8 bombardment gold set: the high tier is right 65%
+    vs 48.3% overall, and the low tier catches ~82% of wrong routes and 9/10
+    out-of-scope questions (see qa/eval/CONFIDENCE-REPORT.md).
+    """
+    ranked = rank(index, query)
+    if not ranked:
+        return {"ranked": [], "confidence": "none", "sem_top": None,
+                "sem_score": 0.0, "reason": "no-hits"}
+    top = ranked[0]
+    sem_top, sem_score = router_semantic.for_index(index).top(query)
+    if top.get("fuzzy"):
+        confidence, reason = "low", "typo-fuzzy-match"
+    elif top["score"] < CONF_MIN:
+        confidence, reason = "low", "weak-keyword"
+    elif sem_top != top["id"]:
+        confidence, reason = "low", "semantic-disagrees"
+    else:
+        confidence, reason = "high", "agree"
+    return {"ranked": ranked, "confidence": confidence, "sem_top": sem_top,
+            "sem_score": round(sem_score, 3), "reason": reason}
 
 
 def resolve_intent(index: dict, query: str) -> dict | None:

@@ -18,6 +18,9 @@ python3 tools/build_cards.py --check
 echo "== router-smoke =="
 python3 qa/router-smoke.py
 
+echo "== confidence calibration (assess never reroutes; calibration on bombard gold) =="
+python3 qa/eval/run_confidence.py
+
 echo "== resolver (ask.py end-to-end) =="
 python3 tools/ask.py --json --no-cache "潜台词是什么意思" \
   | python3 -c "import sys,json; d=json.load(sys.stdin); assert d.get('id')=='p2-subtext-decoder', d; print('resolver: OK ->', d['id'])"

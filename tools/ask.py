@@ -78,6 +78,15 @@ def emit(result: dict, as_json: bool) -> None:
         print("  -> load wiki/synthesis/00-how-to-use.md and ask ONE clarifying question.")
         return
     print(f"[resolved] {result['id']}  (score {result['score']}, lang {result['lang']})")
+    if result["confidence"] == "low":
+        extra = f", semantic check prefers {result['sem_top']}" \
+            if result["reason"] == "semantic-disagrees" else ""
+        print(f"  conf     low ({result['reason']}{extra})")
+    else:
+        print(f"  conf     {result['confidence']}")
+    if result.get("confidence") == "low":
+        print("  -> fast path is unsure: prefer Layer 2 — read index.md and pick the topic by understanding;")
+        print("     treat the card below as a hint, not the answer.")
     print(f"  dir      {result['dir']}")
     if result.get("title"):
         print(f"  title    {result['title']}")
@@ -124,7 +133,8 @@ def main() -> int:
             result["cache"] = "stale (KB changed since cached) — re-answered"
 
     index = router_match.load_index()
-    ranked = router_match.rank(index, q)
+    assessed = router_match.assess(index, q)
+    ranked = assessed["ranked"]
     if not ranked:
         intent = router_match.resolve_intent(index, q)
         if intent:
@@ -158,6 +168,9 @@ def main() -> int:
         "scenarios": top["scenarios"],
         "card": card,
         "runners_up": [r["id"] for r in ranked[1:4]],
+        "confidence": assessed["confidence"],
+        "sem_top": assessed["sem_top"],
+        "reason": assessed["reason"],
         "core": str(core.relative_to(ROOT)) if core.exists() else None,
         "lane": str(lane.relative_to(ROOT)) if lane.exists() else None,
     })

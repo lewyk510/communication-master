@@ -29,6 +29,7 @@ Current focus items and priorities.
 | 21 | Understanding test — Round 6 (Malaysian mixed-language / Manglish·rojak + info-integrity edges) | ✅ **8/8 first try + 路由链修好** | `qa/eval/understanding-hard5.json` + `UNDERSTANDING-HARD5-REPORT.md`; Layer-2 all reached `cu5`; fix = **Layer-1 路由链**：cu5 补 Manglish 实词触发词（where got/paiseh/jialat/lah…）、`can lah`/`okay lah` 从 cu1 归还 cu5、`p2 core.md` Step 2 新增槽位 6「混合语言」显式指向 cu5; smoke 32/32 |
 | 22 | Routing reachability stress test — Round 7 (54 messy phrasings: typo / abbrev / voice2text / ellipsis / colloquial / Manglish / cross-lang) | ✅ **72% → 92%** | `qa/eval/routing-reach.json` + `run_routing_reach.py` + `ROUTING-REACH-REPORT.md`; fix = CJK **错别字兜底**（死路时编辑距离≤1 + 泛化词黑名单）+ **引擎平局优先**（限非泛化触发词）+ c1 触发词瘦身（消除与 p2 双挂）+ 同义词扩充; smoke 32/32 |
 | 23 | Question bombardment — Round 8 (5 independent generators × 5 angles → 139 cases; 2 blind A/B judges) | ✅ measurement + bounded fix | `qa/eval/bombard-*.json` + `run_bombard.py` + `bombard-adjudicated.json` + `BOMBARD-REPORT.md`; finding = 独立出题**标签不可信**（约半数 miss 是噪音）；真实软肋 = **自由文本长句**；fix = **长句开头优先**（`router_match` HEAD_MIN/K/BOOST，仅长句，受控 14%→20%，reach/smoke 无回归）；结论 = 关键词天花板已到，下一步应做意图分类器 |
+| 24 | Router confidence calibration — Round 13 (lexical classifier measured + confidence tier shipped) | ✅ **负结果 + 置信度层落地** | `tools/router_semantic.py`（BM25 语义校验）+ `router_match.assess()`（high/low/none，路由零改动）+ `qa/eval/run_confidence.py`（drift 硬门）+ `CONFIDENCE-REPORT.md`; 实测：词汇接管全口径 44.1% < 基线 48.3% 且 oos 误路由 8-9/10（否决）；置信层 high 档精度 65%、拦错 82%、拦 oos 9/10; smoke 32/32+3/3+4/4 |
 
 ---
 
@@ -101,3 +102,4 @@ Each `wiki/<cluster>/<id>/`: `core.md` + `zh.md` + `en.md` + `ms.md`, ≥3 `raw/
 | 2026-10-10 | Full coverage scan (Round 10) + 6 gap fixes | `qa/eval/coverage-scan.json`, `qa/eval/COVERAGE-SCAN-REPORT.md`; sc19/c16/c1/sc1/sc2/sc7 content adds + `router.json` triggers |
 | 2026-10-10 | Answer-quality + parity audit (Round 11) + reply-hygiene rule | `qa/eval/answer-quality-audit.json`, `qa/eval/ANSWER-QUALITY-AUDIT-REPORT.md`; `00-how-to-use.md` §(f), `SKILL.md` |
 | 2026-10-10 | Robustness/safety test (Round 12, final) + injection/forgery rules | `qa/eval/robustness.json`, `qa/eval/ROBUSTNESS-REPORT.md`; `00-how-to-use.md` §(e)/§(f) |
+| 2026-11-03 | Router confidence calibration (Round 13) | lexical classifier negative result; `tools/router_semantic.py` + `assess()` + `run_confidence.py` + `CONFIDENCE-REPORT.md`; smoke +4 confidence cases; check.sh gains confidence gate |

@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ROUTER = ROOT / "router.json"
 
 sys.path.insert(0, str(ROOT / "tools"))
-from router_match import rank, resolve_intent  # noqa: E402  (shared scorer)
+from router_match import assess, rank, resolve_intent  # noqa: E402  (shared scorer)
 
 # (query, expected topic id)  — must resolve exactly. Covers every cluster and
 # all three lanes; includes the reviewer round-2 regressions.
@@ -92,6 +92,16 @@ INTENT_CASES: list[tuple[str, str]] = [
     ("收到这种话我该怎么回复", "S2"),
 ]
 
+# Confidence tiers (Round 13): assess() must not change the route, only grade
+# trust in it. high = strong keyword score + semantic check agrees; low = weak
+# keyword signal or the semantic check prefers another topic.
+CONF_CASES: list[tuple[str, str]] = [
+    ("can lah 什么意思", "high"),
+    ("微信上他突然已读不回怎么办", "high"),
+    ("老板说辛苦了是什么暗示", "low"),
+    ("约旦人开会都不看表 我朋友说他们没礼貌 你觉得呢", "low"),
+]
+
 
 def build_scorer(router: dict):
     def resolve(query: str) -> tuple[str | None, int, list[str]]:
@@ -137,11 +147,24 @@ def main() -> int:
                 intent_failures += 1
                 print(f"  [FAIL] {query} -> {got} (expected engine {expected_engine})")
 
-    if failures or intent_failures:
-        print(f"router-smoke: FAIL — {failures} recall + {intent_failures} intent regression(s)")
+    conf_failures = 0
+    if CONF_CASES:
+        print("confidence tiers (assess grades the fast path; routing unchanged):")
+        for query, expected_conf in CONF_CASES:
+            a = assess(router, query)
+            gc = a["confidence"]
+            if gc == expected_conf:
+                print(f"  [PASS] {query} -> {gc} ({a['reason']})")
+            else:
+                conf_failures += 1
+                print(f"  [FAIL] {query} -> {gc}/{a['reason']} (expected {expected_conf})")
+
+    if failures or intent_failures or conf_failures:
+        print(f"router-smoke: FAIL — {failures} recall + {intent_failures} intent + {conf_failures} confidence regression(s)")
         return 1
     print(f"router-smoke: OK — {len(CASES)}/{len(CASES)} passed, "
-          f"{len(INTENT_CASES)}/{len(INTENT_CASES)} intent-fallback passed")
+          f"{len(INTENT_CASES)}/{len(INTENT_CASES)} intent-fallback passed, "
+          f"{len(CONF_CASES)}/{len(CONF_CASES)} confidence passed")
     return 0
 
 
